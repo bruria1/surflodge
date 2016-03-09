@@ -29,18 +29,18 @@ Drupal.behaviors.my_custom_behavior = {
 
 /**********  main  **********/
 
-  $height = $(window).height()/2;
+  $height = $(window).height()/3*2;
   $("#main").css("margin-top", $height);
   $(window).resize(function() {
-   	$height = $(window).height()/2;
+   	$height = $(window).height()/3*2;
 	$("#main").css("margin-top", $height);
   });
 
 /*********   scroll  *******/
 
-$linksheight = $height + $("#header").height() -140;
+$linksheight = $height + $("#header").height() -200;
   $(window).resize(function() {
-	$linksheight = $height + $("#header").height() - 140;
+	$linksheight = $height + $("#header").height() - 200;
   });
 $(document).ready(function(){       
       $scroll_pos = 0;

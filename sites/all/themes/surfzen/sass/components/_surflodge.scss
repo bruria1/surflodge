@@ -36,6 +36,7 @@
 $default: #202020;
 $yellow: #ffc221;
 $blue: #46C2D2;
+$light-blue: #31919E;
 
 /**********  global css  ********/
 
@@ -78,24 +79,23 @@ body{
   text-transform: uppercase;
 }
 
-.field-collection-view {
-    border-bottom: none;
-    margin: 0;
-    padding: 0;
-}
-
-.field-collection-container{
-    border-bottom: none;
-    margin: 0;
-    padding: 0;
-}
-
 #content{
   padding: 0;
 }
 
 .block{
   margin-bottom: 0;
+}
+
+.field-collection-view {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.field-collection-container {
+    border: none;
+    margin: 0;
 }
 /**********  header **********/
 
@@ -141,13 +141,17 @@ body{
   width: 300px;
   background-color: $blue;
   z-index: 200;
+  padding-top: 60px;
+  padding-left: 50px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   li{
     width: 100%;
+    margin-bottom: 20px;
   }
   a{
     color: #fff;
+    text-transform: uppercase;
   }
 }
 
@@ -212,6 +216,123 @@ body{
   }
 }
 
+/*********  footer  ***************/
+
+.wrapper-footer{
+  background-color: $light-blue;
+  color: #fff;
+  padding: 100px 0;
+  #footer{
+    @include width();
+    width: 1020px;
+  }
+  .block-title{
+    font-size: 16px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+
+#block-weather-system-1{
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  .temperature{
+    font-size: 25px;
+    margin-top: 20px;
+    span:nth-child(1){
+      font-weight: bold;
+    }
+  }
+}
+
+#block-bean-social-link-block{
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  .field-items{
+    clear: left;
+  }
+  .field-item{
+    float: left;
+    margin-right: 20px;
+  }  
+  .field-name-field-social-text{
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+}
+
+#block-mailchimp-signup-signup-for-newsletter{
+  position: relative;
+  width: 30%;
+  float: right;
+  input.form-text{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px 0 0 3px;
+    width: 85%;
+    float: left;
+    height: 40px;
+    padding: 7px 13px;
+    color: #fff;
+  }
+  .form-required{
+    display: none;
+  }
+  label{
+    font-weight: normal;
+    padding: 7px 13px;
+  }
+  .form-submit{
+    background: url("../images/Group.png") no-repeat center center #fff;
+    border-radius: 0 3px 3px 0;
+    width: 15%;
+    height: 40px;
+    border: none;
+    text-indent: -9999px;
+  }
+  .form-item{
+    margin: 0 0 10px 0;
+  }
+}
+
+.wrapper-bottom{
+  background-color: $blue;
+  overflow: hidden;
+  padding: 90px 0;
+  .region-bottom{
+    @include width;
+    width: 1020px;
+  }
+  p{
+    margin: 0;
+  }
+  .logo-image{
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto
+  }
+  #block-block-5{
+    border-top: 1px solid #fff;
+    padding-top: 40px;
+    margin-top: 80px;
+    color: #fff;
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+    a{
+      color: #fff;
+    }
+  }
+}
 /*****  background image and video  ***********/
 
 .field-name-field-background-image{
@@ -240,6 +361,7 @@ body{
 
 .region-links{
   width: 100%;
+  z-index: 100;
   .block{
     @include width();
     padding: 0;
@@ -275,27 +397,136 @@ body{
 /*********  front  **********/
 
 .front{
-  .field-name-field-pix-n-text > .field-items > .field-item{
-    width: 50%;
-    float: left;
-    &.even{
-      .field-name-field-hp-text{
-        padding: 0 30px 0 80px;
-      }
+  .field-name-body{
+    padding: 0 90px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    margin: 50px 0;
+    @include res(s-m){
+      padding: 0 3%;
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+      -moz-column-count: 1; /* Firefox */
+      column-count: 1;
+      -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 40px; /* Firefox */
+      column-gap: 40px;
+      margin: 20px 0;
     }
-    &.odd{
-      .field-name-field-hp-text{
-        padding: 0 80px 0 30px;
-      }
+  }
+  p{
+    margin: 0;
+  }
+  .field-name-field-hp-image{
+    .field-item{
+      width: 50%;
+      float: left;
     }
   }
 }
 
 #block-views-concerts-view-block{
+  padding: 0 16%;
+  margin-bottom: 100px;
+  overflow: hidden;
   h2{
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 20px;
     letter-spacing: 10px;
     text-align: center;
+  }
+  .views-row-odd{
+    float: right;
+  }
+  .views-row-even{
+    float: left;
+  }
+  .views-row{
+    width: 47%;
+    position: relative;
+    margin-bottom: 30px;
+    img{
+      margin-bottom: -8px;
+      border-radius: 3px;
+    }
+  }
+  .views-field-title{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 3px;
+    .month{
+      color: #fff;
+      font-size: 20px;
+      padding-top: 21%;
+      line-height: 33px;
+      text-transform: uppercase;
+    }
+    a{
+      height: 100%;
+      display: block;
+    }
+    .day{
+      color: $yellow;
+      font-size: 36px;
+    }
+    .hour{
+      color: #fff;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+    .title{
+      color: #fff;
+      font-size: 16px;
+      margin-top: 4%;
+    }
+  }
+}
+
+#block-views-blog-post-view-block{
+  padding: 0 185px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  h2{
+    margin: 20px 0;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  .views-row-odd{
+    float: right;
+  }
+  .views-row-even{
+    float: left;
+  }
+  .views-row{
+    width: 47%;
+    position: relative;
+    margin-bottom: 30px;
+    img{
+      margin-bottom: -8px;
+      border-radius: 3px;
+    }
+  } 
+  .views-field-field-post-date{
+    color: $yellow;
+    font-size: 14px;
+    float: left;
+  } 
+  .views-field-field-post-date-1{
+    color: $yellow;
+    font-size: 30px;
+    clear: left;
+  }
+  .views-field-title a{
+    color: $default;
+    font-size: 16px;
+    float: right;
   }
 }
