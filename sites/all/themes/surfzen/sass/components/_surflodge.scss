@@ -175,8 +175,9 @@ body{
   .lines{
     float: right;
     margin-right: 100px;
-        transition: all 0.5s;
+    transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    height: 20px;
   }
   span{
     width: 20px;
@@ -368,17 +369,17 @@ body{
   }
   p{
     margin: 0;
-  }
-  a{
-    background-color: $yellow;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    color: #fff;
-    display: block;
-    letter-spacing: 6px;
-    margin: -26px 36px 0 0;
-    float: right;
+    a{
+      background-color: $yellow;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      color: #fff;
+      display: block;
+      letter-spacing: 6px;
+      margin: -26px 36px 0 0;
+      float: right;
+    }
   }
 }
 

@@ -29,10 +29,10 @@ Drupal.behaviors.my_custom_behavior = {
 
 /**********  main  **********/
 
-  $height = $(window).height()/3*2;
+  $height = $(window).height()-180;
   $("#main").css("margin-top", $height);
   $(window).resize(function() {
-   	$height = $(window).height()/3*2;
+   	$height = $(window).height()-180;
 	$("#main").css("margin-top", $height);
   });
 
