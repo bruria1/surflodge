@@ -133,6 +133,6 @@
   <?php print render($page['footer']); ?>
 </div>
 <div class="wrapper-bottom">
-  <div class="logo-image"><img src="/sites/surflodge.dd/files/logo-surflodge.png"></div>
+  <div class="logo-image"><img src="/sites/default/files/logo-surflodge.png"></div>
   <?php print render($page['bottom']); ?>
 </div>
