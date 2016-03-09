@@ -7,6 +7,35 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
+
+
+  <header class="header" id="header" role="banner">
+    <div class="header-wrapper">
+                  <div id="navigation">
+      <?php if ($main_menu): ?>
+        <nav id="main-menu" role="navigation" tabindex="-1">
+          <?php
+          // This code snippet is hard to modify. We recommend turning off the
+          // "Main menu" on your sub-theme's settings form, deleting this PHP
+          // code block, and, instead, using the "Menu block" module.
+          // @see https://drupal.org/project/menu_block
+          print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
+      <?php endif; ?>
+
+      <?php print render($page['navigation']); ?>
+
+    </div>
     <div class="menu-wrapper">
       <div class="menu-button">
         <div class="lines">
@@ -16,7 +45,6 @@
         </div>
       </div>
     </div>
-  <header class="header" id="header" role="banner">
 
     <?php if ($logo): ?>
     <div class="logo-wrapper">
@@ -55,42 +83,11 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-
+</div>
   </header>
 
 <div id="page">
-
-    <div id="navigation">
-
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" role="navigation" tabindex="-1">
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see https://drupal.org/project/menu_block
-          print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )); ?>
-        </nav>
-      <?php endif; ?>
-
-      <?php print render($page['navigation']); ?>
-
-    </div>
-
-
-
-
-  <div id="main">
+ <div id="main">
     <?php print render($page['links']); ?>
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>

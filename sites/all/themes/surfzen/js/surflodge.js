@@ -18,7 +18,7 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
 /********  hamburger menu  **********/
-      $(".menu-button").click(function(){
+      $(".menu-wrapper").click(function(){
         if ($("body").hasClass("display-menu")){
           $("body").removeClass("display-menu");
         }
@@ -27,15 +27,35 @@ Drupal.behaviors.my_custom_behavior = {
         }
       });
 
-/**********  main  **********/
+      $("#page").click(function(){
+          $("body").removeClass("display-menu");
+      });
 
-  $height = $(window).height()-180;
-  $("#main").css("margin-top", $height);
+/**********  main  **********/
+  
+  $mainheight = $(window).height()-180;
+  $("#main").css("margin-top", $mainheight);
   $(window).resize(function() {
-   	$height = $(window).height()-180;
-	$("#main").css("margin-top", $height);
+   	$mainheight = $(window).height()-180;
+	 $("#main").css("margin-top", $mainheight);
   });
 
+$height = $(window).height();
+    if ($height<662) {
+      $("body").addClass("small-height");
+    }
+    else{
+      $("body").removeClass("small-height");
+    }
+  $(window).resize(function() {
+    $height = $(window).height();
+    if ($height<662) {
+      $("body").addClass("small-height");
+    }
+    else{
+      $("body").removeClass("small-height");
+    }
+  });
 /*********   scroll  *******/
 
 $linksheight = $height + $("#header").height() -200;
