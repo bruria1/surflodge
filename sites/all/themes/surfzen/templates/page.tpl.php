@@ -127,8 +127,12 @@
 
   </div>
 
-  <?php print render($page['footer']); ?>
 
 </div>
-
-<?php print render($page['bottom']); ?>
+<div class="wrapper-footer">
+  <?php print render($page['footer']); ?>
+</div>
+<div class="wrapper-bottom">
+  <div class="logo-image"><img src="/sites/surflodge.dd/files/logo-surflodge.png"></div>
+  <?php print render($page['bottom']); ?>
+</div>
