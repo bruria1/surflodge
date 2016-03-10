@@ -33,15 +33,15 @@ Drupal.behaviors.my_custom_behavior = {
 
 /**********  main  **********/
   
-  $mainheight = $(window).height()-180;
+  $mainheight = $(window).height()-150;
   $("#main").css("margin-top", $mainheight);
   $(window).resize(function() {
-   	$mainheight = $(window).height()-180;
+   	$mainheight = $(window).height()-150;
 	 $("#main").css("margin-top", $mainheight);
   });
 
 $height = $(window).height();
-    if ($height<662) {
+    if ($height<500) {
       $("body").addClass("small-height");
     }
     else{
@@ -49,7 +49,7 @@ $height = $(window).height();
     }
   $(window).resize(function() {
     $height = $(window).height();
-    if ($height<662) {
+    if ($height<500) {
       $("body").addClass("small-height");
     }
     else{
@@ -58,7 +58,7 @@ $height = $(window).height();
   });
 /*********   scroll  *******/
 
-$linksheight = $height + $("#header").height() -350;
+$linksheight = $height + $("#header").height() -400;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -72,7 +72,7 @@ $(document).ready(function(){
       });
 });
 $(window).resize(function() {
-$linksheight = $height + $("#header").height() -350;
+$linksheight = $height + $("#header").height() -400;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -84,8 +84,17 @@ $(document).ready(function(){
             $("body").removeClass('scroll');
         }
       });
-});});
+});
+});
 
+/************* blog page  *********/
+
+  var imageHeight = $("#block-views-blog-post-view-block-1 img").height();
+  $("#block-views-blog-post-view-block-1 .views-field-field-post-date-1").height(imageHeight);
+  $(window).resize(function() {
+    var imageHeight = $("#block-views-blog-post-view-block-1 img").height();
+    $("#block-views-blog-post-view-block-1 .views-field-field-post-date-1").height(imageHeight);
+  });
 
   }
 };
