@@ -859,25 +859,45 @@ body{
         }
         .places{
           width: 680px;
-          margin: 0 auto;
+          margin: 70px auto 0;
           max-width: 100%;
           font-size: 20px;
-          margin-top: 70px;
+          @include res(s-m){
+            margin-top: 20px;
+          }
           .number span{
             text-decoration: underline;
+          }
+          .label{
+            text-align: center;
           }
         }
         .left-place{
           float: left;
+          @include res(s){
+            width: 100%;
+            float: none;
+            text-align: center;
+            margin-bottom: 15px;
+          }
         }
         .right-place{
           float: right;
+          @include res(s){
+            width: 100%;
+            float: none;
+            text-align: center;
+          }
         }
         .emails{
           clear: both;
           text-align: center;
           padding-top: 100px;
           padding-bottom: 90px;
+          @include res(s-m){
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
           a{
             display: inline-block;
             color: #fff;
@@ -888,6 +908,12 @@ body{
           }
           a:last-child{
             border-right: none;
+          }
+          @include res(s-m){
+            a{
+              width: 100%;
+              border: none;
+            }
           }
         }
     }
@@ -900,6 +926,9 @@ body{
     padding: 80px 0 150px;
     margin-top: 30px;
     border-radius: 3px;
+    @include res(s-m){
+      padding-top: 20px;
+    }
     .form{
       width: 670px;
       max-width: 94%;
@@ -912,9 +941,17 @@ body{
       letter-spacing: 12px;
       text-transform: uppercase;
       margin-bottom: 80px;
+      @include res(s-m){
+        margin-bottom: 20px;
+      }
     }
     label{
       font-weight: normal;
+    }
+    .webform-component{
+      @include res(s-m){
+        margin-top: 0;
+      }
     }
     .webform-component--first-name{
       float: left;
@@ -956,6 +993,9 @@ body{
       border:none;
       padding: 5px 10px;
       border-radius: 3px;
+      @include res(s-m){
+        margin-top: 10px;
+      }
     }
   }
 }
