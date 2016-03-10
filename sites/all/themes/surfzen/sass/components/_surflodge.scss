@@ -208,6 +208,9 @@ body{
     margin-top: 3px;
     right: 10px;
   }
+  @include res(l){
+    right: 10px;
+  }
   .lines{
     float: right;
     transition: all 0.5s;

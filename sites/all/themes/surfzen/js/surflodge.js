@@ -58,10 +58,7 @@ $height = $(window).height();
   });
 /*********   scroll  *******/
 
-$linksheight = $height + $("#header").height() -200;
-  $(window).resize(function() {
-	$linksheight = $height + $("#header").height() - 200;
-  });
+$linksheight = $height + $("#header").height() -350;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -74,6 +71,20 @@ $(document).ready(function(){
         }
       });
 });
+$(window).resize(function() {
+$linksheight = $height + $("#header").height() -350;
+$(document).ready(function(){       
+      $scroll_pos = 0;
+      $(document).scroll(function() { 
+        $scroll_pos = $(this).scrollTop();
+        if($scroll_pos > $linksheight) {
+            $("body").addClass('scroll');
+        }
+        else {
+            $("body").removeClass('scroll');
+        }
+      });
+});});
 
 
   }
