@@ -70,6 +70,7 @@ body{
 #main{
   padding-top: 0px;
   background-color: #fafafa;
+  border-radius: 3px;
 }
 
 .not-front #main{
@@ -338,6 +339,11 @@ body{
   .field-item{
     display: inline-block;
     margin-right: 20px;
+    transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+    &:hover{
+      opacity: 0.8;
+    }
   } 
   .field-item:last-child{
     margin-right: 0;
@@ -434,7 +440,7 @@ body{
 }
 /*****  background image and video  ***********/
 
-.field-name-field-background-image{
+.field-name-field-background-image, .views-field-field-background-image{
   border: medium none;
   height: 200%;
   left: -50%;
@@ -684,7 +690,7 @@ body{
   }
 }
 
-/********  surf lif page - Blog  ***********/
+/********  surf life page - Blog  ***********/
 
 .page-node-22{
   #page-title{
@@ -692,7 +698,7 @@ body{
   }
 }
 
-#block-views-blog-post-view-block-1{
+#block-views-blog-post-view-block-1, .view-blog-post-view.view-display-id-page_2{
   .views-exposed-form{
     text-align: center;
     .description{
@@ -833,21 +839,17 @@ body{
 
 .node-type-webform{
   #page-title{
-    background-color: $blue;
     padding: 80px 8% 80px;
-    color: #fff;
-    border-radius: 3px 3px 0 0;
     margin-top: 0;
   }
   #main{
     padding: 0;
-    border-radius: 3px 3px 0 0;
     background-color: transparent;
   }
   article{
     background-color: $blue;
     color: #fff;
-    border-radius: 0 0 3px 3px;
+    border-radius: 3px;
     .content{
         padding: 0px 8%;
         .address{
@@ -997,5 +999,129 @@ body{
         margin-top: 10px;
       }
     }
+  }
+}
+#map-canvas {
+  height: 500px;
+  width: 100%;
+}
+
+/************  post page  ********/
+
+.node-type-blog-post{
+  .date-in-parts{
+    color: $yellow;
+    float: left;
+    .month{
+      font-size: 14px;
+    }
+    .day{
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  .name-title{
+    float: left;
+    margin-left: 50px;
+    @include res(s){
+      float: left;
+      clear: left;
+      margin: 0;
+    }
+    #page-title{
+      margin: 0;
+      font-size: 24px;
+      color: $yellow;
+      letter-spacing: 0;
+    }
+    .field-name-field-post-type a{
+      font-size: 13px;
+      color: #9b9b9b;
+    }
+  }
+  .field-name-field-post-tags{
+    float: right;
+    color: #9b9b9b;
+    font-size: 13px;
+    margin-top: 37px;
+    @include res(s-m){
+      clear: left;
+      float: left;
+      margin: 0;
+    }
+    a{
+      color: #9b9b9b;
+    }
+    .field-label{
+      font-weight: normal;
+    }
+    .field-item{
+      float: left;
+      margin-right: 5px;
+    }
+  }
+  .field-name-field-blog-post-image{
+    clear: both;
+    padding-top: 20px;
+  }
+  .field-name-body{
+    margin-top: 60px;
+    p{
+      margin-top: 0;
+    }
+  }
+  #share{
+    .link{
+      float: left;
+      margin-right: 14px;
+    }
+  }
+}
+
+#block-views-blog-post-view-block-2{
+  border-top: 1px solid #979797;
+  padding-top: 30px;
+  margin-top: 50px;
+  .block-title{
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 25px;
+  }
+  .views-row{
+    width: 48%;
+    @include res(s){
+      width: 100%;
+    }
+  }
+  .views-field-field-blog-post-image{
+    overflow: hidden;
+    img{
+      margin-bottom: -8px;
+      border-radius: 3px;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      overflow: hidden;
+      &:hover{
+          transform: scale3d(1.1, 1.1, 1);
+          -ms-transform: scale3d(1.1, 1.1, 1);
+          -webkit-transform: scale3d(1.1, 1.1, 1);
+          opacity: 0.9
+      }
+    }
+  }
+  .views-row-odd{
+    float: left;
+  }
+  .views-row-even{
+    float: right;
+  }
+  .views-field-title a{
+    font-size: 24px;
+    color: $yellow;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .views-field-field-post-date{
+    line-height: 15px;
   }
 }

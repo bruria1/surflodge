@@ -89,11 +89,11 @@ $(document).ready(function(){
 
 /************* blog page  *********/
 
-  var imageHeight = $("#block-views-blog-post-view-block-1 img").height();
-  $("#block-views-blog-post-view-block-1 .views-field-field-post-date-1").height(imageHeight);
+  var imageHeight = $(".view-blog-post-view img").height();
+  $(".view-blog-post-view .views-field-field-post-date-1").height(imageHeight);
   $(window).resize(function() {
-    var imageHeight = $("#block-views-blog-post-view-block-1 img").height();
-    $("#block-views-blog-post-view-block-1 .views-field-field-post-date-1").height(imageHeight);
+    var imageHeight = $(".view-blog-post-view img").height();
+    $(".view-blog-post-view .views-field-field-post-date-1").height(imageHeight);
   });
 
   }
