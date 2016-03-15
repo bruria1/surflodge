@@ -528,7 +528,7 @@ body{
         background-color: #fdd671;
       }
       @include res(s-m){
-        margin: -20px 0 0 0;
+        margin: -20px 10px 0 0;
         font-size: 15px;
         padding: 5px 10px;
       }
@@ -545,22 +545,16 @@ body{
     margin-top: 65px!important;
   }
   @include res(s-m){
-    right: 5px;
+    right: 0px;
     a{
       margin-top: 42px!important;
     }
   }
   .block{
     padding: 0 3%;
-    @include res(s-m){
-      padding: 0;
-    }
   }
   a{
     margin-top: 0;
-    @include res(s-m){
-      margin: 0;
-    }
   }
 }
 
