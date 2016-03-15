@@ -68,20 +68,37 @@ body{
 }
 
 #main{
-  padding-top: 0px;
-  background-color: #fafafa;
+  padding: 0px;
   border-radius: 3px;
 }
 
-.not-front #main{
-  padding:  20px 8% 80px;
-  @include res(s-m){
-    padding:5px 2% 20px;
-  }
+.front #main{
+  background-color: #fafafa;
+}
+
+.not-front article{
+  background-color: #fafafa;
+  padding: 80px 8%;
+  border-radius: 3px;
+}
+
+.not-front.node-type-page article{
+  background-color: $blue;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 80px 8%;
+}
+
+.region-content-bottom{
+  margin-top: 40px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  padding: 80px 8%;
 }
 
 #page-title{
-  margin-top: 80px;
+  margin-bottom: 80px;
   font-size: 20px;
   text-align: center;
   letter-spacing: 12px;
@@ -105,6 +122,19 @@ body{
 .field-collection-container {
     border: none;
     margin: 0;
+}
+
+.field-name-field-links-box{
+  margin-top: 50px;
+  a{
+    background-color: $yellow;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 14px 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
 }
 /**********  header **********/
 
@@ -440,13 +470,14 @@ body{
 }
 /*****  background image and video  ***********/
 
-.field-name-field-background-image, .views-field-field-background-image{
+.field-name-field-background-image, .views-field-field-background-image,
+.field-name-field-background-video-file{
   border: medium none;
   height: 200%;
   left: -50%;
   position: fixed;
   width: 200%;
-  z-index: -1;
+  z-index: -2;
   img{
     height: auto;
     min-height: 100%;
@@ -458,6 +489,10 @@ body{
   }
 }
 
+.field-name-field-background-video-file{
+  top: 0;
+  z-index: -1;
+}
 /********  links at the top  ********/
 
 .region-links{
@@ -479,6 +514,11 @@ body{
       letter-spacing: 6px;
       margin: -26px 36px 0 0;
       float: right;
+      transition: background-color 0.5s;
+      -webkit-transition: background-color 0.5s;
+      &:hover{
+        background-color: #fdd671;
+      }
       @include res(s-m){
         margin: -20px 0 0 0;
         font-size: 15px;
@@ -490,8 +530,12 @@ body{
 
 .scroll .region-links{
   position: fixed;
-  top: 65px;
   right: 0;
+  height: 65px;
+  top: 0;
+  a{
+    margin-top: 65px!important;
+  }
   @include res(s-m){
     top: 42px;
     right: 0;
@@ -542,9 +586,15 @@ body{
       float: left;
     }
   }
+  .region-content-bottom{
+    padding: 0;
+  }
+  #page-title{
+    padding-top: 80px;
+  }
 }
 
-#block-views-concerts-view-block{
+#block-views-concerts-view-block, #block-views-concerts-view-block-1{
   padding: 0 16%;
   margin-bottom: 100px;
   overflow: hidden;
@@ -696,6 +746,9 @@ body{
   #page-title{
     display: none;
   }
+  article{
+    padding: 0;
+  }
 }
 
 #block-views-blog-post-view-block-1, .view-blog-post-view.view-display-id-page_2{
@@ -839,17 +892,13 @@ body{
 
 .node-type-webform{
   #page-title{
-    padding: 80px 8% 80px;
-    margin-top: 0;
-  }
-  #main{
-    padding: 0;
-    background-color: transparent;
+    padding-top: 80px;
   }
   article{
     background-color: $blue;
     color: #fff;
     border-radius: 3px;
+    padding: 0;
     .content{
         padding: 0px 8%;
         .address{
@@ -1123,5 +1172,117 @@ body{
   }
   .views-field-field-post-date{
     line-height: 15px;
+  }
+}
+
+/******  our rooms  *********/
+
+#block-views-rooms-view-block{
+  .field-slideshow{
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .field-slideshow-controls{
+    margin-top: -44px;
+    position: relative;
+    z-index: 50;
+    a{
+      background: url("../images/arrows-gallery.png") no-repeat 0 0;
+      width: 32px;
+      height: 35px;
+      text-indent: -9999px;
+      display: inline-block;
+      float: right;
+      &.prev{
+        background-position: -32px 0;
+      }
+    }
+  }
+  .views-field-title{
+    margin-top: 60px;
+    color: $yellow;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .views-row{
+    margin-bottom: 150px;
+  }
+  .views-field-body{
+    ul{
+      padding-left: 14px;
+    }
+  }
+}
+
+/********  concert  ********/
+
+.node-type-concert{
+  article{
+    border-radius: 0 0 3px 3px;
+    padding-top: 0;
+  }
+  #page-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+    color: $yellow;
+    letter-spacing: 6px;
+  }
+  #share{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+    .link{
+      float: left;
+      margin-right: 10px;
+    }
+  }
+  .field-name-field-concert-page-image{
+    float: left;
+    margin-right: 4%;
+    width: 32%;
+    @include res(s-m){
+      width: 100%;
+    }
+  }
+  .field-name-body{
+    width: 64%;
+    float: right;
+    p{
+      margin-top: 0;
+    }
+    @include res(s-m){
+      width: 100%;
+    }
+  }
+  .field-name-field-concert-sample-video{
+    width: 100%;
+    padding-top: 90px;
+    clear: both;
+    iframe{
+      @include res(s-m)
+        height: 300px;
+      }
+      @include res(s-m)
+        height: 450px;
+      }
+    }
+  }
+}
+
+#block-block-7{
+  background-color: #fafafa;
+  border-radius: 3px 3px 0 0; 
+  padding: 70px 8% 50px;
+  p{
+    margin: 0;
+  }
+  a{
+    color: $yellow;
+    background: url("../images/arrow-yellow.png") no-repeat left center;
+    padding-left: 32px;
   }
 }

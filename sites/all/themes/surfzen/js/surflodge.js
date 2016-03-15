@@ -17,18 +17,6 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-function initialize() {
-  var mapOptions = {
-    center: new google.maps.LatLng(40.680898,-8.684059),
-    zoom: 11,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true
-
-  };
-  var map = new google.maps.Map(document.getElementById("map-canvas"),
-      mapOptions);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
 
 /********  hamburger menu  **********/
       $(".menu-wrapper").click(function(){
@@ -71,7 +59,7 @@ $height = $(window).height();
   });
 /*********   scroll  *******/
 
-$linksheight = $height + $("#header").height() -400;
+$linksheight = $height + $("#header").height() -350;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -85,7 +73,7 @@ $(document).ready(function(){
       });
 });
 $(window).resize(function() {
-$linksheight = $height + $("#header").height() -400;
+$linksheight = $height + $("#header").height() -350;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -102,11 +90,11 @@ $(document).ready(function(){
 
 /************* blog page  *********/
 
-  var imageHeight = $(".view-blog-post-view img").height();
-  $(".view-blog-post-view .views-field-field-post-date-1").height(imageHeight);
+  var imageHeight = $(".not-front .view-blog-post-view img").height();
+  $(".not-front .view-blog-post-view .views-field-field-post-date-1").height(imageHeight);
   $(window).resize(function() {
-    var imageHeight = $(".view-blog-post-view img").height();
-    $(".view-blog-post-view .views-field-field-post-date-1").height(imageHeight);
+    var imageHeight = $(".not-front .view-blog-post-view img").height();
+    $(".not-front .view-blog-post-view .views-field-field-post-date-1").height(imageHeight);
   });
 
   }
