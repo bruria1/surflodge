@@ -1263,10 +1263,10 @@ body{
     padding-top: 90px;
     clear: both;
     iframe{
-      @include res(s-m)
+      @include res(s-m){
         height: 300px;
       }
-      @include res(s-m)
+      @include res(l){
         height: 450px;
       }
     }
