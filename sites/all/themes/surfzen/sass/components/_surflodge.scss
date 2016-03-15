@@ -88,6 +88,12 @@ body{
   text-align: center;
   border-radius: 3px;
   padding: 80px 8%;
+  .field-name-body{
+    a{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
 }
 
 .region-content-bottom{
@@ -134,6 +140,7 @@ body{
     padding: 14px 10px;
     margin-bottom: 30px;
     display: inline-block;
+    border-radius: 3px;
   }
 }
 /**********  header **********/
@@ -514,6 +521,7 @@ body{
       letter-spacing: 6px;
       margin: -26px 36px 0 0;
       float: right;
+      border-radius: 3px;
       transition: background-color 0.5s;
       -webkit-transition: background-color 0.5s;
       &:hover{
@@ -1279,10 +1287,76 @@ body{
   padding: 70px 8% 50px;
   p{
     margin: 0;
+    a{
+      color: $yellow;
+      background: url("../images/arrow-yellow.png") no-repeat left center;
+      padding-left: 32px;
+    }
   }
-  a{
-    color: $yellow;
-    background: url("../images/arrow-yellow.png") no-repeat left center;
-    padding-left: 32px;
+}
+
+/********  wellness & plan your event *********/
+
+#block-bean-wellness-new-block, #block-bean-plan-your-event-block-bean, #block-bean-resturant-block{
+  text-align: center;
+  .field-name-field-plan-box > .field-items >, .field-name-field-meal > .field-items{
+    .field-item{
+      @include res(s-m){
+        .field-name-field-image{
+          margin: 0;
+        }
+      }
+      .field-name-field-image{
+        width: 51%;
+        @include res(s-m){
+          width: 100%;
+        }
+      }
+    }
+    .field-item.even{
+      .field-name-field-image{
+        float: left;
+        margin-right: 4%;
+      }
+    }
+    .field-item.odd{
+      .field-name-field-image{
+        float: right;
+        margin-left: 4%;
+      }
+    }   
+  }
+  .entity-field-collection-item .content{
+      overflow: hidden;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      @include res(s-m){
+        display: block;
+      }
+  }
+  .field-item.odd .entity-field-collection-item .content{
+      flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction:row-reverse;
+  }
+  .field-name-field-title-for-block{
+    font-size: 20px;
+    text-align: center;
+  }
+  .field-name-field-text-box{
+    text-align: center;
+    a{
+      color: $default;
+    }
+  }
+  .entity-field-collection-item{
+    margin-bottom: 80px;
+    @include res(s-m){
+      margin-bottom: 50px;
+    }
   }
 }
