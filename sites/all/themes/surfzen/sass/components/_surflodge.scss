@@ -545,8 +545,10 @@ body{
     margin-top: 65px!important;
   }
   @include res(s-m){
-    top: 42px;
-    right: 0;
+    right: 5px;
+    a{
+      margin-top: 42px!important;
+    }
   }
   .block{
     padding: 0 3%;
