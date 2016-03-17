@@ -574,16 +574,19 @@ body{
   p{
     margin: 0;
     a{
-      background-color: $yellow;
-      font-size: 18px;
-      text-transform: uppercase;
-      padding: 10px 20px;
+      background-color: #ffc221;
+      border-radius: 6px;
       color: #fff;
       display: block;
-      letter-spacing: 6px;
-      margin: -26px 36px 0 0;
       float: right;
-      border-radius: 3px;
+      font-size: 16px;
+      letter-spacing: 6px;
+      line-height: 23px;
+      margin: -30px 36px 0 0;
+      padding: 7px 0 7px 5px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 90px;
       transition: background-color 0.5s;
       -webkit-transition: background-color 0.5s;
       &:hover{
