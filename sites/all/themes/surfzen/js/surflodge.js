@@ -17,6 +17,19 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
+/********  temperature footer f|c  **********/
+
+      $(".temperature .scales .celsius").click(function(){
+        $(".temperature .scales .celsius").addClass("active");
+        $(".temperature .scales .fahrenheit").removeClass("active");
+        $(".temperature").addClass("celsius").removeClass("fahrenheit");
+      });
+
+      $(".temperature .scales .fahrenheit").click(function(){
+        $(".temperature .scales .fahrenheit").addClass("active");
+        $(".temperature .scales .celsius").removeClass("active");
+        $(".temperature").addClass("fahrenheit").removeClass("celsius");
+      });
 
 /********  hamburger menu  **********/
       $(".menu-wrapper").click(function(){
@@ -31,6 +44,13 @@ Drupal.behaviors.my_custom_behavior = {
       $("#page").click(function(){
           $("body").removeClass("display-menu");
       });
+
+  $width = ($(window).width()-1200)/2+150;
+  $("#navigation").css("width", $width);
+  $(window).resize(function() {
+  $width = ($(window).width()-1200)/2+150;
+    $("#navigation").css("width", $width);
+  });
 
 /**********  main  **********/
   

@@ -305,7 +305,7 @@ function weather_format_temperature($temperature, $unit) {
     $result = t('!temperature&thinsp;°C', array('!temperature' => $temperature));
   }
   return preg_replace("/([^ ]*)&thinsp;([^ ]*)/",
-    '<span style="white-space:nowrap;">\1&thinsp;\2</span>', $result);
+    '<span class="number" style="white-space:nowrap;">\1&thinsp;\2</span>', $result);
 }
 
 /**

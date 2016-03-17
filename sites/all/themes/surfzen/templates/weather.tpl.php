@@ -12,8 +12,8 @@
     <?php endif ?>
     <?php foreach($place['forecasts'] as $forecast): ?>
       <?php foreach($forecast['time_ranges'] as $time_range => $data): ?>
-        <p class="temperature">
-          <?php print $data['temperature']; ?>
+        <p class="temperature fahrenheit">
+          <?php print $data['temperature']; ?><span class="scales"><span class="fahrenheit active">F</span><span class="line"></span><span class="celsius">C</span></span>
           <?php if (isset($data['windchill'])): ?>
             <br />
             <?php print(t('Feels like !temperature', array('!temperature' => $data['windchill']))); ?>

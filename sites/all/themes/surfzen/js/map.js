@@ -9,6 +9,8 @@ function initialize() {
   var surflodge = { lat: 41.044157, lng: -71.950566 };
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
     zoom: 15,
+    scrollwheel: false,
+    zoomControl: true,
     center: surflodge,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: true,

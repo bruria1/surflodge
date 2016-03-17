@@ -116,7 +116,7 @@ body{
   margin-bottom: 80px;
   font-size: 20px;
   text-align: center;
-  letter-spacing: 12px;
+  letter-spacing: 6px;
   text-transform: uppercase;
 }
 
@@ -140,16 +140,18 @@ body{
 }
 
 .field-name-field-links-box{
-  margin-top: 50px;
+  margin-top: 30px;
   a{
     background-color: $yellow;
     color: #fff;
     text-transform: uppercase;
     font-size: 17px;
-    padding: 14px 10px;
+    padding: 10px 15px;
     margin-bottom: 30px;
     display: inline-block;
     border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 6px;
   }
 }
 /**********  header **********/
@@ -212,11 +214,11 @@ body{
   height: 100%;
   position: fixed;
   right: 0;
-  width: 274px;
+  min-width: 300px;
   max-width: 100%;
   background-color: $blue;
   z-index: 200;
-  padding-left: 50px;
+  padding-left: 40px;
   padding-top: 75px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -370,10 +372,44 @@ body{
     letter-spacing: 2px;
   }
   .temperature{
-    font-size: 25px;
+    font-size: 34px;
     margin-top: 20px;
-    span:nth-child(1){
-      font-weight: bold;
+    position: relative;
+    &.fahrenheit{
+      .number:nth-child(2){
+        display: none;
+      }
+    }
+    &.celsius >{
+      .number:nth-child(1){
+        display: none;
+      }
+    }
+    .scales{
+      font-size: 18px;
+      position: absolute;
+      left: 84px;
+      top: 2px;
+      .active{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .fahrenheit{
+        margin-right: 10px;
+      }
+      .celsius{
+        margin-left: 10px;
+      }
+      .line{
+        background-color: #fff;
+        display: inline-block;
+        height: 30px;
+        position: absolute;
+        width: 1px;
+      }
+      .fahrenheit, .celsius{
+        cursor: pointer;
+      }
     }
   }
 }
@@ -652,7 +688,7 @@ body{
   .views-row{
     width: 47%;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     overflow: hidden;
     border-radius: 6px;
     @include res(s){
@@ -681,8 +717,8 @@ body{
     .month{
       color: #fff;
       font-size: 20px;
-      padding-top: 16%;
-      line-height: 33px;
+      padding-top: 15%;
+      line-height: 36px;
       text-transform: uppercase;
       @include res(m){
         padding-top: 7%;
@@ -789,7 +825,7 @@ body{
     display: none;
   }
   article{
-    padding: 0;
+    padding: 0!important;
   }
 }
 
@@ -817,7 +853,7 @@ body{
     padding-top: 50px;
     .views-field-field-post-date-1{
       float: left;
-      width: 9%;
+      width: 9.5%;
       display: flex;
       align-items: center;
       display: -ms-flexbox;
@@ -830,7 +866,9 @@ body{
       color: $yellow;
       text-transform: uppercase;
       .field-content{
-        margin: 0 auto;
+        @include res(s-m){
+          margin: 0 auto;
+        }
       }
       @include res(s-m){
         width: 15%;
@@ -842,6 +880,7 @@ body{
       .day{
         font-size: 30px;
         text-align: center;
+        font-weight: bold;
       }
     }
     .views-field-field-blog-post-image{
@@ -854,7 +893,7 @@ body{
       }
       img{
         margin-bottom: -8px;
-        border-radius: 3px;
+        border-radius: 6px;
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
       }
@@ -867,7 +906,7 @@ body{
     }
     .views-field-nid{
       float: right;
-      width: 51%;
+      width: 47.5%;
       margin-top: 15px;
       @include res(s-m){
         width: 100%;
@@ -879,11 +918,13 @@ body{
         font-weight: bold;
         color: $yellow;      
         text-transform: uppercase;
+        letter-spacing: 3px;
       }
       .body{
         font-size: 14px;
-        margin-top: 10px;
+        margin-top: 28px;
         line-height: 21px;
+        letter-spacing: 2px;
         a{
           color: $dark-blue;
           text-decoration: underline;
@@ -951,7 +992,7 @@ body{
           letter-spacing: 6px;
         }
         .places{
-          width: 680px;
+          width: 500px;
           margin: 70px auto 0;
           max-width: 100%;
           font-size: 20px;
@@ -963,6 +1004,7 @@ body{
           }
           .label{
             text-align: center;
+            letter-spacing: 6px;
           }
         }
         .left-place{
@@ -998,6 +1040,7 @@ body{
             line-height: 16px;
             margin-right: 10px;
             padding-right: 10px;
+            text-decoration: underline;
           }
           a:last-child{
             border-right: none;
@@ -1034,6 +1077,7 @@ body{
       letter-spacing: 12px;
       text-transform: uppercase;
       margin-bottom: 80px;
+      font-weight: normal;
       @include res(s-m){
         margin-bottom: 20px;
       }
@@ -1084,8 +1128,10 @@ body{
       text-transform: uppercase;
       font-size: 17px;
       border:none;
-      padding: 5px 10px;
+      padding: 10px 20px;
       border-radius: 3px;
+      font-weight: bold;
+      letter-spacing: 6px;
       @include res(s-m){
         margin-top: 10px;
       }
@@ -1223,12 +1269,22 @@ body{
   .field-slideshow{
     max-width: 100%;
     box-sizing: border-box;
+    img{
+      margin-bottom: -8px;
+    }
+    .field-slideshow-slide{
+      top: 1px!important;
+    }
+  }
+  .views-field-field-room-gallery{
     position: relative;
+    overflow: hidden;
   }
   .field-slideshow-controls{
-    margin-top: -44px;
-    position: relative;
-    z-index: 50;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 90;
     a{
       background: url("../images/arrows-gallery.png") no-repeat 0 0;
       width: 32px;
@@ -1246,11 +1302,14 @@ body{
     color: $yellow;
     font-size: 24px;
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
   }
   .views-row{
     margin-bottom: 150px;
   }
   .views-field-body{
+    letter-spacing: 2px;
     ul{
       padding-left: 14px;
     }
@@ -1270,7 +1329,10 @@ body{
     margin-bottom: 0;
     text-align: left;
     color: $yellow;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
+  }
+  .field-name-field-concert-date{
+    letter-spacing: 2px;
   }
   #share{
     margin-top: 10px;
@@ -1280,6 +1342,12 @@ body{
     .link{
       float: left;
       margin-right: 10px;
+    }
+    .facebook{
+      margin-top: 4px;
+    }
+    .twitter{
+      margin-top: 4px;
     }
   }
   .field-name-field-concert-page-image{
@@ -1361,13 +1429,13 @@ body{
     }   
   }
   .entity-field-collection-item .content{
-      overflow: hidden;
+ /*     overflow: hidden;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
       -ms-flex-align: center;
       -webkit-align-items: center;
-      align-items: center;
+      align-items: center;*/
       @include res(s-m){
         display: block;
       }
@@ -1380,6 +1448,8 @@ body{
   .field-name-field-title-for-block{
     font-size: 20px;
     text-align: center;
+    letter-spacing: 14px;
+    text-transform: uppercase;
   }
   .field-name-field-text-box{
     text-align: center;
