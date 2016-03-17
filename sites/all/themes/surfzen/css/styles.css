@@ -1788,7 +1788,7 @@ body {
 .region-content-bottom {
   margin-top: 40px;
   background-color: #fafafa;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
   padding: 80px 8%;
 }
 
@@ -2527,6 +2527,12 @@ body {
   margin-bottom: 38px;
   overflow: hidden;
   border-radius: 6px;
+  /*&:hover img{
+      transform: scale3d(1.1, 1.1, 1);
+      -ms-transform: scale3d(1.1, 1.1, 1);
+      -webkit-transform: scale3d(1.1, 1.1, 1);
+      opacity: 0.9
+  }*/
 }
 @media (max-width: 480px) {
   /* line 688, ../sass/components/_surflodge.scss */
@@ -2539,13 +2545,6 @@ body {
   margin-bottom: -8px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-}
-/* line 702, ../sass/components/_surflodge.scss */
-#block-views-concerts-view-block .views-row:hover img, #block-views-concerts-view-block-1 .views-row:hover img {
-  transform: scale3d(1.1, 1.1, 1);
-  -ms-transform: scale3d(1.1, 1.1, 1);
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  opacity: 0.9;
 }
 /* line 709, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-field-title, #block-views-concerts-view-block-1 .views-field-title {
@@ -2639,6 +2638,12 @@ body {
   width: 47%;
   position: relative;
   margin-bottom: 30px;
+  /*&:hover img{
+      transform: scale3d(1.1, 1.1, 1);
+      -ms-transform: scale3d(1.1, 1.1, 1);
+      -webkit-transform: scale3d(1.1, 1.1, 1);
+      opacity: 0.9;
+  }*/
 }
 @media (max-width: 480px) {
   /* line 777, ../sass/components/_surflodge.scss */
@@ -2656,13 +2661,6 @@ body {
   margin-bottom: -8px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-}
-/* line 793, ../sass/components/_surflodge.scss */
-#block-views-blog-post-view-block .views-row:hover img {
-  transform: scale3d(1.1, 1.1, 1);
-  -ms-transform: scale3d(1.1, 1.1, 1);
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  opacity: 0.9;
 }
 /* line 800, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-field-field-post-date {
@@ -2770,6 +2768,12 @@ body {
   float: left;
   width: 37%;
   overflow: hidden;
+  /*&:hover img{
+    transform: scale3d(1.1, 1.1, 1);
+    -ms-transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    opacity: 0.9
+  }*/
 }
 @media (max-width: 767px) {
   /* line 886, ../sass/components/_surflodge.scss */
@@ -2784,13 +2788,6 @@ body {
   border-radius: 6px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-}
-/* line 900, ../sass/components/_surflodge.scss */
-#block-views-blog-post-view-block-1 .view-content .views-field-field-blog-post-image:hover img, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-blog-post-image:hover img {
-  transform: scale3d(1.1, 1.1, 1);
-  -ms-transform: scale3d(1.1, 1.1, 1);
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  opacity: 0.9;
 }
 /* line 907, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-nid, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-nid {
@@ -2988,7 +2985,7 @@ body {
   background-color: #fafafa;
   padding: 80px 0 150px;
   margin-top: 30px;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
 }
 @media (max-width: 767px) {
   /* line 1060, ../sass/components/_surflodge.scss */
@@ -3217,13 +3214,12 @@ body {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   overflow: hidden;
-}
-/* line 1241, ../sass/components/_surflodge.scss */
-#block-views-blog-post-view-block-2 .views-field-field-blog-post-image img:hover {
-  transform: scale3d(1.1, 1.1, 1);
-  -ms-transform: scale3d(1.1, 1.1, 1);
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  opacity: 0.9;
+  /*&:hover{
+      transform: scale3d(1.1, 1.1, 1);
+      -ms-transform: scale3d(1.1, 1.1, 1);
+      -webkit-transform: scale3d(1.1, 1.1, 1);
+      opacity: 0.9
+  }*/
 }
 /* line 1249, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-row-odd {
