@@ -6,7 +6,7 @@
 ?>
 <div class="weather">
   <?php foreach($weather as $place): ?>
-    <p style="clear:left">Montauk, NY</p>
+    <p class="place" style="clear:left">Montauk, NY</p>
     <?php if (empty($place['forecasts'])): ?>
       <?php print(t('Currently, there is no weather information available.')); ?>
     <?php endif ?>

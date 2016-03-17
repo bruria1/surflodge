@@ -6,6 +6,15 @@
   url('../fonts/gothic.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: Helvetica;
+  src: url('../fonts/Helvetica.eot?') format('eot'), 
+  url('../fonts/Helvetica.woff') format('woff'),
+  url('../fonts/Helvetica.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Helvetica.ttf') format('truetype');
+}
+
+
  @mixin res($media) {
   @if $media == s {
     @media (max-width: 480px) { @content; }
@@ -196,10 +205,6 @@ body{
     height: 42px;
   }
 }
-
-.display-menu .header-wrapper{
-  width: 100%!important;
-}
 /********* menu  **********/
 
 #navigation{
@@ -207,25 +212,38 @@ body{
   height: 100%;
   position: fixed;
   right: 0;
-  width: 300px;
+  width: 274px;
   max-width: 100%;
   background-color: $blue;
   z-index: 200;
   padding-left: 50px;
-  padding-top: 60px;
+  padding-top: 75px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   top: 0;
   li{
-    width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    clear: left;
     @include res(s-m){
       margin-bottom: 10px;
     }
   }
+  li:after {
+      border-bottom: 2px solid $yellow;
+      content: "";
+      display: block;
+      padding: 0;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      width: 0;
+  }
+  li.active:after, li:hover:after{
+    width: 100%;
+  }
   a{
     color: #fff;
     text-transform: uppercase;
+    letter-spacing: 7px;
   }
 }
 
@@ -285,9 +303,6 @@ body{
   }
 }
 
-.display-menu .menu-wrapper{
-  right: 10px;
-}
 .display-menu .menu-button{
   color: #fff;
   width: 100%;
@@ -332,6 +347,7 @@ body{
     font-size: 16px;
     letter-spacing: 6px;
     text-transform: uppercase;
+    font-family: 'Helvetica', arial;
   }
   p{
     margin: 0;
@@ -349,6 +365,9 @@ body{
     text-align: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
+  }
+  .place{
+    letter-spacing: 2px;
   }
   .temperature{
     font-size: 25px;
@@ -453,6 +472,11 @@ body{
     padding-top: 40px;
     margin-top: 80px;
     color: #fff;
+    letter-spacing: 6px;
+    a{
+      text-decoration: underline;
+      text-decoration-style: double;
+    }
     @include res(s-m){
       padding-top: 20px;
       margin-top: 20px;
@@ -505,6 +529,8 @@ body{
 .region-links{
   width: 100%;
   z-index: 100;
+  right: 50px;
+  position: fixed;
   .block{
     @include width();
     padding: 0;
@@ -535,7 +561,7 @@ body{
     }
   }
 }
-
+/*
 .scroll .region-links{
   position: fixed;
   right: 0;
@@ -557,7 +583,7 @@ body{
     margin-top: 0;
   }
 }
-
+*/
 /*********  front  **********/
 
 .front{
@@ -595,6 +621,7 @@ body{
   }
   #page-title{
     padding-top: 80px;
+    letter-spacing: 14px;
   }
 }
 
@@ -612,8 +639,9 @@ body{
   h2{
     margin: 20px 0;
     font-size: 20px;
-    letter-spacing: 10px;
     text-align: center;
+    letter-spacing: 14px;
+    text-transform: uppercase;
   }
   .views-row-odd{
     float: right;
@@ -626,12 +654,12 @@ body{
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
+    border-radius: 6px;
     @include res(s){
       width: 100%;
     }
     img{
       margin-bottom: -8px;
-      border-radius: 3px;
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
     }
@@ -653,7 +681,7 @@ body{
     .month{
       color: #fff;
       font-size: 20px;
-      padding-top: 21%;
+      padding-top: 16%;
       line-height: 33px;
       text-transform: uppercase;
       @include res(m){
@@ -667,6 +695,9 @@ body{
     .day{
       color: $yellow;
       font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
     }
     .hour{
       color: #fff;
@@ -677,6 +708,9 @@ body{
       color: #fff;
       font-size: 16px;
       margin-top: 4%;
+      font-weight: bold;
+      letter-spacing: 8px;
+      text-transform: uppercase;
     }
   }
 }
@@ -693,7 +727,7 @@ body{
     margin-bottom: 20px;
   }
   h2{
-    margin: 20px 0;
+    margin: 20px 0 80px;
     font-size: 20px;
     letter-spacing: 10px;
     text-align: center;
@@ -713,10 +747,10 @@ body{
     }
     .views-field-field-blog-post-image{
       overflow: hidden;
+      border-radius: 6px;
     }
     img{
       margin-bottom: -8px;
-      border-radius: 3px;
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
     }
@@ -724,23 +758,27 @@ body{
         transform: scale3d(1.1, 1.1, 1);
         -ms-transform: scale3d(1.1, 1.1, 1);
         -webkit-transform: scale3d(1.1, 1.1, 1);
-        opacity: 0.9
+        opacity: 0.9;
     }
   } 
   .views-field-field-post-date{
     color: $yellow;
     font-size: 14px;
     float: left;
+    text-transform: uppercase;
   } 
   .views-field-field-post-date-1{
     color: $yellow;
     font-size: 30px;
     clear: left;
+    font-weight: bold;
   }
   .views-field-title a{
     color: $default;
     font-size: 16px;
     float: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 }
 

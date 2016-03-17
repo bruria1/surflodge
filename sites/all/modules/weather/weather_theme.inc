@@ -279,7 +279,7 @@ function weather_format_temperature($temperature, $unit) {
     $result = t('!temperature&thinsp;°F', array('!temperature' => $fahrenheit));
   }
   elseif ($unit == 'celsiusfahrenheit') {
-    $result = t('!temperature_c&thinsp;°C / !temperature_f&thinsp;°F',
+    $result = t('!temperature_c&thinsp;°C | !temperature_f&thinsp;°F',
       array(
         '!temperature_c' => $temperature,
         '!temperature_f' => $fahrenheit
@@ -287,7 +287,7 @@ function weather_format_temperature($temperature, $unit) {
     );
   }
   elseif ($unit == 'fahrenheitcelsius') {
-    $result = t('!temperature_f&thinsp;°F / !temperature_c&thinsp;°C',
+    $result = t('!temperature_f&thinsp;° !temperature_c&thinsp;°',
       array(
         '!temperature_f' => $fahrenheit,
         '!temperature_c' => $temperature

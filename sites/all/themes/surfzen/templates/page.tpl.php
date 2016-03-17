@@ -8,6 +8,7 @@
  */
 ?>
 
+    <?php print render($page['links']); ?>
 
   <header class="header" id="header" role="banner">
     <div class="header-wrapper">
@@ -88,7 +89,6 @@
 
 <div id="page">
  <div id="main">
-    <?php print render($page['links']); ?>
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
