@@ -1755,7 +1755,7 @@ body {
 /* line 79, ../sass/components/_surflodge.scss */
 #main {
   padding: 0px;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
 }
 
 /* line 84, ../sass/components/_surflodge.scss */
