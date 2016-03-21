@@ -3,7 +3,7 @@
         session_start(); 
         if (empty($_SESSION['count'])) { ?>
           <div id="splash">
-              <img src="/sites/surflodge.dd/files/logo-surflodge.png">
+              <img src="/sites/default/files/logo-surflodge.png">
               Loading...
           </div> 
         <?php }  
