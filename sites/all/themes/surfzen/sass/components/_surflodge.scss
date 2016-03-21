@@ -74,6 +74,9 @@ body{
 
 #page{
   @include width();
+  @include res(s-m){
+    padding: 0;
+  }
 }
 
 #main{
@@ -97,6 +100,9 @@ body{
   text-align: center;
   border-radius: 3px;
   padding: 80px 8%;
+  @include res(s-m){
+    border-radius: 0;
+  }
   .field-name-body{
     a{
       color: #fff;
@@ -110,6 +116,11 @@ body{
   background-color: #fafafa;
   border-radius: 3px 3px 0 0;
   padding: 80px 8%;
+  @include res(s-m){
+    border-radius: 0;
+    margin: 0;
+    padding-bottom: 30px;
+  }
 }
 
 #page-title{
@@ -223,6 +234,9 @@ body{
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   top: 0;
+  @include res(s-m){
+    min-width: 100%;
+  }
   li{
     margin-bottom: 15px;
     clear: left;
@@ -516,6 +530,9 @@ body{
     }
     .right{
       float: right;
+      @include res(s-m){
+        margin-top: 20px;
+      }
     }
     .left, .right{
       @include res(s-m){
@@ -561,6 +578,9 @@ body{
   z-index: 100;
   right: 50px;
   position: fixed;
+  @include res(s-m){
+    right: 0;
+  }
   .block{
     @include width();
     padding: 0;
@@ -587,9 +607,12 @@ body{
         background-color: #fdd671;
       }
       @include res(s-m){
-        margin: -20px 10px 0 0;
-        font-size: 15px;
-        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 16px;
+        margin-right: 25px;
+        margin-top: -22px;
+        padding: 5px 0 5px 2px;
+        width: 71px;
       }
     }
   }
@@ -647,6 +670,12 @@ body{
     .field-item{
       width: 50%;
       float: left;
+      img{
+        margin-bottom: -8px;
+      }
+      @include res(s){
+        width: 100%;
+      }
     }
   }
   .region-content-bottom{
@@ -1384,6 +1413,9 @@ body{
   background-color: #fafafa;
   border-radius: 3px 3px 0 0; 
   padding: 70px 8% 50px;
+  @include res(s-m){
+    display: none;
+  }
   p{
     margin: 0;
     a{
@@ -1412,6 +1444,7 @@ body{
         }
         @include res(s-m){
           width: 100%;
+          margin-bottom: 30px;
         }
       }
     }
@@ -1477,6 +1510,10 @@ body{
     border-radius: 6px;
     padding: 40px 110px 30px; 
     margin: 0 auto;
+    max-width: 90%;
+    @include res(s-m){
+      padding: 20px 5px;
+    }
     box-sizing: border-box;
     .block-title{
       font-size: 20px;
@@ -1519,11 +1556,11 @@ body{
   }
 }
 
-/********  about *************/
+/********  about & press*************/
 
-#block-views-team-members-block{
+#block-views-team-members-block, #block-views-press-view-block{
   overflow: hidden;
-  .view-header{
+  .view-header, .block-title{
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 12px;
@@ -1576,11 +1613,15 @@ body{
       clear: left;
     }
   }
-  .views-field-title{
+  .views-row-last{
+    margin-bottom: 0;
+  }
+  .views-field-title, .views-field-field-quote{
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 13px;
+    line-height: 20px;
   }
   .views-field-field-job-title{
     font-size: 14px;
@@ -1588,6 +1629,16 @@ body{
   }
 }
 
+#block-views-press-view-block{
+  .views-field-field-image{
+    position: relative;
+    opacity: 1;
+  }
+}
+
+.page-node-63 article{
+  display: none;
+}
 /*******  splash  ********/
 
 #splash{
@@ -1602,3 +1653,7 @@ body{
     margin: 35px auto;
   }
 }
+
+
+
+
