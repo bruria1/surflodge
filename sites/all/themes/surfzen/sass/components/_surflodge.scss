@@ -1413,6 +1413,9 @@ body{
       }
       .field-name-field-image{
         width: 51%;
+        img{
+          margin-bottom: -8px;
+        }
         @include res(s-m){
           width: 100%;
         }
@@ -1465,5 +1468,59 @@ body{
     @include res(s-m){
       margin-bottom: 50px;
     }
+  }
+}
+
+/*********   resturant *********/
+
+.region-highlighted{
+  margin-top: 220px;
+  text-align: center;
+  #block-bean-resturant-upper-block{
+    width: 515px;
+    background-color: #fff;
+    border: 2px solid $yellow;
+    border-radius: 6px;
+    padding: 40px 110px 30px; 
+    margin: 0 auto;
+    box-sizing: border-box;
+    .block-title{
+      font-size: 20px;
+      letter-spacing: 10px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    .field-name-field-pretext{
+      font-weight: bold;
+      font-size: 36px;
+      text-transform: uppercase;
+      color: $yellow;
+      letter-spacing: 6px;
+      margin-top: 15px;
+    }
+    .field-name-field-upper-text{
+      margin-top: 30px;
+      p{
+        margin: 0;
+      }
+    }
+    .field-name-field-reservations{
+      margin-top: 30px;
+    }
+  }
+}
+
+#block-bean-resturant-block .field-name-field-link{
+  a{
+    background-color: $yellow;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 6px;
   }
 }

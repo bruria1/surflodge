@@ -117,6 +117,37 @@ $(document).ready(function(){
     $(".not-front .view-blog-post-view .views-field-field-post-date-1").height(imageHeight);
   });
 
+/************* welness page   *********/
+
+  var Heightcontent = ($(".bean-plan-your-event- .field-name-field-image").height()-$(".bean-plan-your-event- .entity-field-collection-item .content").height())/2;
+    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", Heightcontent);
+  $(window).resize(function() {
+    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", '0');
+    var Heightcontent = ($(".bean-plan-your-event- .field-name-field-image").height()-$(".bean-plan-your-event- .entity-field-collection-item .content").height())/2;
+    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", Heightcontent);
+  });
+
+/***********   resturant  ********/
+
+if ($("body").hasClass("page-node-84")) {
+  $mainheight = $(window).height()-150-$(".region-highlighted").height()-220;
+  if ($mainheight<200){$mainheight=200};
+  $("#main").css("margin-top", $mainheight);
+  $(window).resize(function() {
+  $mainheight = $(window).height()-150-$(".region-highlighted").height()-220;
+    if ($mainheight<200){$mainheight=200};
+   $("#main").css("margin-top", $mainheight);
+  });
+}
+
+  var Heightcontent = ($(".bean-resturannt-block .field-name-field-image").height()-$(".bean-resturannt-block .entity-field-collection-item .content").height())/2;
+    $(".bean-resturannt-block .field-name-field-title-for-block").css("padding-top", Heightcontent);
+  $(window).resize(function() {
+    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", '0');
+    var Heightcontent = ($(".bean-plan-your-event- .field-name-field-image").height()-$(".bean-plan-your-event- .entity-field-collection-item .content").height())/2;
+    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", Heightcontent);
+  });
+  
   }
 };
 

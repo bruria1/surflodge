@@ -3422,23 +3422,27 @@ body {
 #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item .field-name-field-image {
   width: 51%;
 }
+/* line 1416, ../sass/components/_surflodge.scss */
+#block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image img, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item .field-name-field-image img, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item .field-name-field-image img, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item .field-name-field-image img, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image img, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item .field-name-field-image img {
+  margin-bottom: -8px;
+}
 @media (max-width: 767px) {
   /* line 1414, ../sass/components/_surflodge.scss */
   #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item .field-name-field-image {
     width: 100%;
   }
 }
-/* line 1422, ../sass/components/_surflodge.scss */
+/* line 1425, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item.even .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item.even .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item.even .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item.even .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item.even .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item.even .field-name-field-image {
   float: left;
   margin-right: 4%;
 }
-/* line 1428, ../sass/components/_surflodge.scss */
+/* line 1431, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item.odd .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item.odd .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item.odd .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item.odd .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item.odd .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item.odd .field-name-field-image {
   float: right;
   margin-left: 4%;
 }
-/* line 1434, ../sass/components/_surflodge.scss */
+/* line 1437, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .entity-field-collection-item .content, #block-bean-plan-your-event-block-bean .entity-field-collection-item .content, #block-bean-resturant-block .entity-field-collection-item .content {
   /*     overflow: hidden;
        display: -ms-flexbox;
@@ -3449,41 +3453,100 @@ body {
        align-items: center;*/
 }
 @media (max-width: 767px) {
-  /* line 1434, ../sass/components/_surflodge.scss */
+  /* line 1437, ../sass/components/_surflodge.scss */
   #block-bean-wellness-new-block .entity-field-collection-item .content, #block-bean-plan-your-event-block-bean .entity-field-collection-item .content, #block-bean-resturant-block .entity-field-collection-item .content {
     display: block;
   }
 }
-/* line 1446, ../sass/components/_surflodge.scss */
+/* line 1449, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-item.odd .entity-field-collection-item .content, #block-bean-plan-your-event-block-bean .field-item.odd .entity-field-collection-item .content, #block-bean-resturant-block .field-item.odd .entity-field-collection-item .content {
   flex-direction: row-reverse;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
 }
-/* line 1451, ../sass/components/_surflodge.scss */
+/* line 1454, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-title-for-block, #block-bean-plan-your-event-block-bean .field-name-field-title-for-block, #block-bean-resturant-block .field-name-field-title-for-block {
   font-size: 20px;
   text-align: center;
   letter-spacing: 14px;
   text-transform: uppercase;
 }
-/* line 1457, ../sass/components/_surflodge.scss */
+/* line 1460, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-text-box, #block-bean-plan-your-event-block-bean .field-name-field-text-box, #block-bean-resturant-block .field-name-field-text-box {
   text-align: center;
 }
-/* line 1459, ../sass/components/_surflodge.scss */
+/* line 1462, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-text-box a, #block-bean-plan-your-event-block-bean .field-name-field-text-box a, #block-bean-resturant-block .field-name-field-text-box a {
   color: #202020;
 }
-/* line 1463, ../sass/components/_surflodge.scss */
+/* line 1466, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .entity-field-collection-item, #block-bean-plan-your-event-block-bean .entity-field-collection-item, #block-bean-resturant-block .entity-field-collection-item {
   margin-bottom: 80px;
 }
 @media (max-width: 767px) {
-  /* line 1463, ../sass/components/_surflodge.scss */
+  /* line 1466, ../sass/components/_surflodge.scss */
   #block-bean-wellness-new-block .entity-field-collection-item, #block-bean-plan-your-event-block-bean .entity-field-collection-item, #block-bean-resturant-block .entity-field-collection-item {
     margin-bottom: 50px;
   }
+}
+
+/*********   resturant *********/
+/* line 1476, ../sass/components/_surflodge.scss */
+.region-highlighted {
+  margin-top: 220px;
+  text-align: center;
+}
+/* line 1479, ../sass/components/_surflodge.scss */
+.region-highlighted #block-bean-resturant-upper-block {
+  width: 515px;
+  background-color: #fff;
+  border: 2px solid #ffc221;
+  border-radius: 6px;
+  padding: 40px 110px 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* line 1487, ../sass/components/_surflodge.scss */
+.region-highlighted #block-bean-resturant-upper-block .block-title {
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 1493, ../sass/components/_surflodge.scss */
+.region-highlighted #block-bean-resturant-upper-block .field-name-field-pretext {
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #ffc221;
+  letter-spacing: 6px;
+  margin-top: 15px;
+}
+/* line 1501, ../sass/components/_surflodge.scss */
+.region-highlighted #block-bean-resturant-upper-block .field-name-field-upper-text {
+  margin-top: 30px;
+}
+/* line 1503, ../sass/components/_surflodge.scss */
+.region-highlighted #block-bean-resturant-upper-block .field-name-field-upper-text p {
+  margin: 0;
+}
+/* line 1507, ../sass/components/_surflodge.scss */
+.region-highlighted #block-bean-resturant-upper-block .field-name-field-reservations {
+  margin-top: 30px;
+}
+
+/* line 1514, ../sass/components/_surflodge.scss */
+#block-bean-resturant-block .field-name-field-link a {
+  background-color: #ffc221;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 6px;
 }
 
 /**
