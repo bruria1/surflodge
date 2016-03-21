@@ -147,7 +147,12 @@ if ($("body").hasClass("page-node-84")) {
     var Heightcontent = ($(".bean-plan-your-event- .field-name-field-image").height()-$(".bean-plan-your-event- .entity-field-collection-item .content").height())/2;
     $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", Heightcontent);
   });
-  
+
+
+  $(window).load(function(){
+    $('#splash').fadeOut();
+  });
+
   }
 };
 

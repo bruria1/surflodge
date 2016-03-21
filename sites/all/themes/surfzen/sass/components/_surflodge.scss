@@ -363,10 +363,7 @@ body{
   margin-right: 5%;
   @include res(s-m){
     width: 100%;
-    margin: 0 0 20px 0;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 20px;
+    margin: 0 0 60px 0;
   }
   .place{
     letter-spacing: 2px;
@@ -422,8 +419,6 @@ body{
     width: 100%;
     margin: 0 0 20px 0;
     padding-bottom: 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
   }
   .field-items{
     clear: left;
@@ -452,7 +447,6 @@ body{
   float: right;
   @include res(s-m){
     width: 100%;
-    text-align: center;
   }
   input.form-text{
     background-color: transparent;
@@ -1522,5 +1516,89 @@ body{
     border-radius: 3px;
     font-weight: bold;
     letter-spacing: 6px;
+  }
+}
+
+/********  about *************/
+
+#block-views-team-members-block{
+  overflow: hidden;
+  .view-header{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 12px;
+    text-align: center;
+  }
+  .views-field-field-image{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .views-row{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    position: relative;
+    margin-bottom: 70px;
+    @include res(m){
+      width: 49%;
+      margin-right: 2%!important;
+    }
+    @include res(s){
+      width: 100%;
+      margin-right: 0%;
+    }
+  }
+  .views-row:nth-child(3n){
+    margin-right: 0;
+    @include res(s-m){
+      margin-right: 0;
+    }
+  }
+  .views-row:nth-child(3n+1){
+    clear: left;
+    @include res(s-m){
+      clear: none;
+    }
+  }
+  .views-row-even{
+    @include res(m){
+      margin-right: 0!important;
+    }
+  }
+  .views-row-odd{
+    @include res(m){
+      clear: left;
+    }
+  }
+  .views-field-title{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 13px;
+  }
+  .views-field-field-job-title{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/*******  splash  ********/
+
+#splash{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  z-index: 800;
+  img{
+    display: block;
+    margin: 35px auto;
   }
 }
