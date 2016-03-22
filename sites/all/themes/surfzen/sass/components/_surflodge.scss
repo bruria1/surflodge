@@ -216,7 +216,7 @@ body{
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 200;
+  z-index: 99;
   left: 0;
   .header-wrapper{
     position: relative;
@@ -590,7 +590,7 @@ body{
 
 .region-links{
   width: 100%;
-  z-index: 100;
+  z-index: 98;
   right: 50px;
   position: fixed;
   @include res(s-m){
