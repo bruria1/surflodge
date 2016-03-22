@@ -87,6 +87,9 @@
 </div>
   </header>
       <?php print render($page['highlighted']); ?>
+  <div class="tabim">
+      <?php print render($tabs); ?>
+  </div>
 
 <div id="page">
  <div id="main">
@@ -99,7 +102,6 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
-      <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>

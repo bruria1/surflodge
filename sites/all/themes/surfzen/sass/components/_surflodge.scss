@@ -169,6 +169,15 @@ body{
     letter-spacing: 6px;
   }
 }
+
+.tabim{
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  .tabs-primary{
+    @include width;
+  }
+}
 /**********  header **********/
 
 .logo-wrapper{
