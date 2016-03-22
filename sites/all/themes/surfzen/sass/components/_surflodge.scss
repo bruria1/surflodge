@@ -119,6 +119,7 @@ body{
   background-color: #fafafa;
   border-radius: 3px 3px 0 0;
   padding: 80px 8%;
+  margin-top: 40px;
   @include res(s-m){
     border-radius: 0;
     margin: 0;
@@ -533,7 +534,7 @@ body{
     letter-spacing: 6px;
     a{
       text-decoration: underline;
-      text-decoration-style: double;
+      border-bottom: 1px solid;
     }
     @include res(s-m){
       padding-top: 20px;
@@ -866,6 +867,9 @@ body{
   }
   article{
     padding: 0!important;
+  }
+  .region-content-bottom{
+    margin-top: 0;
   }
 }
 
@@ -1653,8 +1657,13 @@ body{
   }
 }
 
-.page-node-63 article{
-  display: none;
+.page-node-63{
+   article{
+    display: none;
+  }
+  .region-content-bottom{
+    margin-top: 0;
+  }
 }
 /*******  splash  ********/
 
