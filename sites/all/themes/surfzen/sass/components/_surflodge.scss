@@ -74,8 +74,13 @@ body{
 
 #page{
   @include width();
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  position: relative;
+  right: 0;
   @include res(s-m){
     padding: 0;
+    right: 0!important;
   }
 }
 
@@ -185,15 +190,16 @@ body{
   width: 100%;
   text-align: center;
   margin-top: 35px;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
   @include res(s){
     width: 250px;
   }
   #logo{
     float: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     @include res(s-m){
       width: 225px;
+      margin-right: 0!important;
     }
   }
 }
@@ -579,6 +585,8 @@ body{
     right: 0;
     top: 0;
     width: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
 }
 
@@ -588,13 +596,22 @@ body{
 }
 /********  links at the top  ********/
 
+.scroll-book-now{
+  .region-links{
+    position: relative;
+    top: 0!important;
+  }
+}
 .region-links{
   width: 100%;
   z-index: 98;
   right: 50px;
   position: fixed;
+  transition: margin-right 0.5s;
+  -webkit-transition: margin-right 0.5s;
   @include res(s-m){
     right: 0;
+    margin-right: 0!important;
   }
   .block{
     @include width();
@@ -760,6 +777,7 @@ body{
       font-size: 20px;
       padding-top: 15%;
       line-height: 36px;
+      letter-spacing: 3px;
       text-transform: uppercase;
       @include res(m){
         padding-top: 7%;

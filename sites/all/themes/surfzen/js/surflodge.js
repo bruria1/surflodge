@@ -45,20 +45,39 @@ Drupal.behaviors.my_custom_behavior = {
           $("body").removeClass("display-menu");
       });
 
-  $width = ($(window).width()-1200)/2+150;
+  $width = ($(window).width()-1200)/2+187;
   $("#navigation").css("width", $width);
   $(window).resize(function() {
-  $width = ($(window).width()-1200)/2+150;
+    $width = ($(window).width()-1200)/2+187;
     $("#navigation").css("width", $width);
   });
+
+  $(".menu-wrapper").click(function(){
+        if ($width<301){$width=300};
+        if ($("body").hasClass("display-menu")){
+          $("#page").css("right", $width);
+          $("#logo").css("margin-right", $width);
+          //$(".field-name-field-background-image img").css("margin-right", $width);
+          $(".region-links").css("margin-right", $width);
+        }
+        else {
+          $("#page").css("right", '0');
+          $("#logo").css("margin-right", '0');
+          //$(".field-name-field-background-image img").css("margin-right", '0');
+          $(".region-links").css("margin-right", 0);
+        }
+   });
+
 
 /**********  main  **********/
   
   $mainheight = $(window).height()-150;
   $("#main").css("margin-top", $mainheight);
+  $(".region-links").css("top", $mainheight);
   $(window).resize(function() {
    	$mainheight = $(window).height()-150;
 	 $("#main").css("margin-top", $mainheight);
+  $(".region-links").css("top", $mainheight);
   });
 
 $height = $(window).height();
@@ -108,6 +127,37 @@ $(document).ready(function(){
 });
 });
 
+/***** book now scroll  ******/
+
+$booknowheight = $("#main").height();
+$(document).ready(function(){       
+      $scroll_pos = 0;
+      $(document).scroll(function() { 
+        $scroll_pos = $(this).scrollTop();
+        if($scroll_pos > $booknowheight) {
+            $("body").addClass('scroll-book-now');
+        }
+        else {
+            $("body").removeClass('scroll-book-now');
+        }
+      });
+});
+
+$(window).resize(function() {
+  $booknowheight = $("#main").height();
+  $(document).ready(function(){       
+        $scroll_pos = 0;
+        $(document).scroll(function() { 
+          $scroll_pos = $(this).scrollTop();
+          if($scroll_pos > $booknowheight) {
+              $("body").addClass('scroll-book-now');
+          }
+          else {
+              $("body").removeClass('scroll-book-now');
+          }
+        });
+  });
+});
 /************* blog page  *********/
 
   var imageHeight = $(".not-front .view-blog-post-view img").height();
@@ -152,6 +202,8 @@ if ($("body").hasClass("page-node-84")) {
   $(window).load(function(){
     $('#splash').fadeOut();
   });
+
+
 
   }
 };

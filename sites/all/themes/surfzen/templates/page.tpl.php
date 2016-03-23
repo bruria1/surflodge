@@ -8,7 +8,6 @@
  */
 ?>
 
-    <?php print render($page['links']); ?>
 
   <header class="header" id="header" role="banner">
     <div class="header-wrapper">
@@ -128,6 +127,9 @@
 
 
 </div>
+
+<?php print render($page['links']); ?>
+
 <div class="wrapper-footer">
   <?php print render($page['footer']); ?>
 </div>
