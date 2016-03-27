@@ -3792,6 +3792,55 @@ body {
   margin: 35px auto;
 }
 
+/**********  gallery  *********/
+/* line 1713, ../sass/components/_surflodge.scss */
+#block-bean-gallery .galleria-stage {
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+}
+/* line 1718, ../sass/components/_surflodge.scss */
+#block-bean-gallery .galleria-stage img {
+  width: 100% !important;
+  right: 0 !important;
+}
+/* line 1722, ../sass/components/_surflodge.scss */
+#block-bean-gallery .galleria-stage .galleria-image {
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+}
+/* line 1729, ../sass/components/_surflodge.scss */
+#block-bean-gallery .galleria-container {
+  max-width: 100%;
+}
+
+/* line 1734, ../sass/components/_surflodge.scss */
+.galleria-theme-classic {
+  background: transparent !important;
+}
+
+/* line 1738, ../sass/components/_surflodge.scss */
+.galleria-theme-classic .galleria-thumbnails-container {
+  left: 0 !important;
+}
+
+/* line 1743, ../sass/components/_surflodge.scss */
+.page-node-86 article {
+  background-color: #fafafa !important;
+  border-radius: 3px 3px 0 0 !important;
+  margin-bottom: 0 !important;
+  color: #202020 !important;
+  padding-bottom: 20px !important;
+}
+/* line 1750, ../sass/components/_surflodge.scss */
+.page-node-86 .region-content-bottom {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /**
  * @file
  * Print styling

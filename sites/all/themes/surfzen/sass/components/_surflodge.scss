@@ -1707,6 +1707,48 @@ body{
   }
 }
 
+/**********  gallery  *********/
 
+#block-bean-gallery{
+  .galleria-stage{
+    width: 100%!important;
+    left: 0!important;
+    top: 0!important;
+    right: 0!important;
+    img{
+      width: 100%!important;
+      right: 0!important;
+    }
+    .galleria-image{
+      width: 100%!important;
+      left: 0!important;
+      top: 0!important;
+      right: 0!important;
+    }
+  }
+  .galleria-container{
+    max-width: 100%;
+  }
+}
 
+.galleria-theme-classic {
+    background: transparent!important;
+}
 
+.galleria-theme-classic .galleria-thumbnails-container{
+  left: 0!important;
+}
+
+.page-node-86{
+  article{
+    background-color: #fafafa!important;
+    border-radius: 3px 3px 0 0!important;
+    margin-bottom: 0!important;
+    color: $default!important;
+    padding-bottom: 20px!important;
+  }
+  .region-content-bottom{
+    margin-top: 0!important;
+    padding-top: 0!important;
+  }
+}

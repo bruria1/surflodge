@@ -203,8 +203,14 @@ if ($("body").hasClass("page-node-84")) {
     $('#splash').fadeOut();
   });
 
+/**********  galleria  *********/
 
 
+  $galleryheight=$(".galleria-stage img").height();
+  //alert($galleryheight);
+  $(".galleria-container").css("height", $galleryheight);
+  
+  
   }
 };
 
