@@ -190,13 +190,16 @@ body{
   width: 100%;
   text-align: center;
   margin-top: 35px;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  right: 0;
   @include res(s){
     width: 250px;
+    right: 0!important;
   }
   #logo{
     float: none;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
     @include res(s-m){
       width: 225px;
       margin-right: 0!important;
@@ -411,6 +414,12 @@ body{
       .number:nth-child(2){
         display: none;
       }
+    }
+    .degree{
+      font-size: 23px;
+      position: relative;
+      right: 5px;
+      top: -7px;
     }
     &.celsius >{
       .number:nth-child(1){

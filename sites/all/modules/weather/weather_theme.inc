@@ -287,7 +287,7 @@ function weather_format_temperature($temperature, $unit) {
     );
   }
   elseif ($unit == 'fahrenheitcelsius') {
-    $result = t('!temperature_f&thinsp;° !temperature_c&thinsp;°',
+    $result = t('!temperature_f&thinsp; !temperature_c&thinsp;',
       array(
         '!temperature_f' => $fahrenheit,
         '!temperature_c' => $temperature
@@ -305,7 +305,7 @@ function weather_format_temperature($temperature, $unit) {
     $result = t('!temperature&thinsp;°C', array('!temperature' => $temperature));
   }
   return preg_replace("/([^ ]*)&thinsp;([^ ]*)/",
-    '<span class="number" style="white-space:nowrap;">\1&thinsp;\2</span>', $result);
+    '<span class="number" style="white-space:nowrap;">\1&thinsp;\2<span class="degree">°</span></span>', $result);
 }
 
 /**

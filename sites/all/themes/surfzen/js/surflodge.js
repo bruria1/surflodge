@@ -56,13 +56,13 @@ Drupal.behaviors.my_custom_behavior = {
         if ($width<301){$width=300};
         if ($("body").hasClass("display-menu")){
           $("#page").css("right", $width);
-          $("#logo").css("margin-right", $width);
+          $(".logo-wrapper").css("right", $width);
           //$(".field-name-field-background-image img").css("margin-right", $width);
           $(".region-links").css("margin-right", $width);
         }
         else {
           $("#page").css("right", '0');
-          $("#logo").css("margin-right", '0');
+          $(".logo-wrapper").css("right", '0');
           //$(".field-name-field-background-image img").css("margin-right", '0');
           $(".region-links").css("margin-right", 0);
         }
