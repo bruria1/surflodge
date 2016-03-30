@@ -1703,7 +1703,7 @@ tr.selected td {
 /* line 804, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1457944323');
+  background-image: url('../images/progress.gif?1459334582');
 }
 
 @font-face {
@@ -2289,7 +2289,7 @@ body {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 3px 0 0 3px;
-  width: 85%;
+  width: 77%;
   float: left;
   height: 40px;
   padding: 7px 13px;
@@ -2308,7 +2308,7 @@ body {
 #block-mailchimp-signup-signup-for-newsletter .form-submit {
   background: url("../images/Group.png") no-repeat center center #fff;
   border-radius: 0 3px 3px 0;
-  width: 15%;
+  width: 23%;
   height: 40px;
   border: none;
   text-indent: -9999px;
@@ -2611,7 +2611,7 @@ body {
 }
 /* line 751, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block h2, #block-views-concerts-view-block-1 h2 {
-  margin: 20px 0;
+  margin: 100px 0 80px;
   font-size: 20px;
   text-align: center;
   letter-spacing: 14px;
@@ -2708,7 +2708,7 @@ body {
 /* line 831, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   max-width: 100%;
   overflow: hidden;
   padding: 0 3%;
@@ -2723,7 +2723,7 @@ body {
 }
 /* line 842, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block h2 {
-  margin: 20px 0 80px;
+  margin: 100px 0 80px;
   font-size: 20px;
   letter-spacing: 10px;
   text-align: center;
