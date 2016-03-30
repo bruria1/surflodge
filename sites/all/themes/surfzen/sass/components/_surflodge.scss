@@ -87,6 +87,9 @@ body{
 #main{
   padding: 0px;
   border-radius: 3px 3px 0 0 ;
+  @include res(s-m){
+    border-radius: 0;
+  }
 }
 
 .page-user #main{
@@ -138,6 +141,7 @@ body{
   text-align: center;
   letter-spacing: 6px;
   text-transform: uppercase;
+  padding: 0 3%;
 }
 
 #content{
@@ -378,7 +382,7 @@ body{
   color: #fff;
   padding: 100px 0;
   @include res(s-m){
-    padding: 20px 0;
+    padding: 60px 0;
   }
   #footer{
     @include width();
@@ -754,6 +758,9 @@ body{
     text-align: center;
     letter-spacing: 14px;
     text-transform: uppercase;
+    @include res(s-m){
+      margin: 60px 0 20px;
+    }
   }
   .views-row-odd{
     float: right;
@@ -844,6 +851,9 @@ body{
     font-size: 20px;
     letter-spacing: 10px;
     text-align: center;
+    @include res(s-m){
+      margin: 60px 0 20px;
+    }
   }
   .views-row-odd{
     float: right;
@@ -945,7 +955,16 @@ body{
       align-items: center;
       color: $yellow;
       text-transform: uppercase;
-      .field-content{
+      @include res(s-m){
+        display: block;
+        margin-bottom: 20px;
+      }
+      @include res(s-m){
+        height: auto!important;
+        width: auto!important;
+        margin-right: 12px;
+      }
+          .field-content{
         @include res(s-m){
           margin: 0 auto;
         }
@@ -956,11 +975,17 @@ body{
       .month{
         font-size: 14px;
         text-align: center;
+        @include res(s-m){
+          text-align: left;
+        }
       }
       .day{
         font-size: 30px;
         text-align: center;
         font-weight: bold;
+        @include res(s-m){
+          text-align: left;
+        }
       }
     }
     .views-field-field-blog-post-image{
@@ -968,8 +993,7 @@ body{
       width: 37%;
       overflow: hidden;
       @include res(s-m){
-        width: 80%;
-        float: right;
+        width: 100%;
       }
       img{
         margin-bottom: -8px;
@@ -990,7 +1014,6 @@ body{
       margin-top: 15px;
       @include res(s-m){
         width: 100%;
-        border-bottom: 1px solid $yellow;
         padding-bottom: 30px;
       }
       .title a{
@@ -999,6 +1022,9 @@ body{
         color: $yellow;      
         text-transform: uppercase;
         letter-spacing: 3px;
+        @include res(s-m){
+          display: none;
+        }
       }
       .body{
         font-size: 14px;
@@ -1012,6 +1038,21 @@ body{
         }
       }
     }
+    .views-field-title-1 {
+      padding-top: 32px;
+      position: relative;
+      display: none;
+      @include res(s-m){
+        display: block;
+      }
+      a{
+        font-size: 15px;
+        font-weight: bold;
+        color: $yellow;      
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
     .views-row{
       overflow: hidden;
       margin-bottom: 80px;
@@ -1021,32 +1062,11 @@ body{
     }
   }
   .pager{
-    margin: 0;
     li{
-        margin-right: 20px;
-        display: inline-block;
-        padding: 0;
-        height: 10px;
-        width: 10px;
+      list-style-type: none;
         a{
-          font-size: 0;
-          width: 10px;
-          height: 10px;
-          box-sizing: border-box;
-          background-color: $yellow;
-          border-radius: 50%;
-          display: inline-block;
+          color: $default;
         }
-    }
-    li.pager-current{
-      width: 12px;
-      height: 12px;
-      background-color: $yellow;
-      border-radius: 50%;
-      font-size: 0;
-    }
-    .pager-next, .pager-last, .pager-first, .pager-previous, .pager-ellipsis{
-      display: none;
     }
   }
 }
@@ -1250,6 +1270,10 @@ body{
       font-size: 24px;
       color: $yellow;
       letter-spacing: 0;
+      @include res(s-m){
+        text-align: left;
+        padding: 0;
+      }
     }
     .field-name-field-post-type a{
       font-size: 13px;
@@ -1283,6 +1307,10 @@ body{
   }
   .field-name-body{
     margin-top: 60px;
+    width: 70%;
+    @include res(s-m){
+      width: 100%;
+    }
     p{
       margin-top: 0;
     }
@@ -1292,6 +1320,54 @@ body{
       float: left;
       margin-right: 14px;
     }
+  }
+  article{
+    border-radius: 3px 3px 0 0;
+    padding-bottom: 50px;
+  }
+  .region-content-bottom{
+    margin: 0;
+    border-radius: 0;
+    padding-top: 0;
+    text-transform: uppercase;
+    @include res(s-m){
+      padding: 0;
+    }
+  }
+}
+
+#block-views-similarterms-block{
+  border-top: 1px solid #979797;
+  padding-top: 38px;
+  overflow: hidden;
+  width: 70%;
+  @include res(s-m){
+    width: 100%;
+  }
+  h2{
+    margin-bottom: 30px;
+    padding: 0 8%;
+  }
+  .view{
+    padding: 0 8%;
+  } 
+  .views-row{
+    width: 48%;
+    margin-bottom: 30px;
+    @include res(s){
+      width: 100%;
+    }
+  }
+  .views-row-odd{
+    float: left;
+  }
+  .views-row-even{
+    float: right;
+  }
+  .views-field-title a{
+      font-size: 24px;
+      color: $yellow;
+      letter-spacing: 6px;  
   }
 }
 
@@ -1410,6 +1486,7 @@ body{
     text-align: left;
     color: $yellow;
     letter-spacing: 4px;
+    padding: 0;
   }
   .field-name-field-concert-date{
     letter-spacing: 2px;
@@ -1595,7 +1672,7 @@ body{
   }
 }
 
-#block-bean-resturant-block .field-name-field-link{
+#block-bean-resturant-block .field-name-field-menu-pdf{
   a{
     background-color: $yellow;
     color: #fff;
@@ -1607,6 +1684,9 @@ body{
     border-radius: 3px;
     font-weight: bold;
     letter-spacing: 6px;
+  }
+  img{
+    display: none;
   }
 }
 
@@ -1702,7 +1782,7 @@ body{
     margin-top: 0;
   }
 }
-/*******  splash  ********/
+/*******  splash  ********
 
 #splash{
   position: fixed;
@@ -1716,38 +1796,16 @@ body{
     margin: 35px auto;
   }
 }
-
+*/
 /**********  gallery  *********/
 
 #block-bean-gallery{
-  .galleria-stage{
-    width: 100%!important;
-    left: 0!important;
-    top: 0!important;
-    right: 0!important;
-    img{
-      width: 100%!important;
-      right: 0!important;
-    }
-    .galleria-image{
-      width: 100%!important;
-      left: 0!important;
-      top: 0!important;
-      right: 0!important;
-    }
-  }
-  .galleria-container{
-    max-width: 100%;
+  .jcbx-glry-classic{
+    background-color: transparent!important;
+    z-index: 0;
   }
 }
 
-.galleria-theme-classic {
-    background: transparent!important;
-}
-
-.galleria-theme-classic .galleria-thumbnails-container{
-  left: 0!important;
-}
 
 .page-node-86{
   article{
