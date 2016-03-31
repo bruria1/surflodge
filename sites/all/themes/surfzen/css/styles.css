@@ -1745,7 +1745,7 @@ body {
 
 /* line 75, ../sass/components/_surflodge.scss */
 #page {
-  width: 1625px;
+  width: 1225px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 3%;
@@ -1814,7 +1814,7 @@ body {
 
 /* line 126, ../sass/components/_surflodge.scss */
 .not-front .wrapper-article {
-  width: 1000px;
+  width: 900px;
   padding: 0 25px;
   margin: 0 auto;
   max-width: 100%;
@@ -1839,7 +1839,7 @@ body {
 }
 /* line 145, ../sass/components/_surflodge.scss */
 .wrapper-content-bottom .region-content-bottom {
-  width: 1000px;
+  width: 900px;
   padding: 0 25px;
   max-width: 100%;
   box-sizing: border-box;
@@ -1905,7 +1905,7 @@ body {
 }
 /* line 202, ../sass/components/_surflodge.scss */
 .tabim .tabs-primary {
-  width: 1625px;
+  width: 1225px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 3%;
@@ -1974,7 +1974,7 @@ body {
 /* line 250, ../sass/components/_surflodge.scss */
 #header .header-wrapper {
   position: relative;
-  width: 1625px;
+  width: 1225px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 3%;
@@ -2173,7 +2173,7 @@ body {
 }
 /* line 407, ../sass/components/_surflodge.scss */
 .wrapper-footer #footer {
-  width: 1625px;
+  width: 1225px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 3%;
@@ -2357,7 +2357,7 @@ body {
 }
 /* line 554, ../sass/components/_surflodge.scss */
 .wrapper-bottom .region-bottom {
-  width: 1625px;
+  width: 1225px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 3%;
@@ -2478,7 +2478,7 @@ body {
 }
 /* line 648, ../sass/components/_surflodge.scss */
 .region-links .block {
-  width: 1625px;
+  width: 1225px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 3%;
@@ -2561,7 +2561,7 @@ body {
   /* Firefox */
   column-gap: 40px;
   margin: 50px auto;
-  width: 1000px;
+  width: 900px;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -3677,7 +3677,7 @@ body {
 }
 /* line 1587, ../sass/components/_surflodge.scss */
 #block-block-7 p {
-  width: 1000px;
+  width: 900px;
   padding: 0 25px;
   box-sizing: border-box;
   margin: 0 auto;
