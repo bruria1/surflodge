@@ -27,6 +27,29 @@ function addMarker(location, map) {
     label: labels[labelIndex++ % labels.length],
     map: map
   });
+  var styles = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -500 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#000" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+
+map.setOptions({styles: styles});
 }
 
 

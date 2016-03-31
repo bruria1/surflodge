@@ -1,4 +1,4 @@
-<?php
+<!--<?php
     if(!isset($_SESSION)) { 
         session_start(); 
         if (empty($_SESSION['count'])) { ?>
@@ -8,7 +8,7 @@
           </div> 
         <?php }  
     } 
-?>
+?>-->
 
 <?php
 /**

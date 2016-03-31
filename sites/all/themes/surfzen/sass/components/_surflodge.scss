@@ -459,21 +459,17 @@ body{
         font-size: 20px;
         font-weight: bold;
       }
-      .fahrenheit{
-        margin-right: 10px;
-      }
-      .celsius{
-        margin-left: 10px;
-      }
       .line{
         background-color: #fff;
         display: inline-block;
         height: 30px;
-        position: absolute;
         width: 1px;
+        margin: 0 10px;
       }
       .fahrenheit, .celsius{
         cursor: pointer;
+        position: relative;
+        top: -6px;      
       }
     }
   }
@@ -640,6 +636,7 @@ body{
   z-index: 98;
   right: 50px;
   position: fixed;
+  height: 0;
   transition: margin-right 0.5s;
   -webkit-transition: margin-right 0.5s;
   @include res(s-m){
@@ -1188,6 +1185,9 @@ body{
     @include res(s-m){
       padding-top: 20px;
     }
+    .form-required{
+      display: none;
+    }
     .form{
       width: 670px;
       max-width: 94%;
@@ -1293,10 +1293,8 @@ body{
       font-size: 24px;
       color: $yellow;
       letter-spacing: 0;
-      @include res(s-m){
-        text-align: left;
-        padding: 0;
-      }
+      padding: 0;
+      text-align: left;
     }
     .field-name-field-post-type a{
       font-size: 13px;
@@ -1347,6 +1345,7 @@ body{
   article{
     border-radius: 3px 3px 0 0;
     padding-bottom: 50px;
+    border:1px solid #fafafa;
   }
   .wrapper-content-bottom{
     margin: 0;
@@ -1374,7 +1373,9 @@ body{
   }
   h2{
     margin-bottom: 30px;
-    padding: 0 8%;
+    @include res(s-m){
+      padding: 0 8%;
+    }
   }
   .view{
     @include res(s-m){
@@ -1784,12 +1785,13 @@ body{
   .views-row-last{
     margin-bottom: 0;
   }
-  .views-field-title, .views-field-field-quote{
+  .views-field-title, .views-field-field-quote a{
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 13px;
     line-height: 20px;
+    color: $default
   }
   .views-field-field-job-title{
     font-size: 14px;
@@ -1854,4 +1856,11 @@ body{
     padding-top: 0!important;
     border-radius: 0;
   }
+}
+
+/****  messages  *********/
+
+.messages{
+  background-image: none;
+  padding-left: 10px;
 }
