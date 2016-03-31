@@ -2743,8 +2743,8 @@ body {
   margin: 0 auto 100px;
   max-width: 100%;
   overflow: hidden;
-  padding: 0 3%;
-  width: 985px;
+  padding: 0 25px;
+  width: 800px;
 }
 @media (max-width: 767px) {
   /* line 856, ../sass/components/_surflodge.scss */
