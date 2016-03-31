@@ -954,6 +954,10 @@ body{
     .bef-select-as-links .form-item .form-item{
       display: inline-block;
       padding: 0 30px;
+      @include res(s-m){
+        width: 100%;
+        padding: 0;
+      }
     }
   }
   .view-content{
