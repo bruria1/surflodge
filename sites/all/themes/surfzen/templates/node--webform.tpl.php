@@ -8,7 +8,7 @@
  */
 ?>
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
+  <div class="wrapper-article">
   <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
     <header>
       <?php print render($title_prefix); ?>
@@ -47,7 +47,7 @@
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
-
+</div>
 </article>
 <div class="form-wrapper-contact-us">
   <div class="form">

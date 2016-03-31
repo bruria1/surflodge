@@ -112,13 +112,6 @@ body{
   text-align: center;
   border-radius: 3px;
   padding: 80px 8%;
-  .wrapper-article{
-    width: 1100px;
-    padding: 0 25px;
-    margin: 0 auto;
-    max-width: 100%;
-    box-sizing:border-box;
-  }
   @include res(s-m){
     border-radius: 0;
   }
@@ -129,6 +122,14 @@ body{
     }
   }
 }
+
+.not-front .wrapper-article{
+    width: 1100px;
+    padding: 0 25px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing:border-box;
+  }
 
 .wrapper-content-bottom{
   background-color: #fafafa;
@@ -304,6 +305,10 @@ body{
     text-transform: uppercase;
     letter-spacing: 7px;
   }
+}
+
+.node-type-concert .menu-683:after, .node-type-blog-post .menu-682:after{
+    width: 100%!important;
 }
 
 .small-height{
@@ -1171,6 +1176,10 @@ body{
       margin: 0;
     }
   }
+  .wrapper-article{
+    width: 100%;
+    padding: 0;
+  }
   .form-wrapper-contact-us{
     background-color: #fafafa;
     padding: 80px 0 150px;
@@ -1339,11 +1348,16 @@ body{
     border-radius: 3px 3px 0 0;
     padding-bottom: 50px;
   }
-  .region-content-bottom{
+  .wrapper-content-bottom{
     margin: 0;
     border-radius: 0;
     padding-top: 0;
     text-transform: uppercase;
+    @include res(s-m){
+      padding: 0;
+    }
+  }
+  .region-content-bottom{
     @include res(s-m){
       padding: 0;
     }
@@ -1363,7 +1377,9 @@ body{
     padding: 0 8%;
   }
   .view{
-    padding: 0 8%;
+    @include res(s-m){
+      padding: 0 8%;
+    }
   } 
   .views-row{
     width: 48%;
@@ -1562,7 +1578,11 @@ body{
     display: none;
   }
   p{
-    margin: 0;
+    width: 1100px;
+    padding: 0 25px;
+    box-sizing:border-box;
+    margin: 0 auto;
+    display: block;
     a{
       color: $yellow;
       background: url("../images/arrow-yellow.png") no-repeat left center;
@@ -1827,10 +1847,11 @@ body{
     border-radius: 3px 3px 0 0!important;
     margin-bottom: 0!important;
     color: $default!important;
-    padding-bottom: 20px!important;
+    padding-bottom: 0px!important;
   }
-  .region-content-bottom{
+  .wrapper-content-bottom{
     margin-top: 0!important;
     padding-top: 0!important;
+    border-radius: 0;
   }
 }
