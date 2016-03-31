@@ -1834,9 +1834,10 @@ body {
     border-radius: 0;
     margin: 0;
     padding-bottom: 30px;
+    padding: 30px 0;
   }
 }
-/* line 144, ../sass/components/_surflodge.scss */
+/* line 145, ../sass/components/_surflodge.scss */
 .wrapper-content-bottom .region-content-bottom {
   width: 1100px;
   padding: 0 25px;
@@ -1845,7 +1846,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 153, ../sass/components/_surflodge.scss */
+/* line 154, ../sass/components/_surflodge.scss */
 #page-title {
   margin-bottom: 80px;
   font-size: 20px;
@@ -1855,34 +1856,34 @@ body {
   padding: 0 3%;
 }
 
-/* line 162, ../sass/components/_surflodge.scss */
+/* line 163, ../sass/components/_surflodge.scss */
 #content {
   padding: 0;
 }
 
-/* line 166, ../sass/components/_surflodge.scss */
+/* line 167, ../sass/components/_surflodge.scss */
 .block {
   margin-bottom: 0;
 }
 
-/* line 170, ../sass/components/_surflodge.scss */
+/* line 171, ../sass/components/_surflodge.scss */
 .field-collection-view {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 176, ../sass/components/_surflodge.scss */
+/* line 177, ../sass/components/_surflodge.scss */
 .field-collection-container {
   border: none;
   margin: 0;
 }
 
-/* line 181, ../sass/components/_surflodge.scss */
+/* line 182, ../sass/components/_surflodge.scss */
 .field-name-field-links-box {
   margin-top: 30px;
 }
-/* line 183, ../sass/components/_surflodge.scss */
+/* line 184, ../sass/components/_surflodge.scss */
 .field-name-field-links-box a {
   background-color: #ffc221;
   color: #fff;
@@ -1896,13 +1897,13 @@ body {
   letter-spacing: 6px;
 }
 
-/* line 197, ../sass/components/_surflodge.scss */
+/* line 198, ../sass/components/_surflodge.scss */
 .tabim {
   position: absolute;
   top: 70px;
   width: 100%;
 }
-/* line 201, ../sass/components/_surflodge.scss */
+/* line 202, ../sass/components/_surflodge.scss */
 .tabim .tabs-primary {
   width: 1725px;
   max-width: 100%;
@@ -1912,7 +1913,7 @@ body {
 }
 
 /**********  header **********/
-/* line 208, ../sass/components/_surflodge.scss */
+/* line 209, ../sass/components/_surflodge.scss */
 .logo-wrapper {
   width: 100%;
   text-align: center;
@@ -1923,30 +1924,30 @@ body {
   right: 0;
 }
 @media (max-width: 480px) {
-  /* line 208, ../sass/components/_surflodge.scss */
+  /* line 209, ../sass/components/_surflodge.scss */
   .logo-wrapper {
     width: 250px;
     right: 0 !important;
   }
 }
-/* line 220, ../sass/components/_surflodge.scss */
+/* line 221, ../sass/components/_surflodge.scss */
 .logo-wrapper #logo {
   float: none;
 }
 @media (max-width: 767px) {
-  /* line 220, ../sass/components/_surflodge.scss */
+  /* line 221, ../sass/components/_surflodge.scss */
   .logo-wrapper #logo {
     width: 225px;
     margin-right: 0 !important;
   }
 }
 
-/* line 229, ../sass/components/_surflodge.scss */
+/* line 230, ../sass/components/_surflodge.scss */
 .scroll .logo-wrapper,
 .not-front .logo-wrapper {
   margin-top: 13px;
 }
-/* line 232, ../sass/components/_surflodge.scss */
+/* line 233, ../sass/components/_surflodge.scss */
 .scroll .logo-wrapper #logo,
 .not-front .logo-wrapper #logo {
   height: 30px;
@@ -1954,7 +1955,7 @@ body {
   display: inline-block;
 }
 @media (max-width: 767px) {
-  /* line 232, ../sass/components/_surflodge.scss */
+  /* line 233, ../sass/components/_surflodge.scss */
   .scroll .logo-wrapper #logo,
   .not-front .logo-wrapper #logo {
     height: 18px;
@@ -1962,7 +1963,7 @@ body {
   }
 }
 
-/* line 243, ../sass/components/_surflodge.scss */
+/* line 244, ../sass/components/_surflodge.scss */
 #header {
   width: 100%;
   position: fixed;
@@ -1970,7 +1971,7 @@ body {
   z-index: 99;
   left: 0;
 }
-/* line 249, ../sass/components/_surflodge.scss */
+/* line 250, ../sass/components/_surflodge.scss */
 #header .header-wrapper {
   position: relative;
   width: 1725px;
@@ -1982,21 +1983,21 @@ body {
   -webkit-transition: all 0.5s;
 }
 
-/* line 257, ../sass/components/_surflodge.scss */
+/* line 258, ../sass/components/_surflodge.scss */
 .scroll #header, .not-front #header {
   height: 65px;
   background-color: #46C2D2;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.93);
 }
 @media (max-width: 767px) {
-  /* line 257, ../sass/components/_surflodge.scss */
+  /* line 258, ../sass/components/_surflodge.scss */
   .scroll #header, .not-front #header {
     height: 42px;
   }
 }
 
 /********* menu  **********/
-/* line 267, ../sass/components/_surflodge.scss */
+/* line 268, ../sass/components/_surflodge.scss */
 #navigation {
   margin-right: -100%;
   height: 100%;
@@ -2013,23 +2014,23 @@ body {
   top: 0;
 }
 @media (max-width: 767px) {
-  /* line 267, ../sass/components/_surflodge.scss */
+  /* line 268, ../sass/components/_surflodge.scss */
   #navigation {
     min-width: 100%;
   }
 }
-/* line 284, ../sass/components/_surflodge.scss */
+/* line 285, ../sass/components/_surflodge.scss */
 #navigation li {
   margin-bottom: 15px;
   clear: left;
 }
 @media (max-width: 767px) {
-  /* line 284, ../sass/components/_surflodge.scss */
+  /* line 285, ../sass/components/_surflodge.scss */
   #navigation li {
     margin-bottom: 10px;
   }
 }
-/* line 291, ../sass/components/_surflodge.scss */
+/* line 292, ../sass/components/_surflodge.scss */
 #navigation li:after {
   border-bottom: 2px solid #ffc221;
   content: "";
@@ -2039,41 +2040,41 @@ body {
   -webkit-transition: all 0.5s;
   width: 0;
 }
-/* line 300, ../sass/components/_surflodge.scss */
+/* line 301, ../sass/components/_surflodge.scss */
 #navigation li.active:after, #navigation li:hover:after {
   width: 100%;
 }
-/* line 303, ../sass/components/_surflodge.scss */
+/* line 304, ../sass/components/_surflodge.scss */
 #navigation a {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 7px;
 }
 
-/* line 310, ../sass/components/_surflodge.scss */
+/* line 311, ../sass/components/_surflodge.scss */
 .node-type-concert .menu-683:after, .node-type-blog-post .menu-682:after {
   width: 100% !important;
 }
 
-/* line 315, ../sass/components/_surflodge.scss */
+/* line 316, ../sass/components/_surflodge.scss */
 .small-height #navigation li {
   padding-bottom: 0;
   margin-bottom: 0;
   line-height: 23px;
 }
 
-/* line 321, ../sass/components/_surflodge.scss */
+/* line 322, ../sass/components/_surflodge.scss */
 .scroll #navigation,
 .not-front #navigation {
   z-index: -1;
 }
 
-/* line 325, ../sass/components/_surflodge.scss */
+/* line 326, ../sass/components/_surflodge.scss */
 .display-menu #navigation {
   margin-right: 0;
 }
 
-/* line 329, ../sass/components/_surflodge.scss */
+/* line 330, ../sass/components/_surflodge.scss */
 .menu-wrapper {
   overflow: hidden;
   float: right;
@@ -2086,7 +2087,7 @@ body {
   z-index: 400;
 }
 @media (max-width: 767px) {
-  /* line 329, ../sass/components/_surflodge.scss */
+  /* line 330, ../sass/components/_surflodge.scss */
   .menu-wrapper {
     margin-right: 0;
     right: 10px;
@@ -2094,18 +2095,18 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 900px) {
-  /* line 329, ../sass/components/_surflodge.scss */
+  /* line 330, ../sass/components/_surflodge.scss */
   .menu-wrapper {
     right: 10px;
   }
 }
-/* line 347, ../sass/components/_surflodge.scss */
+/* line 348, ../sass/components/_surflodge.scss */
 .menu-wrapper .lines {
   float: right;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 352, ../sass/components/_surflodge.scss */
+/* line 353, ../sass/components/_surflodge.scss */
 .menu-wrapper span {
   width: 20px;
   height: 2px;
@@ -2117,39 +2118,39 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 363, ../sass/components/_surflodge.scss */
+  /* line 364, ../sass/components/_surflodge.scss */
   .scroll .menu-wrapper,
   .not-front .menu-wrapper {
     margin-top: 3px;
   }
 }
 
-/* line 370, ../sass/components/_surflodge.scss */
+/* line 371, ../sass/components/_surflodge.scss */
 .display-menu .menu-button {
   color: #fff;
   width: 100%;
 }
-/* line 373, ../sass/components/_surflodge.scss */
+/* line 374, ../sass/components/_surflodge.scss */
 .display-menu .menu-button span {
   margin: 0;
   background-color: #fff;
 }
-/* line 377, ../sass/components/_surflodge.scss */
+/* line 378, ../sass/components/_surflodge.scss */
 .display-menu .menu-button .lines {
   margin-right: 0px;
 }
-/* line 380, ../sass/components/_surflodge.scss */
+/* line 381, ../sass/components/_surflodge.scss */
 .display-menu .menu-button .line1 {
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin-top: 8px;
 }
-/* line 386, ../sass/components/_surflodge.scss */
+/* line 387, ../sass/components/_surflodge.scss */
 .display-menu .menu-button .line2 {
   display: none;
 }
-/* line 389, ../sass/components/_surflodge.scss */
+/* line 390, ../sass/components/_surflodge.scss */
 .display-menu .menu-button .line3 {
   margin-top: -2px;
   transform: rotate(135deg);
@@ -2158,19 +2159,19 @@ body {
 }
 
 /*********  footer  ***************/
-/* line 399, ../sass/components/_surflodge.scss */
+/* line 400, ../sass/components/_surflodge.scss */
 .wrapper-footer {
   background-color: #31919E;
   color: #fff;
   padding: 100px 0;
 }
 @media (max-width: 767px) {
-  /* line 399, ../sass/components/_surflodge.scss */
+  /* line 400, ../sass/components/_surflodge.scss */
   .wrapper-footer {
     padding: 60px 0;
   }
 }
-/* line 406, ../sass/components/_surflodge.scss */
+/* line 407, ../sass/components/_surflodge.scss */
 .wrapper-footer #footer {
   width: 1725px;
   max-width: 100%;
@@ -2179,69 +2180,69 @@ body {
   box-sizing: border-box;
   width: 1020px;
 }
-/* line 410, ../sass/components/_surflodge.scss */
+/* line 411, ../sass/components/_surflodge.scss */
 .wrapper-footer .block-title {
   font-size: 16px;
   letter-spacing: 6px;
   text-transform: uppercase;
   font-family: 'Helvetica', arial;
 }
-/* line 416, ../sass/components/_surflodge.scss */
+/* line 417, ../sass/components/_surflodge.scss */
 .wrapper-footer p {
   margin: 0;
 }
 
-/* line 422, ../sass/components/_surflodge.scss */
+/* line 423, ../sass/components/_surflodge.scss */
 #block-weather-system-1 {
   float: left;
   width: 30%;
   margin-right: 5%;
 }
 @media (max-width: 767px) {
-  /* line 422, ../sass/components/_surflodge.scss */
+  /* line 423, ../sass/components/_surflodge.scss */
   #block-weather-system-1 {
     width: 100%;
     margin: 0 0 60px 0;
   }
 }
-/* line 430, ../sass/components/_surflodge.scss */
+/* line 431, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .place {
   letter-spacing: 2px;
 }
-/* line 433, ../sass/components/_surflodge.scss */
+/* line 434, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature {
   font-size: 34px;
   margin-top: 20px;
   position: relative;
 }
-/* line 438, ../sass/components/_surflodge.scss */
+/* line 439, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature.fahrenheit .number:nth-child(2) {
   display: none;
 }
-/* line 442, ../sass/components/_surflodge.scss */
+/* line 443, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature .degree {
   font-size: 23px;
   position: relative;
   right: 5px;
   top: -7px;
 }
-/* line 449, ../sass/components/_surflodge.scss */
+/* line 450, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature.celsius > .number:nth-child(1) {
   display: none;
 }
-/* line 453, ../sass/components/_surflodge.scss */
+/* line 454, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature .scales {
   font-size: 18px;
   position: absolute;
   left: 84px;
   top: 2px;
 }
-/* line 458, ../sass/components/_surflodge.scss */
+/* line 459, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature .scales .active {
   font-size: 20px;
   font-weight: bold;
 }
-/* line 462, ../sass/components/_surflodge.scss */
+/* line 463, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature .scales .line {
   background-color: #fff;
   display: inline-block;
@@ -2249,65 +2250,65 @@ body {
   width: 1px;
   margin: 0 10px;
 }
-/* line 469, ../sass/components/_surflodge.scss */
+/* line 470, ../sass/components/_surflodge.scss */
 #block-weather-system-1 .temperature .scales .fahrenheit, #block-weather-system-1 .temperature .scales .celsius {
   cursor: pointer;
   position: relative;
   top: -6px;
 }
 
-/* line 478, ../sass/components/_surflodge.scss */
+/* line 479, ../sass/components/_surflodge.scss */
 #block-bean-social-link-block {
   float: left;
   width: 30%;
   margin-right: 5%;
 }
 @media (max-width: 767px) {
-  /* line 478, ../sass/components/_surflodge.scss */
+  /* line 479, ../sass/components/_surflodge.scss */
   #block-bean-social-link-block {
     width: 100%;
     margin: 0 0 20px 0;
     padding-bottom: 20px;
   }
 }
-/* line 487, ../sass/components/_surflodge.scss */
+/* line 488, ../sass/components/_surflodge.scss */
 #block-bean-social-link-block .field-items {
   clear: left;
 }
-/* line 490, ../sass/components/_surflodge.scss */
+/* line 491, ../sass/components/_surflodge.scss */
 #block-bean-social-link-block .field-item {
   display: inline-block;
   margin-right: 20px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 495, ../sass/components/_surflodge.scss */
+/* line 496, ../sass/components/_surflodge.scss */
 #block-bean-social-link-block .field-item:hover {
   opacity: 0.8;
 }
-/* line 499, ../sass/components/_surflodge.scss */
+/* line 500, ../sass/components/_surflodge.scss */
 #block-bean-social-link-block .field-item:last-child {
   margin-right: 0;
 }
-/* line 502, ../sass/components/_surflodge.scss */
+/* line 503, ../sass/components/_surflodge.scss */
 #block-bean-social-link-block .field-name-field-social-text {
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-/* line 508, ../sass/components/_surflodge.scss */
+/* line 509, ../sass/components/_surflodge.scss */
 #block-mailchimp-signup-signup-for-newsletter {
   position: relative;
   width: 30%;
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 508, ../sass/components/_surflodge.scss */
+  /* line 509, ../sass/components/_surflodge.scss */
   #block-mailchimp-signup-signup-for-newsletter {
     width: 100%;
   }
 }
-/* line 515, ../sass/components/_surflodge.scss */
+/* line 516, ../sass/components/_surflodge.scss */
 #block-mailchimp-signup-signup-for-newsletter input.form-text {
   background-color: transparent;
   border: 1px solid #fff;
@@ -2318,16 +2319,16 @@ body {
   padding: 7px 13px;
   color: #fff;
 }
-/* line 525, ../sass/components/_surflodge.scss */
+/* line 526, ../sass/components/_surflodge.scss */
 #block-mailchimp-signup-signup-for-newsletter .form-required {
   display: none;
 }
-/* line 528, ../sass/components/_surflodge.scss */
+/* line 529, ../sass/components/_surflodge.scss */
 #block-mailchimp-signup-signup-for-newsletter label {
   font-weight: normal;
   padding: 7px 13px;
 }
-/* line 532, ../sass/components/_surflodge.scss */
+/* line 533, ../sass/components/_surflodge.scss */
 #block-mailchimp-signup-signup-for-newsletter .form-submit {
   background: url("../images/Group.png") no-repeat center center #fff;
   border-radius: 0 3px 3px 0;
@@ -2336,24 +2337,24 @@ body {
   border: none;
   text-indent: -9999px;
 }
-/* line 540, ../sass/components/_surflodge.scss */
+/* line 541, ../sass/components/_surflodge.scss */
 #block-mailchimp-signup-signup-for-newsletter .form-item {
   margin: 0 0 10px 0;
 }
 
-/* line 545, ../sass/components/_surflodge.scss */
+/* line 546, ../sass/components/_surflodge.scss */
 .wrapper-bottom {
   background-color: #46C2D2;
   overflow: hidden;
   padding: 90px 0;
 }
 @media (max-width: 767px) {
-  /* line 545, ../sass/components/_surflodge.scss */
+  /* line 546, ../sass/components/_surflodge.scss */
   .wrapper-bottom {
     padding: 20px 0;
   }
 }
-/* line 552, ../sass/components/_surflodge.scss */
+/* line 553, ../sass/components/_surflodge.scss */
 .wrapper-bottom .region-bottom {
   width: 1725px;
   max-width: 100%;
@@ -2362,17 +2363,17 @@ body {
   box-sizing: border-box;
   width: 1020px;
 }
-/* line 556, ../sass/components/_surflodge.scss */
+/* line 557, ../sass/components/_surflodge.scss */
 .wrapper-bottom p {
   margin: 0;
 }
-/* line 559, ../sass/components/_surflodge.scss */
+/* line 560, ../sass/components/_surflodge.scss */
 .wrapper-bottom .logo-image {
   max-width: 300px;
   height: auto;
   margin: 0 auto;
 }
-/* line 564, ../sass/components/_surflodge.scss */
+/* line 565, ../sass/components/_surflodge.scss */
 .wrapper-bottom #block-block-5 {
   border-top: 1px solid #fff;
   padding-top: 40px;
@@ -2380,47 +2381,47 @@ body {
   color: #fff;
   letter-spacing: 6px;
 }
-/* line 570, ../sass/components/_surflodge.scss */
+/* line 571, ../sass/components/_surflodge.scss */
 .wrapper-bottom #block-block-5 a {
   text-decoration: underline;
   border-bottom: 1px solid;
 }
 @media (max-width: 767px) {
-  /* line 564, ../sass/components/_surflodge.scss */
+  /* line 565, ../sass/components/_surflodge.scss */
   .wrapper-bottom #block-block-5 {
     padding-top: 20px;
     margin-top: 20px;
   }
 }
-/* line 578, ../sass/components/_surflodge.scss */
+/* line 579, ../sass/components/_surflodge.scss */
 .wrapper-bottom #block-block-5 .left {
   float: left;
 }
-/* line 581, ../sass/components/_surflodge.scss */
+/* line 582, ../sass/components/_surflodge.scss */
 .wrapper-bottom #block-block-5 .right {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 581, ../sass/components/_surflodge.scss */
+  /* line 582, ../sass/components/_surflodge.scss */
   .wrapper-bottom #block-block-5 .right {
     margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 587, ../sass/components/_surflodge.scss */
+  /* line 588, ../sass/components/_surflodge.scss */
   .wrapper-bottom #block-block-5 .left, .wrapper-bottom #block-block-5 .right {
     float: none;
     width: 100%;
     text-align: center;
   }
 }
-/* line 594, ../sass/components/_surflodge.scss */
+/* line 595, ../sass/components/_surflodge.scss */
 .wrapper-bottom #block-block-5 a {
   color: #fff;
 }
 
 /*****  background image and video  ***********/
-/* line 601, ../sass/components/_surflodge.scss */
+/* line 602, ../sass/components/_surflodge.scss */
 .field-name-field-background-image, .views-field-field-background-image,
 .field-name-field-background-video-file {
   border: medium none;
@@ -2430,7 +2431,7 @@ body {
   width: 200%;
   z-index: -2;
 }
-/* line 609, ../sass/components/_surflodge.scss */
+/* line 610, ../sass/components/_surflodge.scss */
 .field-name-field-background-image img, .views-field-field-background-image img,
 .field-name-field-background-video-file img {
   height: auto;
@@ -2444,20 +2445,20 @@ body {
   -webkit-transition: all 0.5s;
 }
 
-/* line 622, ../sass/components/_surflodge.scss */
+/* line 623, ../sass/components/_surflodge.scss */
 .field-name-field-background-video-file {
   top: 0;
   z-index: -1;
 }
 
 /********  links at the top  ********/
-/* line 629, ../sass/components/_surflodge.scss */
+/* line 630, ../sass/components/_surflodge.scss */
 .scroll-book-now .region-links {
   position: relative;
   top: 0 !important;
 }
 
-/* line 634, ../sass/components/_surflodge.scss */
+/* line 635, ../sass/components/_surflodge.scss */
 .region-links {
   width: 100%;
   z-index: 98;
@@ -2468,13 +2469,13 @@ body {
   -webkit-transition: margin-right 0.5s;
 }
 @media (max-width: 767px) {
-  /* line 634, ../sass/components/_surflodge.scss */
+  /* line 635, ../sass/components/_surflodge.scss */
   .region-links {
     right: 0;
     margin-right: 0 !important;
   }
 }
-/* line 646, ../sass/components/_surflodge.scss */
+/* line 647, ../sass/components/_surflodge.scss */
 .region-links .block {
   width: 1725px;
   max-width: 100%;
@@ -2483,11 +2484,11 @@ body {
   box-sizing: border-box;
   padding: 0;
 }
-/* line 650, ../sass/components/_surflodge.scss */
+/* line 651, ../sass/components/_surflodge.scss */
 .region-links p {
   margin: 0;
 }
-/* line 652, ../sass/components/_surflodge.scss */
+/* line 653, ../sass/components/_surflodge.scss */
 .region-links p a {
   background-color: #ffc221;
   border-radius: 6px;
@@ -2505,12 +2506,12 @@ body {
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
-/* line 668, ../sass/components/_surflodge.scss */
+/* line 669, ../sass/components/_surflodge.scss */
 .region-links p a:hover {
   background-color: #fdd671;
 }
 @media (max-width: 767px) {
-  /* line 652, ../sass/components/_surflodge.scss */
+  /* line 653, ../sass/components/_surflodge.scss */
   .region-links p a {
     font-size: 12px;
     line-height: 16px;
@@ -2545,7 +2546,7 @@ body {
 }
 */
 /*********  front  **********/
-/* line 708, ../sass/components/_surflodge.scss */
+/* line 709, ../sass/components/_surflodge.scss */
 .front .field-name-body {
   padding: 0 25px;
   -webkit-column-count: 2;
@@ -2564,7 +2565,7 @@ body {
   box-sizing: border-box;
 }
 @media (max-width: 767px) {
-  /* line 708, ../sass/components/_surflodge.scss */
+  /* line 709, ../sass/components/_surflodge.scss */
   .front .field-name-body {
     padding: 0 3%;
     -webkit-column-count: 1;
@@ -2580,36 +2581,36 @@ body {
     margin: 20px 0;
   }
 }
-/* line 731, ../sass/components/_surflodge.scss */
+/* line 732, ../sass/components/_surflodge.scss */
 .front p {
   margin: 0;
 }
-/* line 735, ../sass/components/_surflodge.scss */
+/* line 736, ../sass/components/_surflodge.scss */
 .front .field-name-field-hp-image .field-item {
   width: 50%;
   float: left;
 }
-/* line 738, ../sass/components/_surflodge.scss */
+/* line 739, ../sass/components/_surflodge.scss */
 .front .field-name-field-hp-image .field-item img {
   margin-bottom: -8px;
 }
 @media (max-width: 480px) {
-  /* line 735, ../sass/components/_surflodge.scss */
+  /* line 736, ../sass/components/_surflodge.scss */
   .front .field-name-field-hp-image .field-item {
     width: 100%;
   }
 }
-/* line 746, ../sass/components/_surflodge.scss */
+/* line 747, ../sass/components/_surflodge.scss */
 .front .region-content-bottom {
   padding: 0;
 }
-/* line 749, ../sass/components/_surflodge.scss */
+/* line 750, ../sass/components/_surflodge.scss */
 .front #page-title {
   padding-top: 80px;
   letter-spacing: 14px;
 }
 
-/* line 755, ../sass/components/_surflodge.scss */
+/* line 756, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block, #block-views-concerts-view-block-1 {
   box-sizing: border-box;
   margin: 0 auto;
@@ -2621,19 +2622,19 @@ body {
   overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 900px) {
-  /* line 755, ../sass/components/_surflodge.scss */
+  /* line 756, ../sass/components/_surflodge.scss */
   #block-views-concerts-view-block, #block-views-concerts-view-block-1 {
     padding: 0 3%;
   }
 }
 @media (max-width: 767px) {
-  /* line 755, ../sass/components/_surflodge.scss */
+  /* line 756, ../sass/components/_surflodge.scss */
   #block-views-concerts-view-block, #block-views-concerts-view-block-1 {
     padding: 0 3%;
     margin-bottom: 20px;
   }
 }
-/* line 771, ../sass/components/_surflodge.scss */
+/* line 772, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block h2, #block-views-concerts-view-block-1 h2 {
   margin: 100px 0 80px;
   font-size: 20px;
@@ -2642,20 +2643,20 @@ body {
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
-  /* line 771, ../sass/components/_surflodge.scss */
+  /* line 772, ../sass/components/_surflodge.scss */
   #block-views-concerts-view-block h2, #block-views-concerts-view-block-1 h2 {
     margin: 60px 0 20px;
   }
 }
-/* line 781, ../sass/components/_surflodge.scss */
+/* line 782, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-row-odd, #block-views-concerts-view-block-1 .views-row-odd {
   float: right;
 }
-/* line 784, ../sass/components/_surflodge.scss */
+/* line 785, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-row-even, #block-views-concerts-view-block-1 .views-row-even {
   float: left;
 }
-/* line 787, ../sass/components/_surflodge.scss */
+/* line 788, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-row, #block-views-concerts-view-block-1 .views-row {
   width: 47%;
   position: relative;
@@ -2670,18 +2671,18 @@ body {
   }*/
 }
 @media (max-width: 480px) {
-  /* line 787, ../sass/components/_surflodge.scss */
+  /* line 788, ../sass/components/_surflodge.scss */
   #block-views-concerts-view-block .views-row, #block-views-concerts-view-block-1 .views-row {
     width: 100%;
   }
 }
-/* line 796, ../sass/components/_surflodge.scss */
+/* line 797, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-row img, #block-views-concerts-view-block-1 .views-row img {
   margin-bottom: -8px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 808, ../sass/components/_surflodge.scss */
+/* line 809, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-field-title, #block-views-concerts-view-block-1 .views-field-title {
   position: absolute;
   height: 100%;
@@ -2691,7 +2692,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 3px;
 }
-/* line 816, ../sass/components/_surflodge.scss */
+/* line 817, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-field-title .month, #block-views-concerts-view-block-1 .views-field-title .month {
   color: #fff;
   font-size: 20px;
@@ -2701,17 +2702,17 @@ body {
   text-transform: uppercase;
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 816, ../sass/components/_surflodge.scss */
+  /* line 817, ../sass/components/_surflodge.scss */
   #block-views-concerts-view-block .views-field-title .month, #block-views-concerts-view-block-1 .views-field-title .month {
     padding-top: 7%;
   }
 }
-/* line 827, ../sass/components/_surflodge.scss */
+/* line 828, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-field-title a, #block-views-concerts-view-block-1 .views-field-title a {
   height: 100%;
   display: block;
 }
-/* line 831, ../sass/components/_surflodge.scss */
+/* line 832, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-field-title .day, #block-views-concerts-view-block-1 .views-field-title .day {
   color: #ffc221;
   font-size: 36px;
@@ -2719,13 +2720,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-/* line 838, ../sass/components/_surflodge.scss */
+/* line 839, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-field-title .hour, #block-views-concerts-view-block-1 .views-field-title .hour {
   color: #fff;
   font-size: 15px;
   margin-top: 5px;
 }
-/* line 843, ../sass/components/_surflodge.scss */
+/* line 844, ../sass/components/_surflodge.scss */
 #block-views-concerts-view-block .views-field-title .title, #block-views-concerts-view-block-1 .views-field-title .title {
   color: #fff;
   font-size: 16px;
@@ -2735,7 +2736,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 854, ../sass/components/_surflodge.scss */
+/* line 855, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block {
   box-sizing: border-box;
   margin: 0 auto 100px;
@@ -2745,13 +2746,13 @@ body {
   width: 985px;
 }
 @media (max-width: 767px) {
-  /* line 854, ../sass/components/_surflodge.scss */
+  /* line 855, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block {
     padding: 0 3%;
     margin-bottom: 20px;
   }
 }
-/* line 865, ../sass/components/_surflodge.scss */
+/* line 866, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block h2 {
   margin: 100px 0 80px;
   font-size: 20px;
@@ -2759,20 +2760,20 @@ body {
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* line 865, ../sass/components/_surflodge.scss */
+  /* line 866, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block h2 {
     margin: 60px 0 20px;
   }
 }
-/* line 874, ../sass/components/_surflodge.scss */
+/* line 875, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-row-odd {
   float: right;
 }
-/* line 877, ../sass/components/_surflodge.scss */
+/* line 878, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-row-even {
   float: left;
 }
-/* line 880, ../sass/components/_surflodge.scss */
+/* line 881, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-row {
   width: 47%;
   position: relative;
@@ -2785,37 +2786,37 @@ body {
   }*/
 }
 @media (max-width: 480px) {
-  /* line 880, ../sass/components/_surflodge.scss */
+  /* line 881, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block .views-row {
     width: 100%;
   }
 }
-/* line 887, ../sass/components/_surflodge.scss */
+/* line 888, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-row .views-field-field-blog-post-image {
   overflow: hidden;
   border-radius: 6px;
 }
-/* line 891, ../sass/components/_surflodge.scss */
+/* line 892, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-row img {
   margin-bottom: -8px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 903, ../sass/components/_surflodge.scss */
+/* line 904, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-field-field-post-date {
   color: #ffc221;
   font-size: 14px;
   float: left;
   text-transform: uppercase;
 }
-/* line 909, ../sass/components/_surflodge.scss */
+/* line 910, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-field-field-post-date-1 {
   color: #ffc221;
   font-size: 30px;
   clear: left;
   font-weight: bold;
 }
-/* line 915, ../sass/components/_surflodge.scss */
+/* line 916, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block .views-field-title a {
   color: #202020;
   font-size: 16px;
@@ -2825,49 +2826,49 @@ body {
 }
 
 /********  surf life page - Blog  ***********/
-/* line 927, ../sass/components/_surflodge.scss */
+/* line 928, ../sass/components/_surflodge.scss */
 .page-node-22 #page-title {
   display: none;
 }
-/* line 930, ../sass/components/_surflodge.scss */
+/* line 931, ../sass/components/_surflodge.scss */
 .page-node-22 article {
   padding: 0 !important;
 }
-/* line 933, ../sass/components/_surflodge.scss */
+/* line 934, ../sass/components/_surflodge.scss */
 .page-node-22 .region-content-bottom {
   margin-top: 0;
 }
 
-/* line 939, ../sass/components/_surflodge.scss */
+/* line 940, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .views-exposed-form, .view-blog-post-view.view-display-id-page_2 .views-exposed-form {
   text-align: center;
 }
-/* line 941, ../sass/components/_surflodge.scss */
+/* line 942, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .views-exposed-form .description, .view-blog-post-view.view-display-id-page_2 .views-exposed-form .description {
   display: none;
 }
-/* line 944, ../sass/components/_surflodge.scss */
+/* line 945, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .views-exposed-form a, .view-blog-post-view.view-display-id-page_2 .views-exposed-form a {
   color: #9b9b9b;
 }
-/* line 946, ../sass/components/_surflodge.scss */
+/* line 947, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .views-exposed-form a.active, #block-views-blog-post-view-block-1 .views-exposed-form a:hover, .view-blog-post-view.view-display-id-page_2 .views-exposed-form a.active, .view-blog-post-view.view-display-id-page_2 .views-exposed-form a:hover {
   color: #ffc221;
 }
-/* line 950, ../sass/components/_surflodge.scss */
+/* line 951, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .views-exposed-form .views-exposed-widget, .view-blog-post-view.view-display-id-page_2 .views-exposed-form .views-exposed-widget {
   float: none;
 }
-/* line 953, ../sass/components/_surflodge.scss */
+/* line 954, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .views-exposed-form .bef-select-as-links .form-item .form-item, .view-blog-post-view.view-display-id-page_2 .views-exposed-form .bef-select-as-links .form-item .form-item {
   display: inline-block;
   padding: 0 30px;
 }
-/* line 958, ../sass/components/_surflodge.scss */
+/* line 959, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content, .view-blog-post-view.view-display-id-page_2 .view-content {
   padding-top: 50px;
 }
-/* line 960, ../sass/components/_surflodge.scss */
+/* line 961, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 {
   float: left;
   width: 9.5%;
@@ -2884,14 +2885,14 @@ body {
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
-  /* line 960, ../sass/components/_surflodge.scss */
+  /* line 961, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 {
     display: block;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 960, ../sass/components/_surflodge.scss */
+  /* line 961, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 {
     height: auto !important;
     width: auto !important;
@@ -2899,41 +2900,41 @@ body {
   }
 }
 @media (max-width: 767px) {
-  /* line 983, ../sass/components/_surflodge.scss */
+  /* line 984, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1 .field-content, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 .field-content {
     margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
-  /* line 960, ../sass/components/_surflodge.scss */
+  /* line 961, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 {
     width: 15%;
   }
 }
-/* line 991, ../sass/components/_surflodge.scss */
+/* line 992, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1 .month, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 .month {
   font-size: 14px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* line 991, ../sass/components/_surflodge.scss */
+  /* line 992, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1 .month, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 .month {
     text-align: left;
   }
 }
-/* line 998, ../sass/components/_surflodge.scss */
+/* line 999, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1 .day, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 .day {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
 }
 @media (max-width: 767px) {
-  /* line 998, ../sass/components/_surflodge.scss */
+  /* line 999, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-field-post-date-1 .day, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-post-date-1 .day {
     text-align: left;
   }
 }
-/* line 1007, ../sass/components/_surflodge.scss */
+/* line 1008, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-field-blog-post-image, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-blog-post-image {
   float: left;
   width: 37%;
@@ -2946,32 +2947,32 @@ body {
   }*/
 }
 @media (max-width: 767px) {
-  /* line 1007, ../sass/components/_surflodge.scss */
+  /* line 1008, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-field-blog-post-image, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-blog-post-image {
     width: 100%;
   }
 }
-/* line 1014, ../sass/components/_surflodge.scss */
+/* line 1015, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-field-blog-post-image img, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-field-blog-post-image img {
   margin-bottom: -8px;
   border-radius: 6px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 1027, ../sass/components/_surflodge.scss */
+/* line 1028, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-nid, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-nid {
   float: right;
   width: 47.5%;
   margin-top: 15px;
 }
 @media (max-width: 767px) {
-  /* line 1027, ../sass/components/_surflodge.scss */
+  /* line 1028, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-nid, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-nid {
     width: 100%;
     padding-bottom: 30px;
   }
 }
-/* line 1035, ../sass/components/_surflodge.scss */
+/* line 1036, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-nid .title a, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-nid .title a {
   font-size: 24px;
   font-weight: bold;
@@ -2980,37 +2981,37 @@ body {
   letter-spacing: 3px;
 }
 @media (max-width: 767px) {
-  /* line 1035, ../sass/components/_surflodge.scss */
+  /* line 1036, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-nid .title a, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-nid .title a {
     display: none;
   }
 }
-/* line 1045, ../sass/components/_surflodge.scss */
+/* line 1046, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-nid .body, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-nid .body {
   font-size: 14px;
   margin-top: 28px;
   line-height: 21px;
   letter-spacing: 2px;
 }
-/* line 1050, ../sass/components/_surflodge.scss */
+/* line 1051, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-nid .body a, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-nid .body a {
   color: #31919E;
   text-decoration: underline;
   margin-left: 5px;
 }
-/* line 1057, ../sass/components/_surflodge.scss */
+/* line 1058, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-title-1, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-title-1 {
   padding-top: 32px;
   position: relative;
   display: none;
 }
 @media (max-width: 767px) {
-  /* line 1057, ../sass/components/_surflodge.scss */
+  /* line 1058, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-field-title-1, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-title-1 {
     display: block;
   }
 }
-/* line 1064, ../sass/components/_surflodge.scss */
+/* line 1065, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-field-title-1 a, .view-blog-post-view.view-display-id-page_2 .view-content .views-field-title-1 a {
   font-size: 15px;
   font-weight: bold;
@@ -3018,43 +3019,43 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-/* line 1072, ../sass/components/_surflodge.scss */
+/* line 1073, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .view-content .views-row, .view-blog-post-view.view-display-id-page_2 .view-content .views-row {
   overflow: hidden;
   margin-bottom: 80px;
 }
 @media (max-width: 767px) {
-  /* line 1072, ../sass/components/_surflodge.scss */
+  /* line 1073, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-1 .view-content .views-row, .view-blog-post-view.view-display-id-page_2 .view-content .views-row {
     margin-bottom: 30px;
   }
 }
-/* line 1081, ../sass/components/_surflodge.scss */
+/* line 1082, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .pager li, .view-blog-post-view.view-display-id-page_2 .pager li {
   list-style-type: none;
 }
-/* line 1083, ../sass/components/_surflodge.scss */
+/* line 1084, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-1 .pager li a, .view-blog-post-view.view-display-id-page_2 .pager li a {
   color: #202020;
 }
 
 /*******  contact page  *******/
-/* line 1093, ../sass/components/_surflodge.scss */
+/* line 1094, ../sass/components/_surflodge.scss */
 .node-type-webform #page-title {
   padding-top: 80px;
 }
-/* line 1096, ../sass/components/_surflodge.scss */
+/* line 1097, ../sass/components/_surflodge.scss */
 .node-type-webform article {
   background-color: #46C2D2;
   color: #fff;
   border-radius: 3px;
   padding: 0;
 }
-/* line 1101, ../sass/components/_surflodge.scss */
+/* line 1102, ../sass/components/_surflodge.scss */
 .node-type-webform article .content {
   padding: 0px 8%;
 }
-/* line 1103, ../sass/components/_surflodge.scss */
+/* line 1104, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .address {
   padding-top: 30px;
   font-size: 20px;
@@ -3062,7 +3063,7 @@ body {
   text-align: center;
   letter-spacing: 6px;
 }
-/* line 1110, ../sass/components/_surflodge.scss */
+/* line 1111, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .places {
   width: 500px;
   margin: 70px auto 0;
@@ -3070,26 +3071,26 @@ body {
   font-size: 20px;
 }
 @media (max-width: 767px) {
-  /* line 1110, ../sass/components/_surflodge.scss */
+  /* line 1111, ../sass/components/_surflodge.scss */
   .node-type-webform article .content .places {
     margin-top: 20px;
   }
 }
-/* line 1118, ../sass/components/_surflodge.scss */
+/* line 1119, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .places .number span {
   text-decoration: underline;
 }
-/* line 1121, ../sass/components/_surflodge.scss */
+/* line 1122, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .places .label {
   text-align: center;
   letter-spacing: 6px;
 }
-/* line 1126, ../sass/components/_surflodge.scss */
+/* line 1127, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .left-place {
   float: left;
 }
 @media (max-width: 480px) {
-  /* line 1126, ../sass/components/_surflodge.scss */
+  /* line 1127, ../sass/components/_surflodge.scss */
   .node-type-webform article .content .left-place {
     width: 100%;
     float: none;
@@ -3097,19 +3098,19 @@ body {
     margin-bottom: 15px;
   }
 }
-/* line 1135, ../sass/components/_surflodge.scss */
+/* line 1136, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .right-place {
   float: right;
 }
 @media (max-width: 480px) {
-  /* line 1135, ../sass/components/_surflodge.scss */
+  /* line 1136, ../sass/components/_surflodge.scss */
   .node-type-webform article .content .right-place {
     width: 100%;
     float: none;
     text-align: center;
   }
 }
-/* line 1143, ../sass/components/_surflodge.scss */
+/* line 1144, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .emails {
   clear: both;
   text-align: center;
@@ -3117,13 +3118,13 @@ body {
   padding-bottom: 90px;
 }
 @media (max-width: 767px) {
-  /* line 1143, ../sass/components/_surflodge.scss */
+  /* line 1144, ../sass/components/_surflodge.scss */
   .node-type-webform article .content .emails {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-/* line 1152, ../sass/components/_surflodge.scss */
+/* line 1153, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .emails a {
   display: inline-block;
   color: #fff;
@@ -3133,27 +3134,27 @@ body {
   padding-right: 10px;
   text-decoration: underline;
 }
-/* line 1161, ../sass/components/_surflodge.scss */
+/* line 1162, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .emails a:last-child {
   border-right: none;
 }
 @media (max-width: 767px) {
-  /* line 1165, ../sass/components/_surflodge.scss */
+  /* line 1166, ../sass/components/_surflodge.scss */
   .node-type-webform article .content .emails a {
     width: 100%;
     border: none;
   }
 }
-/* line 1172, ../sass/components/_surflodge.scss */
+/* line 1173, ../sass/components/_surflodge.scss */
 .node-type-webform article p {
   margin: 0;
 }
-/* line 1176, ../sass/components/_surflodge.scss */
+/* line 1177, ../sass/components/_surflodge.scss */
 .node-type-webform .wrapper-article {
   width: 100%;
   padding: 0;
 }
-/* line 1180, ../sass/components/_surflodge.scss */
+/* line 1181, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us {
   background-color: #fafafa;
   padding: 80px 0 150px;
@@ -3161,23 +3162,23 @@ body {
   border-radius: 3px 3px 0 0;
 }
 @media (max-width: 767px) {
-  /* line 1180, ../sass/components/_surflodge.scss */
+  /* line 1181, ../sass/components/_surflodge.scss */
   .node-type-webform .form-wrapper-contact-us {
     padding-top: 20px;
   }
 }
-/* line 1188, ../sass/components/_surflodge.scss */
+/* line 1189, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us .form-required {
   display: none;
 }
-/* line 1191, ../sass/components/_surflodge.scss */
+/* line 1192, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us .form {
   width: 670px;
   max-width: 94%;
   padding: 0 3%;
   margin: 0 auto;
 }
-/* line 1197, ../sass/components/_surflodge.scss */
+/* line 1198, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us .form-title {
   font-size: 20px;
   text-align: center;
@@ -3187,48 +3188,48 @@ body {
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  /* line 1197, ../sass/components/_surflodge.scss */
+  /* line 1198, ../sass/components/_surflodge.scss */
   .node-type-webform .form-wrapper-contact-us .form-title {
     margin-bottom: 20px;
   }
 }
-/* line 1208, ../sass/components/_surflodge.scss */
+/* line 1209, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us label {
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  /* line 1211, ../sass/components/_surflodge.scss */
+  /* line 1212, ../sass/components/_surflodge.scss */
   .node-type-webform .form-wrapper-contact-us .webform-component {
     margin-top: 0;
   }
 }
-/* line 1216, ../sass/components/_surflodge.scss */
+/* line 1217, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us .webform-component--first-name {
   float: left;
   width: 46%;
 }
 @media (max-width: 767px) {
-  /* line 1216, ../sass/components/_surflodge.scss */
+  /* line 1217, ../sass/components/_surflodge.scss */
   .node-type-webform .form-wrapper-contact-us .webform-component--first-name {
     width: 100%;
   }
 }
-/* line 1223, ../sass/components/_surflodge.scss */
+/* line 1224, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us .webform-component--last-name {
   float: right;
   width: 46%;
 }
 @media (max-width: 767px) {
-  /* line 1223, ../sass/components/_surflodge.scss */
+  /* line 1224, ../sass/components/_surflodge.scss */
   .node-type-webform .form-wrapper-contact-us .webform-component--last-name {
     width: 100%;
   }
 }
-/* line 1230, ../sass/components/_surflodge.scss */
+/* line 1231, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us .webform-component-email {
   clear: both;
 }
-/* line 1233, ../sass/components/_surflodge.scss */
+/* line 1234, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us input.form-text {
   width: 100%;
   height: 34px;
@@ -3236,17 +3237,17 @@ body {
   border-radius: 3px;
   padding: 0 5px;
 }
-/* line 1240, ../sass/components/_surflodge.scss */
+/* line 1241, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us textarea {
   border: 1px solid #e1e1e1;
   border-radius: 3px;
   padding: 0 5px;
 }
-/* line 1245, ../sass/components/_surflodge.scss */
+/* line 1246, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us .grippie {
   display: none;
 }
-/* line 1248, ../sass/components/_surflodge.scss */
+/* line 1249, ../sass/components/_surflodge.scss */
 .node-type-webform .form-wrapper-contact-us input.form-submit {
   background-color: #ffc221;
   color: #fff;
@@ -3259,47 +3260,47 @@ body {
   letter-spacing: 6px;
 }
 @media (max-width: 767px) {
-  /* line 1248, ../sass/components/_surflodge.scss */
+  /* line 1249, ../sass/components/_surflodge.scss */
   .node-type-webform .form-wrapper-contact-us input.form-submit {
     margin-top: 10px;
   }
 }
 
-/* line 1264, ../sass/components/_surflodge.scss */
+/* line 1265, ../sass/components/_surflodge.scss */
 #map-canvas {
   height: 500px;
   width: 100%;
 }
 
 /************  post page  ********/
-/* line 1272, ../sass/components/_surflodge.scss */
+/* line 1273, ../sass/components/_surflodge.scss */
 .node-type-blog-post .date-in-parts {
   color: #ffc221;
   float: left;
 }
-/* line 1275, ../sass/components/_surflodge.scss */
+/* line 1276, ../sass/components/_surflodge.scss */
 .node-type-blog-post .date-in-parts .month {
   font-size: 14px;
 }
-/* line 1278, ../sass/components/_surflodge.scss */
+/* line 1279, ../sass/components/_surflodge.scss */
 .node-type-blog-post .date-in-parts .day {
   font-size: 30px;
   font-weight: bold;
 }
-/* line 1283, ../sass/components/_surflodge.scss */
+/* line 1284, ../sass/components/_surflodge.scss */
 .node-type-blog-post .name-title {
   float: left;
   margin-left: 50px;
 }
 @media (max-width: 480px) {
-  /* line 1283, ../sass/components/_surflodge.scss */
+  /* line 1284, ../sass/components/_surflodge.scss */
   .node-type-blog-post .name-title {
     float: left;
     clear: left;
     margin: 0;
   }
 }
-/* line 1291, ../sass/components/_surflodge.scss */
+/* line 1292, ../sass/components/_surflodge.scss */
 .node-type-blog-post .name-title #page-title {
   margin: 0;
   font-size: 24px;
@@ -3308,12 +3309,12 @@ body {
   padding: 0;
   text-align: left;
 }
-/* line 1299, ../sass/components/_surflodge.scss */
+/* line 1300, ../sass/components/_surflodge.scss */
 .node-type-blog-post .name-title .field-name-field-post-type a {
   font-size: 13px;
   color: #9b9b9b;
 }
-/* line 1304, ../sass/components/_surflodge.scss */
+/* line 1305, ../sass/components/_surflodge.scss */
 .node-type-blog-post .field-name-field-post-tags {
   float: right;
   color: #9b9b9b;
@@ -3321,58 +3322,58 @@ body {
   margin-top: 37px;
 }
 @media (max-width: 767px) {
-  /* line 1304, ../sass/components/_surflodge.scss */
+  /* line 1305, ../sass/components/_surflodge.scss */
   .node-type-blog-post .field-name-field-post-tags {
     clear: left;
     float: left;
     margin: 0;
   }
 }
-/* line 1314, ../sass/components/_surflodge.scss */
+/* line 1315, ../sass/components/_surflodge.scss */
 .node-type-blog-post .field-name-field-post-tags a {
   color: #9b9b9b;
 }
-/* line 1317, ../sass/components/_surflodge.scss */
+/* line 1318, ../sass/components/_surflodge.scss */
 .node-type-blog-post .field-name-field-post-tags .field-label {
   font-weight: normal;
 }
-/* line 1320, ../sass/components/_surflodge.scss */
+/* line 1321, ../sass/components/_surflodge.scss */
 .node-type-blog-post .field-name-field-post-tags .field-item {
   float: left;
   margin-right: 5px;
 }
-/* line 1325, ../sass/components/_surflodge.scss */
+/* line 1326, ../sass/components/_surflodge.scss */
 .node-type-blog-post .field-name-field-blog-post-image {
   clear: both;
   padding-top: 20px;
 }
-/* line 1329, ../sass/components/_surflodge.scss */
+/* line 1330, ../sass/components/_surflodge.scss */
 .node-type-blog-post .field-name-body {
   margin-top: 60px;
   width: 70%;
 }
 @media (max-width: 767px) {
-  /* line 1329, ../sass/components/_surflodge.scss */
+  /* line 1330, ../sass/components/_surflodge.scss */
   .node-type-blog-post .field-name-body {
     width: 100%;
   }
 }
-/* line 1335, ../sass/components/_surflodge.scss */
+/* line 1336, ../sass/components/_surflodge.scss */
 .node-type-blog-post .field-name-body p {
   margin-top: 0;
 }
-/* line 1340, ../sass/components/_surflodge.scss */
+/* line 1341, ../sass/components/_surflodge.scss */
 .node-type-blog-post #share .link {
   float: left;
   margin-right: 14px;
 }
-/* line 1345, ../sass/components/_surflodge.scss */
+/* line 1346, ../sass/components/_surflodge.scss */
 .node-type-blog-post article {
   border-radius: 3px 3px 0 0;
   padding-bottom: 50px;
   border: 1px solid #fafafa;
 }
-/* line 1350, ../sass/components/_surflodge.scss */
+/* line 1351, ../sass/components/_surflodge.scss */
 .node-type-blog-post .wrapper-content-bottom {
   margin: 0;
   border-radius: 0;
@@ -3380,19 +3381,19 @@ body {
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
-  /* line 1350, ../sass/components/_surflodge.scss */
+  /* line 1351, ../sass/components/_surflodge.scss */
   .node-type-blog-post .wrapper-content-bottom {
     padding: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 1359, ../sass/components/_surflodge.scss */
+  /* line 1360, ../sass/components/_surflodge.scss */
   .node-type-blog-post .region-content-bottom {
     padding: 0;
   }
 }
 
-/* line 1366, ../sass/components/_surflodge.scss */
+/* line 1367, ../sass/components/_surflodge.scss */
 #block-views-similarterms-block {
   border-top: 1px solid #979797;
   padding-top: 38px;
@@ -3400,80 +3401,80 @@ body {
   width: 70%;
 }
 @media (max-width: 767px) {
-  /* line 1366, ../sass/components/_surflodge.scss */
+  /* line 1367, ../sass/components/_surflodge.scss */
   #block-views-similarterms-block {
     width: 100%;
   }
 }
-/* line 1374, ../sass/components/_surflodge.scss */
+/* line 1375, ../sass/components/_surflodge.scss */
 #block-views-similarterms-block h2 {
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  /* line 1374, ../sass/components/_surflodge.scss */
+  /* line 1375, ../sass/components/_surflodge.scss */
   #block-views-similarterms-block h2 {
     padding: 0 8%;
   }
 }
 @media (max-width: 767px) {
-  /* line 1380, ../sass/components/_surflodge.scss */
+  /* line 1381, ../sass/components/_surflodge.scss */
   #block-views-similarterms-block .view {
     padding: 0 8%;
   }
 }
-/* line 1385, ../sass/components/_surflodge.scss */
+/* line 1386, ../sass/components/_surflodge.scss */
 #block-views-similarterms-block .views-row {
   width: 48%;
   margin-bottom: 30px;
 }
 @media (max-width: 480px) {
-  /* line 1385, ../sass/components/_surflodge.scss */
+  /* line 1386, ../sass/components/_surflodge.scss */
   #block-views-similarterms-block .views-row {
     width: 100%;
   }
 }
-/* line 1392, ../sass/components/_surflodge.scss */
+/* line 1393, ../sass/components/_surflodge.scss */
 #block-views-similarterms-block .views-row-odd {
   float: left;
 }
-/* line 1395, ../sass/components/_surflodge.scss */
+/* line 1396, ../sass/components/_surflodge.scss */
 #block-views-similarterms-block .views-row-even {
   float: right;
 }
-/* line 1398, ../sass/components/_surflodge.scss */
+/* line 1399, ../sass/components/_surflodge.scss */
 #block-views-similarterms-block .views-field-title a {
   font-size: 24px;
   color: #ffc221;
   letter-spacing: 6px;
 }
 
-/* line 1405, ../sass/components/_surflodge.scss */
+/* line 1406, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 {
   border-top: 1px solid #979797;
   padding-top: 30px;
   margin-top: 50px;
 }
-/* line 1409, ../sass/components/_surflodge.scss */
+/* line 1410, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .block-title {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 25px;
 }
-/* line 1414, ../sass/components/_surflodge.scss */
+/* line 1415, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-row {
   width: 48%;
 }
 @media (max-width: 480px) {
-  /* line 1414, ../sass/components/_surflodge.scss */
+  /* line 1415, ../sass/components/_surflodge.scss */
   #block-views-blog-post-view-block-2 .views-row {
     width: 100%;
   }
 }
-/* line 1420, ../sass/components/_surflodge.scss */
+/* line 1421, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-field-field-blog-post-image {
   overflow: hidden;
 }
-/* line 1422, ../sass/components/_surflodge.scss */
+/* line 1423, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-field-field-blog-post-image img {
   margin-bottom: -8px;
   border-radius: 3px;
@@ -3487,53 +3488,53 @@ body {
       opacity: 0.9
   }*/
 }
-/* line 1436, ../sass/components/_surflodge.scss */
+/* line 1437, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-row-odd {
   float: left;
 }
-/* line 1439, ../sass/components/_surflodge.scss */
+/* line 1440, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-row-even {
   float: right;
 }
-/* line 1442, ../sass/components/_surflodge.scss */
+/* line 1443, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-field-title a {
   font-size: 24px;
   color: #ffc221;
   text-transform: uppercase;
   margin-top: 10px;
 }
-/* line 1448, ../sass/components/_surflodge.scss */
+/* line 1449, ../sass/components/_surflodge.scss */
 #block-views-blog-post-view-block-2 .views-field-field-post-date {
   line-height: 15px;
 }
 
 /******  our rooms  *********/
-/* line 1456, ../sass/components/_surflodge.scss */
+/* line 1457, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .field-slideshow {
   max-width: 100%;
   box-sizing: border-box;
 }
-/* line 1459, ../sass/components/_surflodge.scss */
+/* line 1460, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .field-slideshow img {
   margin-bottom: -8px;
 }
-/* line 1462, ../sass/components/_surflodge.scss */
+/* line 1463, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .field-slideshow .field-slideshow-slide {
   top: 1px !important;
 }
-/* line 1466, ../sass/components/_surflodge.scss */
+/* line 1467, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .views-field-field-room-gallery {
   position: relative;
   overflow: hidden;
 }
-/* line 1470, ../sass/components/_surflodge.scss */
+/* line 1471, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .field-slideshow-controls {
   position: absolute;
   bottom: 0px;
   right: 0;
   z-index: 90;
 }
-/* line 1475, ../sass/components/_surflodge.scss */
+/* line 1476, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .field-slideshow-controls a {
   background: url("../images/arrows-gallery.png") no-repeat 0 0;
   width: 32px;
@@ -3542,11 +3543,11 @@ body {
   display: inline-block;
   float: right;
 }
-/* line 1482, ../sass/components/_surflodge.scss */
+/* line 1483, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .field-slideshow-controls a.prev {
   background-position: -32px 0;
 }
-/* line 1487, ../sass/components/_surflodge.scss */
+/* line 1488, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .views-field-title {
   margin-top: 60px;
   color: #ffc221;
@@ -3555,26 +3556,26 @@ body {
   font-weight: bold;
   letter-spacing: 3px;
 }
-/* line 1495, ../sass/components/_surflodge.scss */
+/* line 1496, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .views-row {
   margin-bottom: 150px;
 }
-/* line 1498, ../sass/components/_surflodge.scss */
+/* line 1499, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .views-field-body {
   letter-spacing: 2px;
 }
-/* line 1500, ../sass/components/_surflodge.scss */
+/* line 1501, ../sass/components/_surflodge.scss */
 #block-views-rooms-view-block .views-field-body ul {
   padding-left: 14px;
 }
 
 /********  concert  ********/
-/* line 1509, ../sass/components/_surflodge.scss */
+/* line 1510, ../sass/components/_surflodge.scss */
 .node-type-concert article {
   border-radius: 0 0 3px 3px;
   padding-top: 0;
 }
-/* line 1513, ../sass/components/_surflodge.scss */
+/* line 1514, ../sass/components/_surflodge.scss */
 .node-type-concert #page-title {
   font-size: 30px;
   font-weight: bold;
@@ -3584,89 +3585,89 @@ body {
   letter-spacing: 4px;
   padding: 0;
 }
-/* line 1522, ../sass/components/_surflodge.scss */
+/* line 1523, ../sass/components/_surflodge.scss */
 .node-type-concert .field-name-field-concert-date {
   letter-spacing: 2px;
 }
-/* line 1525, ../sass/components/_surflodge.scss */
+/* line 1526, ../sass/components/_surflodge.scss */
 .node-type-concert #share {
   margin-top: 10px;
   margin-bottom: 40px;
   width: 100%;
   overflow: hidden;
 }
-/* line 1530, ../sass/components/_surflodge.scss */
+/* line 1531, ../sass/components/_surflodge.scss */
 .node-type-concert #share .link {
   float: left;
   margin-right: 10px;
 }
-/* line 1534, ../sass/components/_surflodge.scss */
+/* line 1535, ../sass/components/_surflodge.scss */
 .node-type-concert #share .facebook {
   margin-top: 4px;
 }
-/* line 1537, ../sass/components/_surflodge.scss */
+/* line 1538, ../sass/components/_surflodge.scss */
 .node-type-concert #share .twitter {
   margin-top: 4px;
 }
-/* line 1541, ../sass/components/_surflodge.scss */
+/* line 1542, ../sass/components/_surflodge.scss */
 .node-type-concert .field-name-field-concert-page-image {
   float: left;
   margin-right: 4%;
   width: 32%;
 }
 @media (max-width: 767px) {
-  /* line 1541, ../sass/components/_surflodge.scss */
+  /* line 1542, ../sass/components/_surflodge.scss */
   .node-type-concert .field-name-field-concert-page-image {
     width: 100%;
   }
 }
-/* line 1549, ../sass/components/_surflodge.scss */
+/* line 1550, ../sass/components/_surflodge.scss */
 .node-type-concert .field-name-body {
   width: 64%;
   float: right;
 }
-/* line 1552, ../sass/components/_surflodge.scss */
+/* line 1553, ../sass/components/_surflodge.scss */
 .node-type-concert .field-name-body p {
   margin-top: 0;
 }
 @media (max-width: 767px) {
-  /* line 1549, ../sass/components/_surflodge.scss */
+  /* line 1550, ../sass/components/_surflodge.scss */
   .node-type-concert .field-name-body {
     width: 100%;
   }
 }
-/* line 1559, ../sass/components/_surflodge.scss */
+/* line 1560, ../sass/components/_surflodge.scss */
 .node-type-concert .field-name-field-concert-sample-video {
   width: 100%;
   padding-top: 90px;
   clear: both;
 }
 @media (max-width: 767px) {
-  /* line 1563, ../sass/components/_surflodge.scss */
+  /* line 1564, ../sass/components/_surflodge.scss */
   .node-type-concert .field-name-field-concert-sample-video iframe {
     height: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 900px) {
-  /* line 1563, ../sass/components/_surflodge.scss */
+  /* line 1564, ../sass/components/_surflodge.scss */
   .node-type-concert .field-name-field-concert-sample-video iframe {
     height: 450px;
   }
 }
 
-/* line 1574, ../sass/components/_surflodge.scss */
+/* line 1575, ../sass/components/_surflodge.scss */
 #block-block-7 {
   background-color: #fafafa;
   border-radius: 3px 3px 0 0;
   padding: 70px 8% 50px;
 }
 @media (max-width: 767px) {
-  /* line 1574, ../sass/components/_surflodge.scss */
+  /* line 1575, ../sass/components/_surflodge.scss */
   #block-block-7 {
     display: none;
   }
 }
-/* line 1581, ../sass/components/_surflodge.scss */
+/* line 1582, ../sass/components/_surflodge.scss */
 #block-block-7 p {
   width: 1100px;
   padding: 0 25px;
@@ -3674,7 +3675,7 @@ body {
   margin: 0 auto;
   display: block;
 }
-/* line 1587, ../sass/components/_surflodge.scss */
+/* line 1588, ../sass/components/_surflodge.scss */
 #block-block-7 p a {
   color: #ffc221;
   background: url("../images/arrow-yellow.png") no-repeat left center;
@@ -3682,42 +3683,42 @@ body {
 }
 
 /********  wellness & plan your event *********/
-/* line 1597, ../sass/components/_surflodge.scss */
+/* line 1598, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block, #block-bean-plan-your-event-block-bean, #block-bean-resturant-block {
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* line 1602, ../sass/components/_surflodge.scss */
+  /* line 1603, ../sass/components/_surflodge.scss */
   #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item .field-name-field-image {
     margin: 0;
   }
 }
-/* line 1606, ../sass/components/_surflodge.scss */
+/* line 1607, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item .field-name-field-image {
   width: 51%;
 }
-/* line 1608, ../sass/components/_surflodge.scss */
+/* line 1609, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image img, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item .field-name-field-image img, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item .field-name-field-image img, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item .field-name-field-image img, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image img, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item .field-name-field-image img {
   margin-bottom: -8px;
 }
 @media (max-width: 767px) {
-  /* line 1606, ../sass/components/_surflodge.scss */
+  /* line 1607, ../sass/components/_surflodge.scss */
   #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item .field-name-field-image {
     width: 100%;
     margin-bottom: 30px;
   }
 }
-/* line 1618, ../sass/components/_surflodge.scss */
+/* line 1619, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item.even .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item.even .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item.even .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item.even .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item.even .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item.even .field-name-field-image {
   float: left;
   margin-right: 4%;
 }
-/* line 1624, ../sass/components/_surflodge.scss */
+/* line 1625, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-plan-box > .field-items > .field-item.odd .field-name-field-image, #block-bean-wellness-new-block .field-name-field-meal > .field-items .field-item.odd .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-plan-box > .field-items > .field-item.odd .field-name-field-image, #block-bean-plan-your-event-block-bean .field-name-field-meal > .field-items .field-item.odd .field-name-field-image, #block-bean-resturant-block .field-name-field-plan-box > .field-items > .field-item.odd .field-name-field-image, #block-bean-resturant-block .field-name-field-meal > .field-items .field-item.odd .field-name-field-image {
   float: right;
   margin-left: 4%;
 }
-/* line 1630, ../sass/components/_surflodge.scss */
+/* line 1631, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .entity-field-collection-item .content, #block-bean-plan-your-event-block-bean .entity-field-collection-item .content, #block-bean-resturant-block .entity-field-collection-item .content {
   /*     overflow: hidden;
        display: -ms-flexbox;
@@ -3728,50 +3729,50 @@ body {
        align-items: center;*/
 }
 @media (max-width: 767px) {
-  /* line 1630, ../sass/components/_surflodge.scss */
+  /* line 1631, ../sass/components/_surflodge.scss */
   #block-bean-wellness-new-block .entity-field-collection-item .content, #block-bean-plan-your-event-block-bean .entity-field-collection-item .content, #block-bean-resturant-block .entity-field-collection-item .content {
     display: block;
   }
 }
-/* line 1642, ../sass/components/_surflodge.scss */
+/* line 1643, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-item.odd .entity-field-collection-item .content, #block-bean-plan-your-event-block-bean .field-item.odd .entity-field-collection-item .content, #block-bean-resturant-block .field-item.odd .entity-field-collection-item .content {
   flex-direction: row-reverse;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
 }
-/* line 1647, ../sass/components/_surflodge.scss */
+/* line 1648, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-title-for-block, #block-bean-plan-your-event-block-bean .field-name-field-title-for-block, #block-bean-resturant-block .field-name-field-title-for-block {
   font-size: 20px;
   text-align: center;
   letter-spacing: 14px;
   text-transform: uppercase;
 }
-/* line 1653, ../sass/components/_surflodge.scss */
+/* line 1654, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-text-box, #block-bean-plan-your-event-block-bean .field-name-field-text-box, #block-bean-resturant-block .field-name-field-text-box {
   text-align: center;
 }
-/* line 1655, ../sass/components/_surflodge.scss */
+/* line 1656, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .field-name-field-text-box a, #block-bean-plan-your-event-block-bean .field-name-field-text-box a, #block-bean-resturant-block .field-name-field-text-box a {
   color: #202020;
 }
-/* line 1659, ../sass/components/_surflodge.scss */
+/* line 1660, ../sass/components/_surflodge.scss */
 #block-bean-wellness-new-block .entity-field-collection-item, #block-bean-plan-your-event-block-bean .entity-field-collection-item, #block-bean-resturant-block .entity-field-collection-item {
   margin-bottom: 80px;
 }
 @media (max-width: 767px) {
-  /* line 1659, ../sass/components/_surflodge.scss */
+  /* line 1660, ../sass/components/_surflodge.scss */
   #block-bean-wellness-new-block .entity-field-collection-item, #block-bean-plan-your-event-block-bean .entity-field-collection-item, #block-bean-resturant-block .entity-field-collection-item {
     margin-bottom: 50px;
   }
 }
 
 /*********   resturant *********/
-/* line 1669, ../sass/components/_surflodge.scss */
+/* line 1670, ../sass/components/_surflodge.scss */
 .region-highlighted {
   margin-top: 220px;
   text-align: center;
 }
-/* line 1672, ../sass/components/_surflodge.scss */
+/* line 1673, ../sass/components/_surflodge.scss */
 .region-highlighted #block-bean-resturant-upper-block {
   width: 515px;
   background-color: #fff;
@@ -3783,19 +3784,19 @@ body {
   box-sizing: border-box;
 }
 @media (max-width: 767px) {
-  /* line 1672, ../sass/components/_surflodge.scss */
+  /* line 1673, ../sass/components/_surflodge.scss */
   .region-highlighted #block-bean-resturant-upper-block {
     padding: 20px 5px;
   }
 }
-/* line 1684, ../sass/components/_surflodge.scss */
+/* line 1685, ../sass/components/_surflodge.scss */
 .region-highlighted #block-bean-resturant-upper-block .block-title {
   font-size: 20px;
   letter-spacing: 10px;
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 1690, ../sass/components/_surflodge.scss */
+/* line 1691, ../sass/components/_surflodge.scss */
 .region-highlighted #block-bean-resturant-upper-block .field-name-field-pretext {
   font-weight: bold;
   font-size: 36px;
@@ -3804,20 +3805,20 @@ body {
   letter-spacing: 6px;
   margin-top: 15px;
 }
-/* line 1698, ../sass/components/_surflodge.scss */
+/* line 1699, ../sass/components/_surflodge.scss */
 .region-highlighted #block-bean-resturant-upper-block .field-name-field-upper-text {
   margin-top: 30px;
 }
-/* line 1700, ../sass/components/_surflodge.scss */
+/* line 1701, ../sass/components/_surflodge.scss */
 .region-highlighted #block-bean-resturant-upper-block .field-name-field-upper-text p {
   margin: 0;
 }
-/* line 1704, ../sass/components/_surflodge.scss */
+/* line 1705, ../sass/components/_surflodge.scss */
 .region-highlighted #block-bean-resturant-upper-block .field-name-field-reservations {
   margin-top: 30px;
 }
 
-/* line 1711, ../sass/components/_surflodge.scss */
+/* line 1712, ../sass/components/_surflodge.scss */
 #block-bean-resturant-block .field-name-field-menu-pdf a {
   background-color: #ffc221;
   color: #fff;
@@ -3830,24 +3831,24 @@ body {
   font-weight: bold;
   letter-spacing: 6px;
 }
-/* line 1723, ../sass/components/_surflodge.scss */
+/* line 1724, ../sass/components/_surflodge.scss */
 #block-bean-resturant-block .field-name-field-menu-pdf img {
   display: none;
 }
 
 /********  about & press*************/
-/* line 1730, ../sass/components/_surflodge.scss */
+/* line 1731, ../sass/components/_surflodge.scss */
 #block-views-team-members-block, #block-views-press-view-block {
   overflow: hidden;
 }
-/* line 1732, ../sass/components/_surflodge.scss */
+/* line 1733, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .view-header, #block-views-team-members-block .block-title, #block-views-press-view-block .view-header, #block-views-press-view-block .block-title {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 12px;
   text-align: center;
 }
-/* line 1738, ../sass/components/_surflodge.scss */
+/* line 1739, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-field-field-image, #block-views-press-view-block .views-field-field-image {
   position: absolute;
   opacity: 0;
@@ -3855,11 +3856,11 @@ body {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 1744, ../sass/components/_surflodge.scss */
+/* line 1745, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-field-field-image:hover, #block-views-press-view-block .views-field-field-image:hover {
   opacity: 1;
 }
-/* line 1748, ../sass/components/_surflodge.scss */
+/* line 1749, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-row, #block-views-press-view-block .views-row {
   float: left;
   width: 30%;
@@ -3868,56 +3869,56 @@ body {
   margin-bottom: 70px;
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 1748, ../sass/components/_surflodge.scss */
+  /* line 1749, ../sass/components/_surflodge.scss */
   #block-views-team-members-block .views-row, #block-views-press-view-block .views-row {
     width: 49%;
     margin-right: 2% !important;
   }
 }
 @media (max-width: 480px) {
-  /* line 1748, ../sass/components/_surflodge.scss */
+  /* line 1749, ../sass/components/_surflodge.scss */
   #block-views-team-members-block .views-row, #block-views-press-view-block .views-row {
     width: 100%;
     margin-right: 0%;
   }
 }
-/* line 1763, ../sass/components/_surflodge.scss */
+/* line 1764, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-row:nth-child(3n), #block-views-press-view-block .views-row:nth-child(3n) {
   margin-right: 0;
 }
 @media (max-width: 767px) {
-  /* line 1763, ../sass/components/_surflodge.scss */
+  /* line 1764, ../sass/components/_surflodge.scss */
   #block-views-team-members-block .views-row:nth-child(3n), #block-views-press-view-block .views-row:nth-child(3n) {
     margin-right: 0;
   }
 }
-/* line 1769, ../sass/components/_surflodge.scss */
+/* line 1770, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-row:nth-child(3n+1), #block-views-press-view-block .views-row:nth-child(3n+1) {
   clear: left;
 }
 @media (max-width: 767px) {
-  /* line 1769, ../sass/components/_surflodge.scss */
+  /* line 1770, ../sass/components/_surflodge.scss */
   #block-views-team-members-block .views-row:nth-child(3n+1), #block-views-press-view-block .views-row:nth-child(3n+1) {
     clear: none;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 1775, ../sass/components/_surflodge.scss */
+  /* line 1776, ../sass/components/_surflodge.scss */
   #block-views-team-members-block .views-row-even, #block-views-press-view-block .views-row-even {
     margin-right: 0 !important;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 1780, ../sass/components/_surflodge.scss */
+  /* line 1781, ../sass/components/_surflodge.scss */
   #block-views-team-members-block .views-row-odd, #block-views-press-view-block .views-row-odd {
     clear: left;
   }
 }
-/* line 1785, ../sass/components/_surflodge.scss */
+/* line 1786, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-row-last, #block-views-press-view-block .views-row-last {
   margin-bottom: 0;
 }
-/* line 1788, ../sass/components/_surflodge.scss */
+/* line 1789, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-field-title, #block-views-team-members-block .views-field-field-quote a, #block-views-press-view-block .views-field-title, #block-views-press-view-block .views-field-field-quote a {
   font-size: 16px;
   text-transform: uppercase;
@@ -3926,28 +3927,28 @@ body {
   line-height: 20px;
   color: #202020;
 }
-/* line 1796, ../sass/components/_surflodge.scss */
+/* line 1797, ../sass/components/_surflodge.scss */
 #block-views-team-members-block .views-field-field-job-title, #block-views-press-view-block .views-field-field-job-title {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 1803, ../sass/components/_surflodge.scss */
+/* line 1804, ../sass/components/_surflodge.scss */
 #block-views-press-view-block .views-field-field-image {
   position: relative;
   opacity: 1;
 }
-/* line 1807, ../sass/components/_surflodge.scss */
+/* line 1808, ../sass/components/_surflodge.scss */
 #block-views-press-view-block .block-title {
   margin-bottom: 80px;
 }
 
-/* line 1813, ../sass/components/_surflodge.scss */
+/* line 1814, ../sass/components/_surflodge.scss */
 .page-node-63 article {
   height: 0;
   padding: 0 !important;
 }
-/* line 1817, ../sass/components/_surflodge.scss */
+/* line 1818, ../sass/components/_surflodge.scss */
 .page-node-63 .region-content-bottom {
   margin-top: 0;
 }
@@ -3968,13 +3969,13 @@ body {
 }
 */
 /**********  gallery  *********/
-/* line 1839, ../sass/components/_surflodge.scss */
+/* line 1840, ../sass/components/_surflodge.scss */
 #block-bean-gallery .jcbx-glry-classic {
   background-color: transparent !important;
   z-index: 0;
 }
 
-/* line 1847, ../sass/components/_surflodge.scss */
+/* line 1848, ../sass/components/_surflodge.scss */
 .page-node-86 article {
   background-color: #fafafa !important;
   border-radius: 3px 3px 0 0 !important;
@@ -3982,7 +3983,7 @@ body {
   color: #202020 !important;
   padding-bottom: 0px !important;
 }
-/* line 1854, ../sass/components/_surflodge.scss */
+/* line 1855, ../sass/components/_surflodge.scss */
 .page-node-86 .wrapper-content-bottom {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -3990,7 +3991,7 @@ body {
 }
 
 /****  messages  *********/
-/* line 1863, ../sass/components/_surflodge.scss */
+/* line 1864, ../sass/components/_surflodge.scss */
 .messages, .messages--status, .messages--warning, .messages--error {
   background-image: none;
   padding-left: 10px;
