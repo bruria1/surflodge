@@ -67,7 +67,7 @@ textarea:focus, input:focus{
 
 body{
     font-size: 15px;
-    line-height: 28px;
+    line-height: 22px;
     font-family: 'gothic', arial;  
     color: $default;
 }
@@ -158,6 +158,7 @@ body{
   letter-spacing: 6px;
   text-transform: uppercase;
   padding: 0 3%;
+  font-weight: normal;
 }
 
 #content{
@@ -215,13 +216,11 @@ body{
   -webkit-transition: all 0.5s;
   right: 0;
   @include res(s){
-    width: 250px;
     right: 0!important;
   }
   #logo{
     float: none;
     @include res(s-m){
-      width: 225px;
       margin-right: 0!important;
     }
   }
@@ -231,12 +230,19 @@ body{
 .not-front .logo-wrapper{
   margin-top: 6px;
   #logo{
-    height: 30px;
-    overflow: hidden;
     display: inline-block;
+    height: 26px;
+    margin-top: 9px;
+    overflow: hidden;
+    width: 320px;
     @include res(s-m){
       height: 18px;
       float: left;
+      margin-top: 3px;
+    }
+    @include res(s){
+      margin-top: 8px;
+      width: 200px;
     }
   }
 }
@@ -340,7 +346,7 @@ body{
   @include res(s-m){
     margin-right: 0;
     right: 10px;
-    margin-top: 6px;
+    margin-top: 7px;
   }
   @include res(l){
     right: 10px;
@@ -364,7 +370,7 @@ body{
 .scroll .menu-wrapper,
 .not-front .menu-wrapper{
   @include res(s-m){
-    margin-top: 3px;
+    margin-top: 8px;
   }
 }
 
@@ -455,7 +461,7 @@ body{
     .scales{
       font-size: 18px;
       position: absolute;
-      left: 84px;
+      left: 74px;
       top: 2px;
       .active{
         font-size: 20px;
@@ -530,6 +536,7 @@ body{
   label{
     font-weight: normal;
     padding: 7px 13px;
+    cursor: text;
   }
   .form-submit{
     background: url("../images/Group.png") no-repeat center center #fff;
@@ -853,6 +860,10 @@ body{
   }
 }
 
+#block-views-concerts-view-block-1{
+  margin-bottom: 0;
+}
+
 #block-views-blog-post-view-block{
    box-sizing: border-box;
     margin: 0 auto 100px;
@@ -909,17 +920,21 @@ body{
     text-transform: uppercase;
   } 
   .views-field-field-post-date-1{
+    margin-top: 15px;
     color: $yellow;
     font-size: 30px;
     clear: left;
     font-weight: bold;
   }
-  .views-field-title a{
-    color: $default;
-    font-size: 16px;
-    float: right;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  .views-field-title{ 
+    margin-top:15px;
+    a{
+      color: $default;
+      font-size: 16px;
+      float: right;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
   }
 }
 
@@ -932,8 +947,9 @@ body{
   article{
     padding: 0!important;
   }
-  .region-content-bottom{
+  .wrapper-content-bottom{
     margin-top: 0;
+    padding-top: 30px;
   }
 }
 
@@ -954,7 +970,7 @@ body{
     }
     .bef-select-as-links .form-item .form-item{
       display: inline-block;
-      padding: 0 30px;
+      padding: 0 18px;
       @include res(s-m){
         width: 100%;
         padding: 0;
@@ -962,7 +978,7 @@ body{
     }
   }
   .view-content{
-    padding-top: 50px;
+    padding-top: 75px;
     .views-field-field-post-date-1{
       float: left;
       width: 9.5%;
@@ -1242,6 +1258,7 @@ body{
       border: 1px solid #e1e1e1;
       border-radius: 3px;
       padding:  0 5px;
+      margin-top: 5px;
     }
     textarea{
       border: 1px solid #e1e1e1;
@@ -1257,7 +1274,7 @@ body{
       text-transform: uppercase;
       font-size: 17px;
       border:none;
-      padding: 10px 20px;
+      padding: 15px 20px;
       border-radius: 3px;
       font-weight: bold;
       letter-spacing: 6px;
@@ -1298,13 +1315,15 @@ body{
       margin: 0;
       font-size: 24px;
       color: $yellow;
-      letter-spacing: 0;
+      letter-spacing: 2px;
       padding: 0;
       text-align: left;
+      font-weight: bold;
     }
     .field-name-field-post-type a{
       font-size: 13px;
       color: #9b9b9b;
+      text-transform: uppercase;
     }
   }
   .field-name-field-post-tags{
@@ -1325,7 +1344,7 @@ body{
     }
     .field-item{
       float: left;
-      margin-right: 5px;
+      margin-left: 5px;
     }
   }
   .field-name-field-blog-post-image{
@@ -1334,7 +1353,7 @@ body{
   }
   .field-name-body{
     margin-top: 60px;
-    width: 70%;
+    width: 75%;
     @include res(s-m){
       width: 100%;
     }
@@ -1371,7 +1390,7 @@ body{
 
 #block-views-similarterms-block{
   border-top: 1px solid #979797;
-  padding-top: 38px;
+  padding-top: 30px;
   overflow: hidden;
   width: 70%;
   @include res(s-m){
@@ -1379,6 +1398,8 @@ body{
   }
   h2{
     margin-bottom: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
     @include res(s-m){
       padding: 0 8%;
     }
@@ -1404,7 +1425,11 @@ body{
   .views-field-title a{
       font-size: 24px;
       color: $yellow;
-      letter-spacing: 6px;  
+      letter-spacing: 6px; 
+      font-weight: bold; 
+  }
+  .views-field-field-post-date{
+    letter-spacing: 2px;
   }
 }
 
@@ -1491,7 +1516,7 @@ body{
     }
   }
   .views-field-title{
-    margin-top: 60px;
+    margin-top: 40px;
     color: $yellow;
     font-size: 24px;
     text-transform: uppercase;
@@ -1548,6 +1573,9 @@ body{
     float: left;
     margin-right: 4%;
     width: 32%;
+    img{
+      border-radius: 6px;
+    }
     @include res(s-m){
       width: 100%;
     }
@@ -1702,16 +1730,18 @@ body{
       text-transform: uppercase;
       color: $yellow;
       letter-spacing: 6px;
-      margin-top: 15px;
+      margin-top: 23px;
     }
     .field-name-field-upper-text{
       margin-top: 30px;
+      text-transform: uppercase;
       p{
         margin: 0;
       }
     }
     .field-name-field-reservations{
       margin-top: 30px;
+      text-transform: uppercase;
     }
   }
 }
@@ -1743,6 +1773,7 @@ body{
     font-size: 20px;
     letter-spacing: 12px;
     text-align: center;
+    font-weight: normal;
   }
   .views-field-field-image{
     position: absolute;
@@ -1796,15 +1827,20 @@ body{
   }
   .views-field-title, .views-field-field-quote a{
     font-size: 16px;
-    text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 13px;
     line-height: 20px;
-    color: $default
+    color: $default;
+    margin-bottom: 5px;
+  }
+  .views-field-field-quote a{
+    margin-top: 17px!important;
+    display: block;
   }
   .views-field-field-job-title{
     font-size: 14px;
     line-height: 20px;
+    letter-spacing: 2px;
   }
 }
 
@@ -1819,11 +1855,14 @@ body{
 }
 
 .page-node-63{
+  #page-title{
+    display: none;
+  }
    article{
     height: 0;
     padding: 0!important;
   }
-  .region-content-bottom{
+  .wrapper-content-bottom{
     margin-top: 0;
   }
 }
