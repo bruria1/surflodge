@@ -78,6 +78,7 @@ body{
   -webkit-transition: all 0.5s;
   position: relative;
   right: 0;
+  overflow: hidden;
   @include res(s-m){
     padding: 0;
     right: 0!important;
@@ -111,7 +112,7 @@ body{
   color: #fff;
   text-align: center;
   border-radius: 3px;
-  padding: 80px 8%;
+  padding: 80px 8% 60px;
   @include res(s-m){
     border-radius: 0;
   }
@@ -181,7 +182,7 @@ body{
 }
 
 .field-name-field-links-box{
-  margin-top: 30px;
+  margin-top: 50px;
   a{
     background-color: $yellow;
     color: #fff;
@@ -194,6 +195,13 @@ body{
     font-weight: bold;
     letter-spacing: 6px;
   }
+  .field-item:last-child a{
+    margin-bottom: 0;
+  }
+}
+
+.field-name-field-text-after-links{
+  margin-top: 40px;
 }
 
 .tabim{
@@ -1651,13 +1659,13 @@ body{
     .field-item.even{
       .field-name-field-image{
         float: left;
-        margin-right: 4%;
+        margin-right: 10%;
       }
     }
     .field-item.odd{
       .field-name-field-image{
         float: right;
-        margin-left: 4%;
+        margin-left: 10%;
       }
     }   
   }
@@ -1752,8 +1760,7 @@ body{
     color: #fff;
     text-transform: uppercase;
     font-size: 17px;
-    padding: 10px 15px;
-    margin-bottom: 30px;
+    padding: 15px 20px;
     display: inline-block;
     border-radius: 3px;
     font-weight: bold;
@@ -1887,6 +1894,12 @@ body{
   .jcbx-glry-classic{
     background-color: transparent!important;
     z-index: 0;
+  }
+  .jb-idx-thb-frame{
+    border: none!important;
+  }
+  .jb-idx-thumb, .jb-dt-main-image{
+    box-shadow: none!important;
   }
 }
 

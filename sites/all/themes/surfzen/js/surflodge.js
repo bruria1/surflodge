@@ -128,7 +128,7 @@ $(document).ready(function(){
 });
 
 /***** book now scroll  ******/
-
+/*
 $booknowheight = $("#main").height();
 $(document).ready(function(){       
       $scroll_pos = 0;
@@ -157,7 +157,7 @@ $(window).resize(function() {
           }
         });
   });
-});
+});*/
 /************* blog page  *********/
 
   var imageHeight = $(".not-front .view-blog-post-view img").height();
@@ -169,13 +169,25 @@ $(window).resize(function() {
 
 /************* welness page   *********/
 
-  var Heightcontent = ($(".bean-plan-your-event- .field-name-field-image").height()-$(".bean-plan-your-event- .entity-field-collection-item .content").height())/2;
-    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", Heightcontent);
-  $(window).resize(function() {
-    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", '0');
-    var Heightcontent = ($(".bean-plan-your-event- .field-name-field-image").height()-$(".bean-plan-your-event- .entity-field-collection-item .content").height())/2;
-    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", Heightcontent);
+$('.field-name-field-plan-box > .field-items > .field-item').each(function(){
+  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
+  $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
+  $contenthight = (($(this).children().children().children(".content")).height());
+  $paddinghight = ($imghight-$contenthight)/2;
+  if ($paddinghight < 0){$paddinghight = 0};
+  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
+});
+
+$(window).resize(function() {
+  $('.field-name-field-plan-box > .field-items > .field-item').each(function(){
+    ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
+    $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
+    $contenthight = (($(this).children().children().children(".content")).height());
+    $paddinghight = ($imghight-$contenthight)/2;
+    if ($paddinghight < 0){$paddinghight = 0};
+    ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
   });
+});
 
 /***********   resturant  ********/
 
@@ -188,21 +200,33 @@ if ($("body").hasClass("page-node-84")) {
     if ($mainheight<200){$mainheight=200};
    $("#main").css("margin-top", $mainheight);
   });
-}
 
-  var Heightcontent = ($(".bean-resturannt-block .field-name-field-image").height()-$(".bean-resturannt-block .entity-field-collection-item .content").height())/2;
-    $(".bean-resturannt-block .field-name-field-title-for-block").css("padding-top", Heightcontent);
+
+$('.field-name-field-meal > .field-items > .field-item').each(function(){
+  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
+  $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
+  $contenthight = (($(this).children().children().children(".content")).height());
+  $paddinghight = ($imghight-$contenthight)/2;
+  if ($paddinghight < 0){$paddinghight = 0};
+  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
+});
+
   $(window).resize(function() {
-    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", '0');
-    var Heightcontent = ($(".bean-plan-your-event- .field-name-field-image").height()-$(".bean-plan-your-event- .entity-field-collection-item .content").height())/2;
-    $(".bean-plan-your-event- .field-name-field-title-for-block").css("padding-top", Heightcontent);
+    $('.field-name-field-meal > .field-items > .field-item').each(function(){
+      ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
+      $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
+      $contenthight = (($(this).children().children().children(".content")).height());
+      $paddinghight = ($imghight-$contenthight)/2;
+      if ($paddinghight < 0){$paddinghight = 0};
+      ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
+    });
   });
 
-
-  $(window).load(function(){
+}
+/*  $(window).load(function(){
     $('#splash').fadeOut();
   });
-
+*/
 /**********  galleria  *********/
 
 
