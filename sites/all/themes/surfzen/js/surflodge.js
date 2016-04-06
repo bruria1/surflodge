@@ -41,8 +41,10 @@ Drupal.behaviors.my_custom_behavior = {
         }
       });
 
-      $("#page").click(function(){
+      $("#wrapper-site").click(function(){
+        if ($("body").hasClass("display-menu")){
           $("body").removeClass("display-menu");
+        }
       });
 
   $width = ($(window).width()-1200)/2+187;
@@ -68,7 +70,12 @@ Drupal.behaviors.my_custom_behavior = {
         }
    });
 
-
+  $("#wrapper-site").click(function(){
+          $("#page").css("right", '0');
+          $(".logo-wrapper").css("right", '0');
+          //$(".field-name-field-background-image img").css("margin-right", '0');
+          $(".region-links").css("margin-right", 0);
+   });
 /**********  main  **********/
   
   $mainheight = $(window).height()-150;
@@ -129,7 +136,7 @@ $(document).ready(function(){
 
 /***** book now scroll  ******/
 /*
-$booknowheight = $("#main").height();
+$booknowheight = $("#page").height()-$mainheight;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -142,9 +149,20 @@ $(document).ready(function(){
         }
       });
 });
+*/
+$booknowheight = $(window).height()+500;
+
+$(window).scroll(function() {
+   if($(window).scrollTop() + $booknowheight > $(document).height()) {
+      $("body").addClass('scroll-book-now');
+   }
+    else {
+      $("body").removeClass('scroll-book-now');
+  }
+});
 
 $(window).resize(function() {
-  $booknowheight = $("#main").height();
+  $booknowheight = $("#page").height()-770;
   $(document).ready(function(){       
         $scroll_pos = 0;
         $(document).scroll(function() { 
@@ -157,7 +175,7 @@ $(window).resize(function() {
           }
         });
   });
-});*/
+});
 /************* blog page  *********/
 
   var imageHeight = $(".not-front .view-blog-post-view img").height();
@@ -168,8 +186,7 @@ $(window).resize(function() {
   });
 
 /************* welness page   *********/
-
-$('.field-name-field-plan-box > .field-items > .field-item').each(function(){
+$('.field-name-field-meal > .field-items > .field-item').each(function(){
   ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
   $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
   $contenthight = (($(this).children().children().children(".content")).height());
@@ -178,16 +195,7 @@ $('.field-name-field-plan-box > .field-items > .field-item').each(function(){
   ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
 });
 
-$(window).resize(function() {
-  $('.field-name-field-plan-box > .field-items > .field-item').each(function(){
-    ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
-    $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
-    $contenthight = (($(this).children().children().children(".content")).height());
-    $paddinghight = ($imghight-$contenthight)/2;
-    if ($paddinghight < 0){$paddinghight = 0};
-    ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
-  });
-});
+
 
 /***********   resturant  ********/
 
@@ -234,7 +242,13 @@ $('.field-name-field-meal > .field-items > .field-item').each(function(){
   //alert($galleryheight);
   $(".galleria-container").css("height", $galleryheight);
   
-  
+/*********  messages  *************/
+
+setTimeout(function(){
+    document.getElementById('block-mailchimp-signup-signup-for-newsletter').className = 'hide-message';
+}, 10000);  
+
+
   }
 };
 

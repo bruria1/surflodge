@@ -797,6 +797,7 @@ body{
   }
   .views-row-odd{
     float: right;
+    clear: both;
   }
   .views-row-even{
     float: left;
@@ -894,6 +895,7 @@ body{
   }
   .views-row-odd{
     float: right;
+    clear: both;
   }
   .views-row-even{
     float: left;
@@ -1927,4 +1929,15 @@ body{
 .messages{
   background-image: none;
   padding-left: 10px;
+}
+
+#inline-messages{
+  color: #fff;
+  border:2px solid $yellow;
+  background-color: transparent;
+  border-radius: 6px;
+}
+
+.hide-message #inline-messages{
+  display: none;
 }

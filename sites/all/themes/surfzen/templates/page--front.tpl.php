@@ -98,7 +98,7 @@
 </div>
   </header>
       <?php print render($page['highlighted']); ?>
-
+<div id="wrapper-site">
 <div id="page">
  <div id="main">
     <div id="content" class="column" role="main">
@@ -146,4 +146,5 @@
 <div class="wrapper-bottom">
   <div class="logo-image"><img src="/sites/default/files/logo-surflodge.png"></div>
   <?php print render($page['bottom']); ?>
+</div>
 </div>
