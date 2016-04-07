@@ -32,7 +32,16 @@ Drupal.behaviors.my_custom_behavior = {
       });
 
 /********  hamburger menu  **********/
-      $(".menu-wrapper").click(function(){
+
+      $(".menu-wrapper").click(function() {
+          $("body").toggleClass( "display-menu" );
+      });
+
+      $("#wrapper-site").click(function(){
+          $("body").toggleClass( "display-menu" );
+      });
+
+/*      $(".menu-wrapper").click(function(){
         if ($("body").hasClass("display-menu")){
           $("body").removeClass("display-menu");
         }
@@ -40,12 +49,7 @@ Drupal.behaviors.my_custom_behavior = {
           $("body").addClass("display-menu");
         }
       });
-
-      $("#wrapper-site").click(function(){
-        if ($("body").hasClass("display-menu")){
-          $("body").removeClass("display-menu");
-        }
-      });
+*/
 
   $width = ($(window).width()-1200)/2+187;
   $("#navigation").css("width", $width);
