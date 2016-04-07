@@ -4094,8 +4094,12 @@ body {
   background-color: transparent;
   border-radius: 6px;
 }
+/* line 1942, ../sass/components/_surflodge.scss */
+#inline-messages.warning {
+  border: 2px solid #CE0606;
+}
 
-/* line 1944, ../sass/components/_surflodge.scss */
+/* line 1947, ../sass/components/_surflodge.scss */
 .hide-message #inline-messages {
   display: none;
 }

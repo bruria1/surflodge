@@ -1939,6 +1939,9 @@ body{
   border:2px solid $yellow;
   background-color: transparent;
   border-radius: 6px;
+  &.warning{
+    border: 2px solid #CE0606;
+  }
 }
 
 .hide-message #inline-messages{
