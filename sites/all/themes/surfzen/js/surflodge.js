@@ -37,19 +37,13 @@ Drupal.behaviors.my_custom_behavior = {
           $("body").toggleClass( "display-menu" );
       });
 
-      $("#wrapper-site").click(function(){
-          $("body").toggleClass( "display-menu" );
-      });
 
-/*      $(".menu-wrapper").click(function(){
+      $("#wrapper-site").click(function(){
         if ($("body").hasClass("display-menu")){
           $("body").removeClass("display-menu");
         }
-        else {
-          $("body").addClass("display-menu");
-        }
       });
-*/
+
 
   $width = ($(window).width()-1200)/2+187;
   $("#navigation").css("width", $width);
