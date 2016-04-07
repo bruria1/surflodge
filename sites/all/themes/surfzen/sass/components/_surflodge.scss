@@ -646,6 +646,9 @@ body{
   .region-links{
     position: relative;
     top: 0!important;
+    @include res(s-m){
+      position: fixed;
+    }
   }
 }
 .region-links{

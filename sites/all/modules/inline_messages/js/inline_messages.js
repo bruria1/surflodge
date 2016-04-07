@@ -20,7 +20,7 @@
         if ($('#toolbar').length) {
           var pos = pos - $('#toolbar').height();
         }
-        $.scrollTo(pos, $settings['duration'], {offset:$settings['offset']});
+        $.scrollTo(pos-150, $settings['duration'], {offset:$settings['offset']});
       }
     }
     
