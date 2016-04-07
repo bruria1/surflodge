@@ -359,6 +359,9 @@ body{
   @include res(l){
     right: 10px;
   }
+  @include res(s){
+    margin-top: 3px;
+  }
   .lines{
     float: right;
     transition: all 0.5s;
@@ -648,7 +651,7 @@ body{
     top: 0!important;
     @include res(s-m){
       position: fixed;
-      bottom: 170px;
+      bottom: 180px;
       top: auto!important;
     }
   }
