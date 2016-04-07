@@ -224,6 +224,7 @@ body{
   right: 0;
   @include res(s){
     right: 0!important;
+    width: 95%;
   }
   #logo{
     float: none;
@@ -647,7 +648,7 @@ body{
     top: 0!important;
     @include res(s-m){
       position: fixed;
-      bottom: 150px;
+      bottom: 170px;
       top: auto!important;
     }
   }
