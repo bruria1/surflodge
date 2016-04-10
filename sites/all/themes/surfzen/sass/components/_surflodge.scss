@@ -207,6 +207,7 @@ body{
 .tabim{
   margin-top: 70px;
   width: 100%;
+  position: absolute;
   .tabs-primary{
     @include width;
   }

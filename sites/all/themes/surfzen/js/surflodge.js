@@ -33,8 +33,28 @@ Drupal.behaviors.my_custom_behavior = {
 
 /********  hamburger menu  **********/
 
-      $(".menu-wrapper").click(function() {
+ /*     $(".menu-wrapper").click(function() {
           $("body").toggleClass( "display-menu" );
+      });*/
+
+ /*     $(".menu-wrapper").click(function(){
+        if ($("body").hasClass("hide-menu")) {
+          $("body").removeClass("hide-menu");
+          $("body").addClass("display-menu");
+        } 
+        if ($("body").hasClass("display-menu")) {
+          $("body").addClass("hide-menu");
+          $("body").removeClass("display-menu");
+        }
+      });
+*/
+      $(".menu-wrapper").click(function(){
+        if ($("body").hasClass("display-menu")){
+          $("body").removeClass("display-menu");
+        }
+        else {
+          $("body").addClass("display-menu");
+        }
       });
 
 
@@ -43,6 +63,7 @@ Drupal.behaviors.my_custom_behavior = {
           $("body").removeClass("display-menu");
         }
       });
+
 
 
   $width = ($(window).width()-1200)/2+187;
