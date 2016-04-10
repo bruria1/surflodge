@@ -637,6 +637,9 @@ body{
     width: 100%;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    @include res(s){
+      right: -100%;
+    }
   }
 }
 
