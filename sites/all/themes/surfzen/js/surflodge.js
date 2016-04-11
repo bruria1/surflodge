@@ -181,7 +181,7 @@ $(window).scroll(function() {
 });
 
 $(window).resize(function() {
-  $booknowheight = $("#page").height()-770;
+  $booknowheight = $("#page").height()+500;
   $(document).ready(function(){       
         $scroll_pos = 0;
         $(document).scroll(function() { 
