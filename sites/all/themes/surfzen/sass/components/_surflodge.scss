@@ -208,6 +208,7 @@ body{
   margin-top: 70px;
   width: 100%;
   position: absolute;
+  z-index: 200;
   .tabs-primary{
     @include width;
   }

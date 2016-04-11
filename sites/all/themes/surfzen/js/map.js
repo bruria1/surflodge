@@ -25,8 +25,8 @@ function addMarker(location, map) {
   // from the array of alphabetical characters.
   var marker = new google.maps.Marker({
     position: location,
-    label: labels[labelIndex++ % labels.length],
-    map: map
+    label: "S",
+    map: map,
   });
   var styles = [
   {
