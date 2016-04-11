@@ -181,18 +181,15 @@ $(window).scroll(function() {
 });
 
 $(window).resize(function() {
-  $booknowheight = $("#page").height()+500;
-  $(document).ready(function(){       
-        $scroll_pos = 0;
-        $(document).scroll(function() { 
-          $scroll_pos = $(this).scrollTop();
-          if($scroll_pos > $booknowheight) {
-              $("body").addClass('scroll-book-now');
-          }
-          else {
-              $("body").removeClass('scroll-book-now');
-          }
-        });
+  $booknowheight = $(window).height()+500;
+
+  $(window).scroll(function() {
+     if($(window).scrollTop() + $booknowheight > $(document).height()) {
+        $("body").addClass('scroll-book-now');
+     }
+      else {
+        $("body").removeClass('scroll-book-now');
+    }
   });
 });
 /************* blog page  *********/
