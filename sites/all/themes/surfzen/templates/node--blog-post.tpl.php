@@ -7,6 +7,12 @@
  * @see https://drupal.org/node/1728164
  */
 ?>
+
+?>
+<?php $url="http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']."/sites/default/files/".render($node->field_background_image['und'][0]['filename']);
+ ?>
+
+<div class="bg-image" style="background: url('<?php print $url; ?>') no-repeat center center"></div>
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="wrapper-article">
 
@@ -36,6 +42,7 @@
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_post_date']);
+    hide($content['field_background_image']);
   ?>
   <div class="date-in-parts">
     <div class="month"><?php echo date('F', strtotime($node->field_post_date['und'][0]['value']));?></div>
