@@ -105,6 +105,9 @@ body{
   background-color: #fafafa;
   padding: 80px 8%;
   border-radius: 3px;
+  @include res(s-m){
+    padding: 80px 25px;
+  }
 }
 
 .not-front.node-type-page article{
@@ -130,6 +133,9 @@ body{
     margin: 0 auto;
     max-width: 100%;
     box-sizing:border-box;
+    @include res(s-m){
+      padding: 0;
+    }
   }
 
 .wrapper-content-bottom{
@@ -253,6 +259,7 @@ body{
     @include res(s){
       margin-top: 8px;
       width: 200px;
+      height: 16px;
     }
   }
 }
@@ -426,6 +433,9 @@ body{
   #footer{
     @include width();
     width: 1020px;
+    @include res(s-m){
+      padding: 0 25px;
+    }
   }
   .block-title{
     font-size: 16px;
@@ -569,11 +579,14 @@ body{
   overflow: hidden;
   padding: 90px 0;
   @include res(s-m){
-    padding: 20px 0;
+    padding: 20px 25px;
   }
   .region-bottom{
     @include width;
     width: 1020px;
+    @include res(s-m){
+      padding: 0;
+    }
   }
   p{
     margin: 0;
@@ -581,7 +594,7 @@ body{
   .logo-image{
     max-width: 300px;
     height: auto;
-    margin: 0 auto
+    margin: 0 auto;
   }
   #block-block-5{
     border-top: 1px solid #fff;
@@ -592,10 +605,15 @@ body{
     a{
       text-decoration: underline;
       border-bottom: 1px solid;
+      @include res(s){
+        border-bottom: 0;
+        display: block;
+        width: 100%;
+      }
     }
     @include res(s-m){
       padding-top: 20px;
-      margin-top: 20px;
+      margin-top: 18px;
     }
     .left{
       float: left;
@@ -620,7 +638,7 @@ body{
 }
 /*****  background image and video  ***********/
 
-.field-name-field-background-image, .views-field-field-background-image,
+/*.field-name-field-background-image, .views-field-field-background-image,*/
 .field-name-field-background-video-file{
   border: medium none;
   height: 200%;
@@ -644,6 +662,18 @@ body{
   }
 }
 
+.bg-image{
+      -webkit-background-size: cover!important;
+      -moz-background-size: cover!important;
+      -o-background-size: cover!important;
+      background-size: cover!important;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: -1;
+}
 .field-name-field-background-video-file{
   top: 0;
   z-index: -1;
@@ -656,7 +686,7 @@ body{
     top: 0!important;
     @include res(s-m){
       position: fixed;
-      bottom: 175px;
+      bottom: 149px;
       top: auto!important;
     }
   }
@@ -672,6 +702,9 @@ body{
   @include res(s-m){
     right: 0;
     margin-right: 0!important;
+    position: fixed;
+    bottom: 149px;
+    top: auto!important;
   }
   .block{
     @include width();
@@ -804,6 +837,7 @@ body{
     text-align: center;
     letter-spacing: 14px;
     text-transform: uppercase;
+    font-weight: normal;
     @include res(s-m){
       margin: 60px 0 20px;
     }
@@ -886,6 +920,10 @@ body{
   margin-bottom: 0;
 }
 
+.page-node-43 .field-name-body p{
+  margin: 0;
+}
+
 #block-views-blog-post-view-block{
    box-sizing: border-box;
     margin: 0 auto 100px;
@@ -902,6 +940,7 @@ body{
     font-size: 20px;
     letter-spacing: 10px;
     text-align: center;
+    font-weight: normal;
     @include res(s-m){
       margin: 60px 0 20px;
     }
@@ -979,6 +1018,9 @@ body{
 #block-views-blog-post-view-block-1, .view-blog-post-view.view-display-id-page_2{
   .views-exposed-form{
     text-align: center;
+    @include res(s-m){
+      text-align: left;
+    }
     .description{
       display: none;
     }
@@ -990,13 +1032,14 @@ body{
     }
     .views-exposed-widget{
       float: none;
+      padding-right: 0;
     }
     .bef-select-as-links .form-item .form-item{
       display: inline-block;
       padding: 0 18px;
       @include res(s-m){
-        width: 100%;
-        padding: 0;
+        width: 49%;
+        padding: 0 0 20px 0;
       }
     }
   }
@@ -1100,7 +1143,7 @@ body{
       }
     }
     .views-field-title-1 {
-      padding-top: 32px;
+      padding-top: 26px;
       position: relative;
       display: none;
       @include res(s-m){
@@ -1143,6 +1186,14 @@ body{
     color: #fff;
     border-radius: 3px;
     padding: 0;
+    @include res(s-m){
+      border-radius: 0;
+    }
+    .field-name-body{
+      @include res(s-m){
+        line-height: 30px;
+      }
+    }
     .content{
         padding: 0px 8%;
         .address{
@@ -1151,12 +1202,17 @@ body{
           text-transform: uppercase;
           text-align: center;
           letter-spacing: 6px;
+          @include res(s-m){
+            padding-top: 60px;
+          }
         }
         .places{
-          width: 500px;
+          width: 600px;
           margin: 70px auto 0;
           max-width: 100%;
           font-size: 20px;
+          letter-spacing: 6px;
+          line-height: 30px;
           @include res(s-m){
             margin-top: 20px;
           }
@@ -1165,7 +1221,6 @@ body{
           }
           .label{
             text-align: center;
-            letter-spacing: 6px;
           }
         }
         .left-place{
@@ -1192,7 +1247,7 @@ body{
           padding-bottom: 90px;
           @include res(s-m){
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
           }
           a{
             display: inline-block;
@@ -1229,6 +1284,9 @@ body{
     border-radius: 3px 3px 0 0;
     @include res(s-m){
       padding-top: 20px;
+      border-radius: 0;
+      margin-top: 0;
+      padding-bottom: 70px;
     }
     .form-required{
       display: none;
@@ -1252,6 +1310,7 @@ body{
     }
     label{
       font-weight: normal;
+      letter-spacing: 2px;
     }
     .webform-component{
       @include res(s-m){
@@ -1286,7 +1345,9 @@ body{
     textarea{
       border: 1px solid #e1e1e1;
       border-radius: 3px;
-      padding:  0 5px;      
+      padding:  0 5px;  
+      resize: none;  
+      margin-top: 5px;  
     }
     .grippie{
       display: none;
@@ -1358,6 +1419,10 @@ body{
       font-size: 13px;
       color: #9b9b9b;
       text-transform: uppercase;
+      @include res(s-m){
+        padding-top: 15px;
+        display: block;
+      }
     }
   }
   .field-name-field-post-tags{
@@ -1396,6 +1461,7 @@ body{
     }
   }
   #share{
+    margin-top: 15px;
     .link{
       float: left;
       margin-right: 14px;
@@ -1405,6 +1471,9 @@ body{
     border-radius: 3px 3px 0 0;
     padding-bottom: 50px;
     border:1px solid #fafafa;
+    @include res(s-m){
+      padding-top: 30px;
+    }
   }
   .wrapper-content-bottom{
     margin: 0;
@@ -1429,11 +1498,13 @@ body{
   width: 70%;
   @include res(s-m){
     width: 100%;
+    padding-bottom: 30px;
   }
   h2{
     margin-bottom: 30px;
     font-weight: normal;
     letter-spacing: 2px;
+    font-size: 22px;
     @include res(s-m){
       padding: 0 8%;
     }
@@ -1456,14 +1527,21 @@ body{
   .views-row-even{
     float: right;
   }
-  .views-field-title a{
-      font-size: 24px;
-      color: $yellow;
-      letter-spacing: 6px; 
-      font-weight: bold; 
+  .views-field-title{
+      margin-top: 8px;
+      margin-bottom: 3px;
+      a{
+        font-size: 22px;
+        color: $yellow;
+        letter-spacing: 3px; 
+        font-weight: bold; 
+      }
   }
   .views-field-field-post-date{
     letter-spacing: 2px;
+  }
+  img{
+    border-radius: 6px;
   }
 }
 
@@ -1583,6 +1661,11 @@ body{
     color: $yellow;
     letter-spacing: 4px;
     padding: 0;
+    @include res(s-m){
+      line-height: 30px;
+      font-size: 25px;
+      padding-top: 16px;
+    }
   }
   .field-name-field-concert-date{
     letter-spacing: 2px;
@@ -1622,12 +1705,16 @@ body{
     }
     @include res(s-m){
       width: 100%;
+      margin-top: 15px;
     }
   }
   .field-name-field-concert-sample-video{
     width: 100%;
     padding-top: 90px;
     clear: both;
+    @include res(s-m){
+      padding-top: 45px;
+    }
     iframe{
       @include res(s-m){
         height: 300px;
@@ -1717,6 +1804,7 @@ body{
     text-align: center;
     letter-spacing: 14px;
     text-transform: uppercase;
+    line-height: 28px;
   }
   .field-name-field-text-box{
     text-align: center;
@@ -1745,7 +1833,7 @@ body{
     background-color: #fff;
     border: 2px solid $yellow;
     border-radius: 6px;
-    padding: 40px 110px 30px; 
+    padding: 40px 10px 30px; 
     margin: 0 auto;
     max-width: 90%;
     @include res(s-m){
@@ -1769,6 +1857,8 @@ body{
     .field-name-field-upper-text{
       margin-top: 30px;
       text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 25px;
       p{
         margin: 0;
       }
@@ -1776,6 +1866,7 @@ body{
     .field-name-field-reservations{
       margin-top: 30px;
       text-transform: uppercase;
+      letter-spacing: 2px;
     }
   }
 }
@@ -1866,6 +1957,10 @@ body{
     color: $default;
     margin-bottom: 5px;
   }
+  .views-field-title{
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
   .views-field-field-quote a{
     margin-top: 17px!important;
     display: block;
@@ -1874,6 +1969,17 @@ body{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 2px;
+  }
+}
+
+#block-views-team-members-block{
+  @include res(s-m){
+    margin-bottom: 30px;
+  }
+  .view-header{
+    @include res(s-m){
+      margin-bottom: 60px;
+    }
   }
 }
 

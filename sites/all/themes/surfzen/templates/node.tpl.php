@@ -7,6 +7,11 @@
  * @see https://drupal.org/node/1728164
  */
 ?>
+<?php $url="http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']."/sites/default/files/".render($node->field_background_image['und'][0]['filename']);
+ ?>
+
+<div class="bg-image" style="background: url('<?php print $url; ?>') no-repeat center center"></div>
+
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="wrapper-article">
 <h1 class="page__title title" id="page-title"><?php print $node->title; ?></h1>
@@ -36,6 +41,7 @@
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
+    hide($content['field_background_image']);
     print render($content);
   ?>
 

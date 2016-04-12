@@ -202,17 +202,29 @@ $(window).resize(function() {
   });
 
 /************* welness page   *********/
-$('.field-name-field-meal > .field-items > .field-item').each(function(){
-  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
-  $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
-  $contenthight = (($(this).children().children().children(".content")).height());
-  $paddinghight = ($imghight-$contenthight)/2;
-  if ($paddinghight < 0){$paddinghight = 0};
-  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
-});
+$(window).load(function() {
 
+  $('.field-name-field-plan-box > .field-items > .field-item').each(function(){
+    ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
+    $imghight = $(".field-name-field-plan-box .field-name-field-image").innerHeight();
+    $contenthight = (($(this).children().children().children(".content")).height());
+    $paddinghight = ($imghight-$contenthight)/2;
+    if ($paddinghight < 0){$paddinghight = 0};
+    ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
+  });
 
+  $(window).resize(function() {
+    $('.field-name-field-plan-box > .field-items > .field-item').each(function(){
+      ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
+      $imghight = $(".field-name-field-plan-box .field-name-field-image").innerHeight();
+      $contenthight = (($(this).children().children().children(".content")).height());
+      $paddinghight = ($imghight-$contenthight)/2;
+      if ($paddinghight < 0){$paddinghight = 0};
+      ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
+    });
+  });
 
+})
 /***********   resturant  ********/
 
 if ($("body").hasClass("page-node-84")) {
@@ -225,17 +237,8 @@ if ($("body").hasClass("page-node-84")) {
    $("#main").css("margin-top", $mainheight);
   });
 
+  $(window).load(function() {
 
-$('.field-name-field-meal > .field-items > .field-item').each(function(){
-  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
-  $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
-  $contenthight = (($(this).children().children().children(".content")).height());
-  $paddinghight = ($imghight-$contenthight)/2;
-  if ($paddinghight < 0){$paddinghight = 0};
-  ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
-});
-
-  $(window).resize(function() {
     $('.field-name-field-meal > .field-items > .field-item').each(function(){
       ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
       $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
@@ -244,8 +247,19 @@ $('.field-name-field-meal > .field-items > .field-item').each(function(){
       if ($paddinghight < 0){$paddinghight = 0};
       ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
     });
-  });
 
+    $(window).resize(function() {
+      $('.field-name-field-meal > .field-items > .field-item').each(function(){
+        ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", 0);
+        $imghight = (($(this).children().children().children().children(".field-name-field-image")).height());
+        $contenthight = (($(this).children().children().children(".content")).height());
+        $paddinghight = ($imghight-$contenthight)/2;
+        if ($paddinghight < 0){$paddinghight = 0};
+        ($(this).children().children().children().children().children(".field-name-field-title-for-block")).css("padding-top", $paddinghight);
+      });
+    });
+
+  });
 }
 /*  $(window).load(function(){
     $('#splash').fadeOut();
