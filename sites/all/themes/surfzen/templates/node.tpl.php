@@ -7,7 +7,7 @@
  * @see https://drupal.org/node/1728164
  */
 ?>
-<?php $url="http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']."/sites/default/files/".render($node->field_background_image['und'][0]['filename']);
+<?php $url="http://" . $_SERVER['SERVER_NAME'] ."/sites/default/files/".render($node->field_background_image['und'][0]['filename']);
  ?>
 
 <div class="bg-image" style="background: url('<?php print $url; ?>') no-repeat center center"></div>
