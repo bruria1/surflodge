@@ -41,8 +41,8 @@
 
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
-    hide($content['links']);?>
-    hide($content['field_background_image']);
+    hide($content['links']);
+    hide($content['field_background_image']); ?>
     <h1 class="page__title title" id="page-title"><?php print $node->title; ?></h1>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="/sites/all/themes/surfzen/js/map.js"></script>
