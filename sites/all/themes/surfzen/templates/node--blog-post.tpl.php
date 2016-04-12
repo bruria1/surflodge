@@ -8,7 +8,6 @@
  */
 ?>
 
-?>
 <?php $url="http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']."/sites/default/files/".render($node->field_background_image['und'][0]['filename']);
  ?>
 
