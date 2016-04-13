@@ -2033,6 +2033,9 @@ body{
 /**********  gallery  *********/
 
 #block-bean-gallery{
+  @include res(s-m){
+    display: none;
+  }
   .jcbx-glry-classic{
     background-color: transparent!important;
     z-index: 0;
@@ -2071,7 +2074,24 @@ body{
   opacity: 0;
 }
 
-
+#block-views-gallery-mobile-block{
+  display: none;
+  @include res(s-m){
+    display: block;
+  }
+  .bx-wrapper .bx-viewport {
+      background: transparent;
+      border:none;
+      box-shadow: none;
+      left: 0px;
+  }
+  .bx-controls-direction{
+    display: none;
+  }
+  li{
+    left: 0;
+  }
+}
 /****  messages  *********/
 
 .messages{
