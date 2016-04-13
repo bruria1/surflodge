@@ -781,7 +781,7 @@ body{
     max-width: 100%;
     box-sizing: border-box;
     @include res(s-m){
-      padding: 0 3%;
+      padding: 0 25px;
       -webkit-column-count: 1; /* Chrome, Safari, Opera */
       -moz-column-count: 1; /* Firefox */
       column-count: 1;
@@ -2051,9 +2051,11 @@ body{
   }
 }
 
-.jcbx-glry-classic div:nth-child(4){
+.jcbx-glry-classic div:nth-child(4), .jcbx-glry-classic div:nth-child(5){
   opacity: 0;
 }
+
+
 /****  messages  *********/
 
 .messages{

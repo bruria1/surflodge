@@ -279,6 +279,11 @@ setTimeout(function(){
 }, 10000);  
 
 
+$("#main-menu li a").on("touchend", function(event) {
+  window.location.href = $(this).attr("href");
+});
+
+
   }
 };
 

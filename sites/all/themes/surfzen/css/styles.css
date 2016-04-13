@@ -2660,7 +2660,7 @@ body {
 @media (max-width: 767px) {
   /* line 771, ../sass/components/_surflodge.scss */
   .front .field-name-body {
-    padding: 0 3%;
+    padding: 0 25px;
     -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
     -moz-column-count: 1;
@@ -4256,34 +4256,34 @@ body {
 }
 
 /* line 2054, ../sass/components/_surflodge.scss */
-.jcbx-glry-classic div:nth-child(4) {
+.jcbx-glry-classic div:nth-child(4), .jcbx-glry-classic div:nth-child(5) {
   opacity: 0;
 }
 
 /****  messages  *********/
-/* line 2059, ../sass/components/_surflodge.scss */
+/* line 2061, ../sass/components/_surflodge.scss */
 .messages, .messages--status, .messages--warning, .messages--error {
   background-image: none;
   padding-left: 10px;
 }
 
-/* line 2064, ../sass/components/_surflodge.scss */
+/* line 2066, ../sass/components/_surflodge.scss */
 .messages, .messages--status, .messages--warning, .messages--error {
   border: 2px solid #ffc221;
   background-color: transparent;
   border-radius: 6px;
 }
-/* line 2068, ../sass/components/_surflodge.scss */
+/* line 2070, ../sass/components/_surflodge.scss */
 .messages.warning, .warning.messages--status, .warning.messages--warning, .warning.messages--error, .messages.error, .error.messages--status, .error.messages--warning, .error.messages--error {
   border: 2px solid #CE0606;
 }
 
-/* line 2074, ../sass/components/_surflodge.scss */
+/* line 2076, ../sass/components/_surflodge.scss */
 #block-mailchimp-signup-signup-for-newsletter .messages, #block-mailchimp-signup-signup-for-newsletter .messages--status, #block-mailchimp-signup-signup-for-newsletter .messages--warning, #block-mailchimp-signup-signup-for-newsletter .messages--error {
   color: #fff;
 }
 
-/* line 2079, ../sass/components/_surflodge.scss */
+/* line 2081, ../sass/components/_surflodge.scss */
 .hide-message #inline-messages {
   display: none;
 }
