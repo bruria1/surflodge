@@ -1463,6 +1463,7 @@ body{
   .field-name-body{
     margin-top: 60px;
     width: 75%;
+    font-size: 15px!important;
     @include res(s-m){
       width: 100%;
     }
