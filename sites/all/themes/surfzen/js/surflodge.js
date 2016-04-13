@@ -48,7 +48,7 @@ Drupal.behaviors.my_custom_behavior = {
         }
       });
 */
-      $(".menu-wrapper").click(function(){
+      $(".menu-wrapper").unbind('click').bind('click', function (e) {
         if ($("body").hasClass("display-menu")){
           $("body").removeClass("display-menu");
         }
@@ -95,6 +95,7 @@ Drupal.behaviors.my_custom_behavior = {
           //$(".field-name-field-background-image img").css("margin-right", '0');
           $(".region-links").css("margin-right", 0);
    });
+
 /**********  main  **********/
   
   $mainheight = $(window).height()-150;
@@ -169,7 +170,7 @@ $(document).ready(function(){
       });
 });
 */
-$booknowheight = $(window).height()+500;
+$booknowheight = $(window).height()+550;
 
 $(window).scroll(function() {
    if($(window).scrollTop() + $booknowheight > $(document).height()) {
@@ -181,8 +182,7 @@ $(window).scroll(function() {
 });
 
 $(window).resize(function() {
-  $booknowheight = $(window).height()+500;
-
+  $booknowheight = $(window).height()+550
   $(window).scroll(function() {
      if($(window).scrollTop() + $booknowheight > $(document).height()) {
         $("body").addClass('scroll-book-now');
