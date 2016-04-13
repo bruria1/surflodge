@@ -44,7 +44,7 @@
     hide($content['field_background_image']);
   ?>
   <div class="date-in-parts">
-    <div class="month"><?php echo date('F', strtotime($node->field_post_date['und'][0]['value']));?></div>
+    <div class="month"><?php echo date('M', strtotime($node->field_post_date['und'][0]['value']));?></div>
     <div class="day"><?php echo date('d', strtotime($node->field_post_date['und'][0]['value']));?></div>
   </div><!--//date-in-parts -->
   <div class="name-title"?>

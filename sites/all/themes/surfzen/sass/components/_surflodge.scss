@@ -164,7 +164,7 @@ body{
   text-align: center;
   letter-spacing: 6px;
   text-transform: uppercase;
-  padding: 0 3%;
+  padding: 0 25px 0 40px;
   font-weight: normal;
 }
 
@@ -258,7 +258,7 @@ body{
     }
     @include res(s){
       margin-top: 8px;
-      width: 200px;
+      width: 210px;
       height: 16px;
     }
   }
@@ -267,7 +267,7 @@ body{
 #header{
   width: 100%;
   position: fixed;
-  top: 0;
+  top: -1px;
   z-index: 99;
   left: 0;
   .header-wrapper{
@@ -579,7 +579,7 @@ body{
   overflow: hidden;
   padding: 90px 0;
   @include res(s-m){
-    padding: 20px 25px;
+    padding: 40px 25px;
   }
   .region-bottom{
     @include width;
@@ -612,8 +612,8 @@ body{
       }
     }
     @include res(s-m){
-      padding-top: 20px;
-      margin-top: 18px;
+      padding-top: 40px;
+      margin-top: 36px;
     }
     .left{
       float: left;
@@ -736,7 +736,7 @@ body{
         line-height: 16px;
         margin-right: 25px;
         margin-top: -22px;
-        padding: 5px 0 5px 2px;
+        padding: 5px 0 5px 5px;
         width: 71px;
       }
     }
@@ -815,6 +815,11 @@ body{
   }
 }
 
+#block-bean-hp-block-title{
+  @include res(s-m){
+    margin-top: 38px;
+  }
+}
 #block-views-concerts-view-block, #block-views-concerts-view-block-1{
   box-sizing: border-box;
   margin: 0 auto;
@@ -1395,6 +1400,7 @@ body{
     .month{
       font-size: 14px;
       letter-spacing: 3px;
+      text-transform: uppercase;
     }
     .day{
       font-size: 30px;
@@ -1668,7 +1674,7 @@ body{
     @include res(s-m){
       line-height: 30px;
       font-size: 25px;
-      padding-top: 16px;
+      padding-top: 46px;
     }
   }
   .field-name-field-concert-date{
