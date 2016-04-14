@@ -322,12 +322,14 @@ body{
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
       width: 0;
-      @include res(s-m){
-        width: 100%;
-      }
   }
   li.active:after, li:hover:after{
     width: 100%;
+  }
+  li:hover:after{
+    @include res(s-m){
+      width: 0;
+    }
   }
   a{
     color: #fff;
