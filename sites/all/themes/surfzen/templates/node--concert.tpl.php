@@ -53,12 +53,12 @@
       </a>
     </div>
     <div class="twitter link">
-        <a href="https://twitter.com/home?status=http://tikke.co.il/node/<?php print $node->nid ?>" onclick="javascript:window.open(this.href,
+        <a href="https://twitter.com/home?status=<?php print $_SERVER['SERVER_NAME'] ?>/node/<?php print $node->nid ?>" onclick="javascript:window.open(this.href,
     '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
     src="/sites/all/themes/surfzen/images/twitter-black.png" alt="Share on Twitter"/></a>
     </div>
     <div class="facebook link">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://tikke.co.il/node/<?php print $node->nid ?>" onclick="javascript:window.open(this.href,
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php print $_SERVER['SERVER_NAME'] ?>/node/<?php print $node->nid ?>" onclick="javascript:window.open(this.href,
     '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
     src="/sites/all/themes/surfzen/images/facebook-black.png" alt="Share on Facebook"/></a>
     </div>
