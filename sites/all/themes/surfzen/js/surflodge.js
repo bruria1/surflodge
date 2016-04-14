@@ -278,7 +278,6 @@ setTimeout(function(){
     document.getElementById('block-mailchimp-signup-signup-for-newsletter').className = 'hide-message';
 }, 10000);  
 
-
 $("#main-menu li a").on("touchend", function(event) {
   window.location.href = $(this).attr("href");
 });

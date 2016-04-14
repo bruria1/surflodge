@@ -146,8 +146,7 @@ body{
   @include res(s-m){
     border-radius: 0;
     margin: 0;
-    padding-bottom: 30px;
-    padding: 30px 0;
+    padding: 60px 0 70px;
   }
   .region-content-bottom{
     width: 800px;
@@ -164,8 +163,11 @@ body{
   text-align: center;
   letter-spacing: 6px;
   text-transform: uppercase;
-  padding: 0 25px 0 40px;
   font-weight: normal;
+}
+
+.front #page-title{
+  padding: 0 25px 0 40px;
 }
 
 #content{
@@ -320,6 +322,9 @@ body{
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
       width: 0;
+      @include res(s-m){
+        width: 100%;
+      }
   }
   li.active:after, li:hover:after{
     width: 100%;
@@ -874,6 +879,9 @@ body{
         opacity: 0.9
     }*/
   }
+  .views-row-last{
+    margin-bottom: 0;
+  }
   .views-field-title{
     position: absolute;
     height: 100%;
@@ -922,6 +930,9 @@ body{
 
 #block-views-concerts-view-block-1{
   margin-bottom: 0;
+  @include res(s-m){
+    padding: 0;
+  }
 }
 
 .page-node-43 .field-name-body p{
@@ -936,7 +947,7 @@ body{
     padding: 0 25px;
     width: 800px;
   @include res(s-m){
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   h2{
     margin: 100px 0 80px;
@@ -1204,7 +1215,7 @@ body{
     .content{
         padding: 0px 8%;
         .address{
-          padding-top: 30px;
+          padding-top: 90px;
           font-size: 20px;
           text-transform: uppercase;
           text-align: center;
@@ -1300,9 +1311,10 @@ body{
     }
     .form{
       width: 670px;
-      max-width: 94%;
-      padding: 0 3%;
+      box-sizing:border-box;
+      padding: 0 25px;
       margin: 0 auto;
+      max-width: 100%;
     }
     .form-title{
       font-size: 20px;
@@ -1647,6 +1659,12 @@ body{
   }
   .views-row{
     margin-bottom: 150px;
+    @include res(s-m){
+      margin-bottom: 75px;
+    }
+  }
+  .views-row-last{
+    margin-bottom: 0;
   }
   .views-field-body{
     letter-spacing: 2px;
@@ -1824,11 +1842,14 @@ body{
     a{
       color: $default;
     }
+    p{
+      margin-bottom: 0;
+    }
   }
   .entity-field-collection-item{
     margin-bottom: 80px;
     @include res(s-m){
-      margin-bottom: 50px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -1843,11 +1864,11 @@ body{
     background-color: #fff;
     border: 2px solid $yellow;
     border-radius: 6px;
-    padding: 40px 10px 30px; 
+    padding: 40px 10px 45spx; 
     margin: 0 auto;
     max-width: 90%;
     @include res(s-m){
-      padding: 20px 5px;
+      padding: 20px 5px 25px;
     }
     box-sizing: border-box;
     .block-title{
@@ -1855,6 +1876,9 @@ body{
       letter-spacing: 10px;
       font-weight: normal;
       text-transform: uppercase;
+      @include res(s-m){
+        font-size: 10px;
+      }
     }
     .field-name-field-pretext{
       font-weight: bold;
@@ -1863,12 +1887,18 @@ body{
       color: $yellow;
       letter-spacing: 6px;
       margin-top: 23px;
+      @include res(s-m){
+        font-size: 17px;
+      }
     }
     .field-name-field-upper-text{
       margin-top: 30px;
       text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 25px;
+      @include res(s-m){
+        font-size: 10px;
+      }
       p{
         margin: 0;
       }
@@ -1877,6 +1907,9 @@ body{
       margin-top: 30px;
       text-transform: uppercase;
       letter-spacing: 2px;
+      @include res(s-m){
+        font-size: 10px;
+      }
     }
   }
 }
@@ -1983,10 +2016,11 @@ body{
 }
 
 #block-views-team-members-block{
-  @include res(s-m){
-    margin-bottom: 30px;
-  }
   .view-header{
+    margin-bottom: 80px;
+    p{
+      margin: 0;
+    }
     @include res(s-m){
       margin-bottom: 60px;
     }
@@ -1999,7 +2033,7 @@ body{
     opacity: 1;
   }
   .block-title{
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 
@@ -2078,6 +2112,9 @@ body{
   display: none;
   @include res(s-m){
     display: block;
+  }
+  .bx-wrapper{
+      margin-bottom: 0;
   }
   .bx-wrapper .bx-viewport {
       background: transparent;
