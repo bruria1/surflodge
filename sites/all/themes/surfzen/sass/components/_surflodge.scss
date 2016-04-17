@@ -2182,9 +2182,9 @@ body{
   }*/
   .field-name-field-gallery-image{
     .field-item{
-      width: 30%;
+      width: 32%;
       float: left;
-      margin-right: 5%;
+      margin-right: 2%;
       @include res(m){
         width: 48%;
       }
@@ -2218,7 +2218,7 @@ body{
   }
   .wrapper-content-bottom{
     margin-top: 0!important;
-    padding-top: 0!important;
+    padding: 0!important;
     border-radius: 0;
   }
 }

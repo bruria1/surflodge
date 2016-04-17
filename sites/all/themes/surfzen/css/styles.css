@@ -4436,9 +4436,9 @@ body {
 }
 /* line 2184, ../sass/components/_surflodge.scss */
 #block-bean-gallery .field-name-field-gallery-image .field-item {
-  width: 30%;
+  width: 32%;
   float: left;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   /* line 2184, ../sass/components/_surflodge.scss */
@@ -4479,7 +4479,7 @@ body {
 /* line 2219, ../sass/components/_surflodge.scss */
 .page-node-86 .wrapper-content-bottom {
   margin-top: 0 !important;
-  padding-top: 0 !important;
+  padding: 0 !important;
   border-radius: 0;
 }
 
