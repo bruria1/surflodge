@@ -2161,7 +2161,7 @@ body{
 /**********  gallery  *********/
 
 #block-bean-gallery{
-  @include res(s-m){
+  /*@include res(s-m){
     display: none;
   }
   .jcbx-glry-classic{
@@ -2178,6 +2178,31 @@ body{
     @include res(s-m){
       height: 200px!important;
       width: auto!important;
+    }
+  }*/
+  .field-name-field-gallery-image{
+    .field-item{
+      width: 30%;
+      float: left;
+      margin-right: 5%;
+      @include res(m){
+        width: 48%;
+      }
+      @include res(s){
+        width: 100%;
+        a{
+          pointer-events: none;
+          cursor: default; 
+        }
+      }
+    }
+    .field-item:nth-child(3n){
+      margin-right: 0;
+    }
+    .field-item.even{
+      @include res(m){
+        margin-right: 4%;
+      }
     }
   }
 }
