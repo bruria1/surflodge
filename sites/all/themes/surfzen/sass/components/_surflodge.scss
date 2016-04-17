@@ -690,6 +690,11 @@ body{
         width: 100%;
         text-align: center;
       }
+      @include res(l){
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
     }
     a{
       color: #fff;
