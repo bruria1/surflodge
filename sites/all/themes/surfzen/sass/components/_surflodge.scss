@@ -419,8 +419,9 @@ body{
   height: 20px;
   width: 20px;
   right: 25px;
-  position: absolute;
+  position: fixed;
   z-index: 400;
+  top: 8px;
   @include res(s-m){
     margin-right: 0;
     right: 10px;
