@@ -3305,6 +3305,16 @@ body {
   padding: 0px 8%;
 }
 /* line 1287, ../sass/components/_surflodge.scss */
+.node-type-webform article .content .number {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
+/* line 1291, ../sass/components/_surflodge.scss */
+.node-type-webform article .content .number a {
+  color: #fff;
+}
+/* line 1295, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .address {
   padding-top: 90px;
   font-size: 20px;
@@ -3313,20 +3323,10 @@ body {
   letter-spacing: 6px;
 }
 @media (max-width: 767px) {
-  /* line 1287, ../sass/components/_surflodge.scss */
+  /* line 1295, ../sass/components/_surflodge.scss */
   .node-type-webform article .content .address {
     padding-top: 60px;
   }
-}
-/* line 1296, ../sass/components/_surflodge.scss */
-.node-type-webform article .content .address .number {
-  text-align: center;
-  font-size: 20px;
-  text-decoration: underline;
-}
-/* line 1300, ../sass/components/_surflodge.scss */
-.node-type-webform article .content .address .number a {
-  color: #fff;
 }
 /* line 1305, ../sass/components/_surflodge.scss */
 .node-type-webform article .content .places {

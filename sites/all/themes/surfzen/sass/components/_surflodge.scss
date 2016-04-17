@@ -1284,6 +1284,14 @@ body{
     }
     .content{
         padding: 0px 8%;
+          .number{
+            text-align: center;
+            font-size: 20px;
+            text-decoration: underline;
+            a{
+              color: #fff;
+            }
+          }
         .address{
           padding-top: 90px;
           font-size: 20px;
@@ -1292,14 +1300,6 @@ body{
           letter-spacing: 6px;
           @include res(s-m){
             padding-top: 60px;
-          }
-          .number{
-            text-align: center;
-            font-size: 20px;
-            text-decoration: underline;
-            a{
-              color: #fff;
-            }
           }
         }
         .places{
