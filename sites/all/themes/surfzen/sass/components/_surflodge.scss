@@ -1288,6 +1288,7 @@ body{
             text-align: center;
             font-size: 20px;
             text-decoration: underline;
+            padding-top: 50px;
             a{
               color: #fff;
             }
@@ -1340,8 +1341,8 @@ body{
         .emails{
           clear: both;
           text-align: center;
-          padding-top: 100px;
-          padding-bottom: 90px;
+          padding-top: 50px;
+          padding-bottom: 65px;
           @include res(s-m){
             padding-top: 20px;
             padding-bottom: 40px;
