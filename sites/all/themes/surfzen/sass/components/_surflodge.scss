@@ -253,6 +253,9 @@ body{
       opacity: 0;
       img{
         text-align: center;
+        @include res(s-m){
+          text-align: left;
+        }
       }
 }
 
@@ -262,6 +265,10 @@ body{
       opacity: 1;
       width: 100%;
       text-align: center;
+      @include res(s-m){
+        width: 250px;
+        top: 6px;
+      }
   }
 }
 
@@ -424,15 +431,15 @@ body{
   overflow: hidden;
   float: right;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 11px;
   height: 20px;
   width: 20px;
-  right: 95px;
+  right: 25px;
   position: absolute;
   z-index: 400;
   @include res(s-m){
     margin-right: 0;
-    right: 52px;
+    right: 10px;
     margin-top: 7px;
   }
   @include res(l){
