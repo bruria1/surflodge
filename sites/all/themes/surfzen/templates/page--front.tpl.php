@@ -111,7 +111,6 @@
       <img class="small" src="http://<?php print $_SERVER['SERVER_NAME'] ?>/sites/all/themes/surfzen/images/mouse-scroll.png">
     </div> -->
  <div id="main">
-    <?php print render($page['links']); ?>
     <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -149,6 +148,7 @@
 
 </div>
 
+<?php print render($page['links']); ?>
 
 <div class="wrapper-footer">
   <?php print render($page['footer']); ?>
