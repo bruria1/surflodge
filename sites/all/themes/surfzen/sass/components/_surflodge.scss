@@ -339,23 +339,7 @@ body{
   }
 }
 
-.front .menu-wrapper{
-  opacity: 0;
-  margin-top: -20px;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  .lines{
-    display: none;
-  }
-}
 
-.front.scroll .menu-wrapper{
-  opacity: 1;
-  margin-top: 10px;
-  .lines{
-    display: block;
-  }
-}
 
 /********* menu  **********/
 
