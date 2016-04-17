@@ -64,7 +64,7 @@ Drupal.behaviors.my_custom_behavior = {
         }
       });
 
-
+/*
 
   $width = ($(window).width()-1200)/2+187;
   $("#navigation").css("width", $width);
@@ -95,7 +95,7 @@ Drupal.behaviors.my_custom_behavior = {
           //$(".field-name-field-background-image img").css("margin-right", '0');
           $(".region-links").css("margin-right", 0);
    });
-
+*/
 /**********  main  **********/
   
   $mainheight = $(window).height()-150;
