@@ -2189,7 +2189,7 @@ body {
   right: 25px;
   position: fixed;
   z-index: 400;
-  top: 8px;
+  top: 6px;
 }
 @media (max-width: 767px) {
   /* line 414, ../sass/components/_surflodge.scss */
