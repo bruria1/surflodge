@@ -107,9 +107,9 @@
 
 <div id="wrapper-site">
 <div id="page">
-    <div class="mouse-scroll">
+    <!-- <div class="mouse-scroll">
       <img class="small" src="http://<?php print $_SERVER['SERVER_NAME'] ?>/sites/all/themes/surfzen/images/mouse-scroll.png">
-    </div>
+    </div> -->
  <div id="main">
     <?php print render($page['links']); ?>
     <div id="content" class="column" role="main">

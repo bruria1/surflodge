@@ -108,13 +108,13 @@ Drupal.behaviors.my_custom_behavior = {
   });
 
   $frontmainheight = $(window).height()+30;
-  $mousescroll = $(window).height()-100;
-  //$(".front #main").css("margin-top", $frontmainheight);
+ // $mousescroll = $(window).height()-100;
+  $(".front #main").css("margin-top", $frontmainheight);
   $(".front .mouse-scroll").css("margin-top", $mousescroll);
   $(window).resize(function() {
-    $mousescroll = $(window).height()-100;
+  //  $mousescroll = $(window).height()-100;
     $frontmainheight = $(window).height()+30;
-  // $(".front #main").css("margin-top", $frontmainheight);
+  $(".front #main").css("margin-top", $frontmainheight);
     $(".front .mouse-scroll").css("margin-top", $mousescroll);
   });
 
