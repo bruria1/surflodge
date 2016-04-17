@@ -98,13 +98,24 @@ Drupal.behaviors.my_custom_behavior = {
 */
 /**********  main  **********/
   
-  $mainheight = $(window).height()-150;
-  $("#main").css("margin-top", $mainheight);
+    $mainheight = $(window).height()-150;
+   $(".not-front #main").css("margin-top", $mainheight);
   $(".region-links").css("top", $mainheight);
   $(window).resize(function() {
    	$mainheight = $(window).height()-150;
-	 $("#main").css("margin-top", $mainheight);
+	 $(".not-front #main").css("margin-top", $mainheight);
   $(".region-links").css("top", $mainheight);
+  });
+
+  $frontmainheight = $(window).height()+30;
+  $mousescroll = $(window).height()-100;
+  //$(".front #main").css("margin-top", $frontmainheight);
+  $(".front .mouse-scroll").css("margin-top", $mousescroll);
+  $(window).resize(function() {
+    $mousescroll = $(window).height()-100;
+    $frontmainheight = $(window).height()+30;
+  // $(".front #main").css("margin-top", $frontmainheight);
+    $(".front .mouse-scroll").css("margin-top", $mousescroll);
   });
 
 $height = $(window).height();
@@ -123,9 +134,17 @@ $height = $(window).height();
       $("body").removeClass("small-height");
     }
   });
+
+  $logoheight = ($(window).height()-95)/2;
+  $(".front .logo-wrapper").css("margin-top", $logoheight);
+  $(window).resize(function() {
+    $logoheight = ($(window).height()-95)/2;
+   $(".front .logo-wrapper").css("margin-top", $logoheight);
+  });
+  
 /*********   scroll  *******/
 
-$linksheight = $height + $("#header").height() -350;
+$linksheight = $logoheight;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -139,7 +158,7 @@ $(document).ready(function(){
       });
 });
 $(window).resize(function() {
-$linksheight = $height + $("#header").height() -350;
+$linksheight = $logoheight;
 $(document).ready(function(){       
       $scroll_pos = 0;
       $(document).scroll(function() { 
@@ -182,12 +201,13 @@ $(window).scroll(function() {
 });
 
 $(window).resize(function() {
-  $booknowheight = $(window).height()+550
+  $booknowheight = $(window).height()+550;
+  $booknowhp = $(window).height()-20;
   $(window).scroll(function() {
      if($(window).scrollTop() + $booknowheight > $(document).height()) {
         $("body").addClass('scroll-book-now');
      }
-      else {
+    else {
         $("body").removeClass('scroll-book-now');
     }
   });

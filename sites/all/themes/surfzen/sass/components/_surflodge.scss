@@ -99,6 +99,7 @@ body{
 
 .front #main{
   background-color: #fafafa;
+  margin-top: 33px;
 }
 
 .not-front article{
@@ -227,10 +228,10 @@ body{
 .logo-wrapper{
   width: 100%;
   text-align: center;
-  margin-top: 35px;
+  /*margin-top: 35px;
   position: relative;
   transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  -webkit-transition: all 0.5s;*/
   right: 0;
   @include res(s){
     right: 0!important;
@@ -244,6 +245,26 @@ body{
   }
 }
 
+.logo-small{
+      top: -38px;
+      position: absolute;
+      transition: top 0.5s;
+      -webkit-transition: top 0.5s;
+      opacity: 0;
+      img{
+        text-align: center;
+      }
+}
+
+.scroll, .not-front{
+  .logo-small{
+      top: 10px;
+      opacity: 1;
+      width: 100%;
+      text-align: center;
+  }
+}
+
 .scroll .logo-wrapper,
 .not-front .logo-wrapper{
   margin-top: 6px;
@@ -253,6 +274,9 @@ body{
     margin-top: 9px;
     overflow: hidden;
     width: 320px;
+    img.default{
+      display: none;
+    }
     @include res(s-m){
       height: 18px;
       float: left;
@@ -275,19 +299,57 @@ body{
   .header-wrapper{
     position: relative;
     width: 100%;
-    padding: 0 25px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
   }
 }
 
+.mouse-scroll{
+  text-align: center;
+}
+
 .scroll #header, .not-front #header{
   height: 50px;
   background-color: $blue;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.93);
   @include res(s-m){
     height: 42px;
   }
 }
+
+.front #header{
+  position: absolute;
+  max-height: 0;
+  transition: max-height 1s;
+  -webkit-transition: max-height 1s;
+}
+
+.front.scroll #header{
+  position: fixed;
+  max-height: 100px;
+  .logo-wrapper{
+    margin-top: 6px!important
+  }
+}
+
+.front .menu-wrapper{
+  opacity: 0;
+  margin-top: -20px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  .lines{
+    display: none;
+  }
+}
+
+.front.scroll .menu-wrapper{
+  opacity: 1;
+  margin-top: 10px;
+  .lines{
+    display: block;
+  }
+}
+
 /********* menu  **********/
 
 #navigation{
@@ -699,6 +761,7 @@ body{
     }
   }
 }
+
 .region-links{
   width: 100%;
   z-index: 98;
@@ -1807,7 +1870,7 @@ body{
     .field-item{
       @include res(s-m){
         .field-name-field-image{
-          margin: 0;
+          margin: 40px 0 0 0;
         }
       }
       .field-name-field-image{

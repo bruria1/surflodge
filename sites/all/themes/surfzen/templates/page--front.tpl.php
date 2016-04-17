@@ -57,10 +57,16 @@
         </div>
       </div>
     </div>
-
+    <div class="logo-small">
+    <a class="small-logo-wrapper" href="<?php print $front_page; ?>">
+      <img class="small" src="http://<?php print $_SERVER['SERVER_NAME'] ?>/sites/all/themes/surfzen/images/small-logo.png" alt="<?php print t('Home'); ?>" class="header__logo-image" />
+    </a>
+  </div>
     <?php if ($logo): ?>
     <div class="logo-wrapper">
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+      <a href="<?php print $front_page; ?>" rel="home" class="header__logo" id="logo">
+        <img class="default" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" />
+      </a>
     </div>
     <?php endif; ?>
 
@@ -98,9 +104,14 @@
 </div>
   </header>
       <?php print render($page['highlighted']); ?>
+
 <div id="wrapper-site">
 <div id="page">
+    <div class="mouse-scroll">
+      <img class="small" src="http://<?php print $_SERVER['SERVER_NAME'] ?>/sites/all/themes/surfzen/images/mouse-scroll.png">
+    </div>
  <div id="main">
+    <?php print render($page['links']); ?>
     <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -138,7 +149,6 @@
 
 </div>
 
-<?php print render($page['links']); ?>
 
 <div class="wrapper-footer">
   <?php print render($page['footer']); ?>

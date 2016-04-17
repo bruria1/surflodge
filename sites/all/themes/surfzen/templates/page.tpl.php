@@ -45,10 +45,16 @@
         </div>
       </div>
     </div>
-
+    <div class="logo-small">
+    <a class="small-logo-wrapper" href="<?php print $front_page; ?>">
+      <img class="small" src="http://<?php print $_SERVER['SERVER_NAME'] ?>/sites/all/themes/surfzen/images/small-logo.png" alt="<?php print t('Home'); ?>" class="header__logo-image" />
+    </a>
+  </div>
     <?php if ($logo): ?>
     <div class="logo-wrapper">
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+      <a href="<?php print $front_page; ?>" rel="home" class="header__logo" id="logo">
+        <img class="default" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" />
+      </a>
     </div>
     <?php endif; ?>
 
