@@ -2205,6 +2205,11 @@ body{
         margin-right: 4%;
       }
     }
+    .field-item.odd{
+      @include res(m){
+        margin-right: 0%;
+      }
+    }
   }
 }
 
