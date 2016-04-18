@@ -3986,7 +3986,7 @@ body {
 /* line 1811, ../sass/components/_surflodge.scss */
 .room-form input {
   border: none;
-  padding: 5px 10px;
+  padding: 5px 0px;
   text-align: center;
 }
 /* line 1816, ../sass/components/_surflodge.scss */
