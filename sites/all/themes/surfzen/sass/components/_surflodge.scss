@@ -1815,6 +1815,7 @@ body{
   }
   .resbox{
     float: left;
+    width: 110px;
     @include res(s-m){
       float: none;
     }
