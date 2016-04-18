@@ -1761,6 +1761,91 @@ body{
   }
 }
 
+.node-44{
+  .wrapper-article{
+    padding: 0;
+  }
+}
+
+.room-form{
+  margin-bottom: 40px;
+  margin-top: 50px;
+  .res_form{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    @include res(s){
+      width: 100%;
+    }
+    @include res(l){
+      margin-right: 15px;
+    }
+    @include res(s-m){
+      margin-bottom: 20px;
+      float: none;
+      width: 100%;
+    }
+  }
+  .styled-select{
+    float: left;
+    height: 33px;
+    @include res(s-m){
+      float: none;
+    }
+  }
+  label{
+    font-weight: normal;
+    float: left;
+    margin-right: 8px;
+    padding-top: 3px;
+    text-align: left;
+    @include res(s-m){
+      width: 100%;
+      text-align: center;
+    }
+  }
+  select{
+    height: 30px;
+  }
+  input{
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .resbox{
+    float: left;
+    @include res(s-m){
+      float: none;
+    }
+  }
+  .submit{
+    width: 100%;
+    text-align: center;
+    clear: both;
+    @include res(s-m){
+      margin-top: 20px;
+    }
+    #availability{
+      background-color: $yellow;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 17px;
+      padding: 10px 15px;
+      display: inline-block;
+      border-radius: 3px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      @include res(s){
+        font-size: 14px;
+      }
+    }
+  }
+  .form-widget{
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+  }
+}
 /********  concert  ********/
 
 .node-type-concert{

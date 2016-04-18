@@ -49,29 +49,24 @@
           drupal_add_library('system', 'ui.datepicker');
 	?>
 	
-	<form action="https://secure.iqres06931.com/iqreservations/default.asp" method="GET" name="Res_Form" target="_blank">
-
+	<form class="room-form" action="https://secure.iqres06931.com/iqreservations/default.asp" method="GET" name="Res_Form" target="_blank">
+    <div class="form-widget">
           <div class="res_form">
+            <label>Check in:</label>
             <input name="arrivalDate" type="text" id="date-from" class="resbox" 
               value="06/01/2016" readonly="true" 
               <?php //onclick="if (this.value=='' || this.value==' ' || this.value=='   ') this.value='ARRIVAL DATE'" ?>
               size="10">
-            <img class="ui-datepicker-trigger" 
-              src="http://thesurflodge.com/wp-content/themes/quark/images/calendar.png" 
-              alt="..." title="...">
           </div> 
-
           <div class="res_form">
+            <label>Check out:</label>
             <input class="resbox" name="departureDate" id="date-to" type="text" 
               value="06/04/2016" readonly="true" 
               <?php //onclick="if (this.value=='' || this.value==' ' || this.value=='   ') this.value='DEPARTURE DATE'" ?>
               size="10">
-            <img class="ui-datepicker-trigger" 
-              src="http://thesurflodge.com/wp-content/themes/quark/images/calendar.png" 
-              alt="..." title="...">
           </div> 
-          <div class="res_form_label"> 
-            Adults:&nbsp; 
+          <div class="res_form_label res_form"> 
+            <label>Adults:</label>
             <div class="styled-select">
               <select name="AD"> <!-- AD = Adults-->  
                 <option value="1">1</option>
@@ -82,7 +77,9 @@
               </select>
             </div>
           </div>  
-          <div class="res_form_label">Children:&nbsp;<div class="styled-select"><select name="CH"> <!-- CH = Children-->  
+          <div class="res_form_label res_form">
+          <label>Children:</label>
+          <div class="styled-select"><select name="CH"> <!-- CH = Children-->  
     <option value="0" selected="selected">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -97,8 +94,10 @@
 		 <input type="hidden" name="COM" id="COM" value="06">
 		 <input type="hidden" name="COD" id="COD" value="04">
 		 <input type="hidden" name="COY" id="COY" value="2016">
-  
+    </div>
+      <div class="submit">
           <input type="submit" name="action" value="Check Availability" id="availability">
+        </div>
           </form>
           <script type="text/javascript">
           (function($) {
