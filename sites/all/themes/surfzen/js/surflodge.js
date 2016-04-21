@@ -100,11 +100,11 @@ Drupal.behaviors.my_custom_behavior = {
   
     $mainheight = $(window).height()-150;
    $(".not-front #main").css("margin-top", $mainheight);
-  $(".region-links").css("top", $mainheight);
+  //$(".region-links").css("top", $mainheight);
   $(window).resize(function() {
    	$mainheight = $(window).height()-150;
 	 $(".not-front #main").css("margin-top", $mainheight);
-  $(".region-links").css("top", $mainheight);
+  //$(".region-links").css("top", $mainheight);
   });
 
   $frontmainheight = $(window).height()+30;
@@ -188,7 +188,7 @@ $(document).ready(function(){
         }
       });
 });
-*/
+
 $booknowheight = $(window).height()+550;
 
 $(window).scroll(function() {
@@ -211,7 +211,7 @@ $(window).resize(function() {
         $("body").removeClass('scroll-book-now');
     }
   });
-});
+});*/
 /************* blog page  *********/
 
   var imageHeight = $(".not-front .view-blog-post-view img").height();
